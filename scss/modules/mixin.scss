@@ -1,0 +1,11 @@
+@mixin d-flex ($dysplai,$justyfi,$alig) {
+    display: $dysplai;
+    justify-content: $justyfi;
+    align-items: $alig;
+}
+@mixin border ($width,$type,$color) {
+    border: $width $type $color;
+}
+@mixin transition-hover ($property,$duration,$type,$delay) {
+    transition: $property $duration $type $delay;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "k1tech.ge",
+  "version": "1.0.0",
+  "description": "K1tech.ge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-1-GX/K1tech.ge.git"
+  },
+  "keywords": [
+    "(\".\")"
+  ],
+  "author": "giorgi khidesheli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-1-GX/K1tech.ge/issues"
+  },
+  "homepage": "https://github.com/Mr-1-GX/K1tech.ge#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
