@@ -3,24 +3,32 @@
     width: $size0;
     top: 0;
     left: 0;
-    background-color: $color03;
+    background-color: $color010;
     position: fixed;
     @include d-flex (flex,space-around,center);
-    @include border (1px, solid, $color02);
-    @include transition-hover (all,0.4s,ease,0.4s);
+    @include border (2px, solid, $color02);
+    @media (max-width: 768px){
+        display: block;
+        text-align: center;
+    }
     .nav-container {
         max-width: $size02;
         width: $size0;
         padding: 5px 0 20px;
         @include d-flex (flex,space-around,center);
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
         .nav-logo {
             max-width: 90px;
             width: $size0;
             height: 105px;
             &:hover {
-                box-shadow: 5px 15px 28px $color02;
-                @include border (0, solid, $color02);
+                box-shadow: 1px 1px 28px $color02;
                 @include transition-hover (all,0.4s,ease,0.4s);
+            }
+            @media (max-width: 768px) {
+                text-align: left;
             }
             .img-logo {
                 width: $size0;
@@ -29,33 +37,68 @@
     }
     .navi {
         @include d-flex (flex,space-between,center);
-        max-width: 580px;
+        max-width: $size020;
         width: $size0;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         .nav-ul {
-            max-width: 390px;
+            max-width: 444px;
             width: $size0;
             @include d-flex (flex,space-between,center);
+            @media (max-width: 768px) {
+                display: none;
+            }
             .nav-li {
-                max-width: 60px;
-                width: $size0;
-                height: 25px;
                 @include d-flex (flex,center,center);
-                &:hover {
-                    box-shadow: 5px 15px 28px $color02;
-                    @include border (1px, solid, $color02);
-                    @include transition-hover (all,0.4s,ease,0.4s);
+                @media (max-width: 768px) {
+                    padding-bottom: 20px;;
                 }
                 .nav-a {
-                    Color: $color04;
+                    Color: $color011;
                     font-size: 15px;
-                    font-family: 'Poppins-B';
+                    font-family: 'ALKDots';
+                    &:hover {
+                        text-shadow: 1px 1px 28px $color02;
+                        @include transition-hover (all,0.4s,ease,0.4s);
+                    }
+                    @media (max-width: 768px) {
+                        display: block;
+                    }
                 }
             }
         }
+        @media (max-width: 768px) {
+            .open-menu {
+                display: block;
+                text-align: -webkit-center;
+                padding: 20px 0;
+            }
+        }
         .soc-ul {
-            max-width: 70px;
+            max-width: 230px;
             width: $size0;
+            height: 110px;
             @include d-flex (flex,space-between,center);
+            flex-wrap: wrap;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            .contact-ul {
+                max-width: 250px;
+                width: 100%;
+                height: 85px;
+                @include d-flex (flex,space-around,normal);
+                flex-direction: column;
+            }
+            .soc-a {
+                max-width: 230px;
+                width: 100%;
+                font-size: 17px;
+                color: #062D2D;
+                font-family: 'ALKDots';
+                @include d-flex (flex,space-between,flex-start);
+            }
             .soc-li {
                 .fa {
                     font-size: 20px;
@@ -68,6 +111,23 @@
                 }
             }
         }
+        @media (max-width: 768px) {
+            .open-socicon {
+                display: flex;
+            }
+        }
+    }
+    .burger-icon {
+        display: none;
+        @media (max-width: 768px) {
+            color: $color02;
+            display: block;
+            font-size: 30px;
+            position: absolute;
+            top: 40px;
+            right: 30px;
+            cursor:pointer;
+        }
     }
 }
 .sect-bg {
@@ -75,39 +135,14 @@
     background-size: cover;
     margin-top: 132px;
     .sect-conteiner-1 {
-        background-color: #FF4858;
         max-width: 1920px;
         width: $size0;
         height: 550px;
+        
         @include d-flex (flex,space-evenly,center);
-        .sect-text {
-            max-width: 330px;
-            width: $size0;
-            height: 224px;
-            @include d-flex (flex,space-around,baseline);
-            flex-direction: column;
-            .sect-h2 {
-                color: $color01;
-                font-size: 36px;
-                font-family: 'Poopins-B';
-            }
-            .sect-p {
-                color: $color01;
-                font-size: 14px;
-                font-family: 'Poppins-R';
-            }
-            .sect-more {
-                .sect-h4 {
-                    color: $color01;
-                    font-size: 14px;
-                    font-family: 'Poppins-R';
-                }
-            }
-        }
-        .sect-img {
-            max-width: 625px;
-            .sect-img-box {
-                width: $size0;
+        .cont-1-img-box {
+            .img-box {
+                width: 100%;
             }
         }
     }
@@ -120,7 +155,9 @@
             max-width: 280px;
             width: $size0;
             height: 320px;
-            background-color: #ff6875;
+            background-color: $color04;
+            background-position: center;
+            background-repeat: no-repeat;
             .cont-2-text {
                 max-width: 280px;
                 width: $size0;
@@ -251,9 +288,10 @@
                 max-width: 270px;
                 width: $size0;
                 height: 260px;
-                background-color: $color04;
+                background-color: $color011;
                 @include d-flex (flex,space-around,center);
                 flex-direction: column;
+                @include border (2px, solid, $color02);
                 .cont-3-img {
                     max-width: 220px;
                     .sect-3-img-box {
@@ -360,7 +398,7 @@
     }
 }
 .foot-bg {
-    background-color: $color03;
+    background-color: $color010;
     @include d-flex (flex,space-around,center);
     flex-direction: column;
     @include border (2px, solid, $color02);
@@ -369,16 +407,18 @@
         width: $size0;
         @include d-flex (flex,space-around,baseline);
         .foot-box {
-            height: $size04;
+            height: 155px;
             @include d-flex (flex,space-evenly,flex-start);
             flex-direction: column;
             .foot-h2 {
-                color: $color01;
+                font-size: 20px;
+                color: $color03;
+                font-family: 'ArchyEDT-Bold';
             }
             .foot-p {
                 max-width: $size03;
                 width: $size0;
-                color: $color04;
+                color: $color03;
             }
             .foot-ul {
                 max-width: $size04;
@@ -398,7 +438,7 @@
             }
             .cont-p {
                 width: $size04;
-                height: $size05;
+                height: 55px;
                 @include d-flex (flex,space-around,normal);
                 flex-direction: column;
                 .li-box {
@@ -414,6 +454,14 @@
             }
         }
     }
+    .xazi {
+        margin:25px 0 25px 0;
+        max-width: 1080px;
+        width: 100%;
+        content: ' ';
+        color: #062D2D;
+        @include border (0.1px, solid, $color02);
+    }
     .foot-conteiner-2 {
         max-width: $size02;
         width: $size0;
@@ -423,14 +471,17 @@
             @include d-flex (flex,space-evenly,flex-start);
             flex-direction: column;
             .foot-2-h2 {
-                color: $color01;
+                font-size: 20px;
+                color: $color03;
+                font-family: 'ArchyEDT-Bold';
+                padding-bottom: 20px;
             }
             .foot-2-ul {
                 height: 130px;
                 @include d-flex (flex,space-around,end);
                 flex-direction: column;
                 .foot-2-li {
-                    color: $color04;
+                    color: $color03;
                 }
             }
         }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>K1tech</title>
         <script src="https://kit.fontawesome.com/16d1808843.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
         <link rel="icon" href="img/k1.png" type="image/gif" sizes="16x16">
         <link rel="stylesheet" href="styles/style.css">
     </head>
@@ -18,9 +19,9 @@
                     </a>
                 </div>
                 <nav class="navi">
-                  <ul class="nav-ul">
+                  <ul id="menu" class="nav-ul">
                     <li class="nav-li">
-                      <a class="nav-a" href="index.html"> Home </a>
+                      <a class="nav-a" href="index.html"> პროდუქტები </a>
                     </li>
                     <li class="nav-li">
                       <a class="nav-a" href="#"> STORE </a>
@@ -38,26 +39,25 @@
                       <a class="nav-a" href="#"> contact </a>
                     </li>
                   </ul>
-                  <ul class="soc-ul">
+                  <ul id="socicon" class="soc-ul">
+                    <ul class="contact-ul">
+                        <li class="soc-li"><a class="soc-a" href="+995 557 100 067"><i class="fas fa-phone-alt fa"></i>+995 557 100 067</a></li>
+                        <Li class="soc-li"><a class="soc-a" href="mailto:k1tech@ygmail.com"><i class="far fa-envelope fa"></i>k1tech@gmail.com</a></Li>
+                    </ul>
                     <li class="soc-li"><a href="https://www.facebook.com"><i class="fab fa-facebook-f fa"></i></a></li>
                     <li class="soc-li"><a href="https://www.instagram.com"><i class="fab fa-instagram fa"></i></a></li>
                     <li class="soc-li"><a href="https://www.youtube.com"><i class="fab fa-youtube fa"></i></a></li>
                   </ul>
                 </nav>
+                <div id="burger-menu" class="burger-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-
         </header>
         <section class="sect-bg">
-            <div class="sect-conteiner-1">
-                <div class="sect-text">
-                    <h2 class="sect-h2">iPhone X</h2>
-                    <p class="sect-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                    <div class="sect-more">
-                        <h4 class="sect-h4">MORE</h4>
-                    </div>
-                </div>
-                <div class="sect-img">
-                    <img class="sect-img-box" src="img/sect-img1.png" alt="section-img">
+            <div id="center" class="sect-conteiner-1">
+                <div class="cont-1-img-box">
+                    <img class="img-box" src="img/Cover.jpg" alt="conteiner-img">
                 </div>
             </div>
             <div class="sect-conteiner-2">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="cont-2-img">
-                        <img class="sect-2-img-box" src="img/sect-2-img.png" alt="section-img">
+                        <img class="sect-2-img-box" src="img/sect-2-img.jpg" alt="section-img">
                     </div>
                 </div>
                 <div class="conteiner-2-box-2">
@@ -250,7 +250,7 @@
                     </div>
                     <div class="sect-2-cont-3-box">
                         <div class="sect-2-cont-3-img">
-                            <img class="sect-2-cont-3-img-box" src="img/sect-2-img.png" alt="section-img">
+                            <img class="sect-2-cont-3-img-box" src="img/sect-2-img.jpg" alt="section-img">
                         </div>
                         <div class="sect-2-cont-3-text">
                             <h3 class="sect-2-cont-3-h3">Typesetting industry</h3>
@@ -282,7 +282,7 @@
                     </div>
                     <div class="sect-2-cont-3-box">
                         <div class="sect-2-cont-3-img">
-                            <img class="sect-2-cont-3-img-box" src="img/sect-2-img.png" alt="section-img">
+                            <img class="sect-2-cont-3-img-box" src="img/sect-2-img.jpg" alt="section-img">
                         </div>
                         <div class="sect-2-cont-3-text">
                             <h3 class="sect-2-cont-3-h3">Typesetting industry</h3>
@@ -295,12 +295,8 @@
         <footer class="foot-bg">
             <div class="foot-container">
                 <div class="foot-box">
-                    <h2 class="foot-h2">BOUNCER</h2>
-                    <p class="foot-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
-                </div>
-                <div class="foot-box">
-                    <h2 class="foot-h2">Follow Us</h2>
-                    <p class="foot-p">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    <h2 class="foot-h2">მოგვყევით ჩვენ</h2>
+                    <p class="foot-p">აქ რაიმე ტექსტი რომელიც ორი სიტყვით გამოხატავს საიტს</p>
                     <ul class="foot-ul">
                         <li class="foot-li"><a href="#"><i class="fab fa-facebook-f fa"></i></a></li>
                         <li class="foot-li"><a href="#"><i class="fab fa-instagram fa"></i></a></li>
@@ -308,7 +304,7 @@
                     </ul>
                 </div>
                 <div class="foot-box">
-                    <h2 class="foot-h2">Contact Us</h2>
+                    <h2 class="foot-h2">კონტაქტი</h2>
                     <ul class="cont-p">
                         <li class="li-box">
                             <i class="far fa-envelope fa-foot"></i>
@@ -316,55 +312,51 @@
                         </li>
                         <li class="li-box">
                             <i class="fas fa-phone-alt fa-foot"></i>
-                            <a class="contact" href="callto:+0 320 422 4254">+0 320 422 4254</a>
-                        </li>
-                        <li class="li-box">
-                            <i class="fas fa-map-marker-alt fa-foot"></i>
-                            <a class="contact" href="https://goo.gl/maps/LU2UA1WASWbjdCUDA">Main Str Chicago Ilinois</a>
+                            <a class="contact" href="+995 557 100 067">+995 557 100 067</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="xazi"></div>
             <div class="foot-conteiner-2">
                 <div class="foot-2-box">
-                    <h2 class="foot-2-h2">Infomation</h2>
+                    <h2 class="foot-2-h2">ჩემი ანგარიში</h2>
                     <ul class="foot-2-ul">
-                        <li class="foot-2-li">About Us</li>
-                        <li class="foot-2-li">Infomation</li>
-                        <li class="foot-2-li">Privacy Policy</li>
-                        <li class="foot-2-li">Terms & Conditions</li>
+                        <li class="foot-2-li">ჩემი ოთახი</li>
+                        <li class="foot-2-li">შეკვეთის ისტორია</li>
+                        <li class="foot-2-li">შერჩეული პროდუქტები</li>
+                        <li class="foot-2-li">სიახლეების გამოწერა</li>
                     </ul>
                 </div>
                 <div class="foot-2-box">
-                    <h2 class="foot-2-h2">Infomation</h2>
+                    <h2 class="foot-2-h2">ინფორმაცია</h2>
                     <ul class="foot-2-ul">
-                        <li class="foot-2-li">About Us</li>
-                        <li class="foot-2-li">Infomation</li>
-                        <li class="foot-2-li">Privacy Policy</li>
-                        <li class="foot-2-li">Terms & Conditions</li>
+                        <li class="foot-2-li">ჩვენს შესახებ</li>
+                        <li class="foot-2-li">საკურიერო მომსახურება</li>
+                        <li class="foot-2-li">საგარანტიო მომსახურება</li>
+                        <li class="foot-2-li">გარანტიის პირობები</li>
                     </ul>
                 </div>
                 <div class="foot-2-box">
-                    <h2 class="foot-2-h2">Infomation</h2>
+                    <h2 class="foot-2-h2">სერვისი</h2>
                     <ul class="foot-2-ul">
-                        <li class="foot-2-li">About Us</li>
-                        <li class="foot-2-li">Infomation</li>
-                        <li class="foot-2-li">Privacy Policy</li>
-                        <li class="foot-2-li">Terms & Conditions</li>
+                        <li class="foot-2-li">კონტაქტი</li>
+                        <li class="foot-2-li">საიტის რუკა</li>
                     </ul>
                 </div>
                 <div class="foot-2-box">
-                    <h2 class="foot-2-h2">Infomation</h2>
+                    <h2 class="foot-2-h2">დამატებითი</h2>
                     <ul class="foot-2-ul">
-                        <li class="foot-2-li">About Us</li>
-                        <li class="foot-2-li">Infomation</li>
-                        <li class="foot-2-li">Privacy Policy</li>
-                        <li class="foot-2-li">Terms & Conditions</li>
+                        <li class="foot-2-li">ფასდაკლებები</li>
+                        <li class="foot-2-li">საჩუქრები</li>
+                        <li class="foot-2-li">ბრენდები</li>
                     </ul>
                 </div>
             </div>
-
+            <div class="xazi"></div>
         </footer>
-    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
     </body>
   </html>
