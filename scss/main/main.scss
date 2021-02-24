@@ -460,7 +460,14 @@
         width: 100%;
         content: ' ';
         color: #062D2D;
-        @include border (0.1px, solid, $color02);
+        @include border (0.1px, solid, $color04);
+        box-shadow: 0 0 15px $color02;
+    }
+    .avtori {
+        max-width: 1080px;
+        width: $size0;
+        padding-bottom: 20px;
+        @include d-flex (flex,space-between,center);
     }
     .foot-conteiner-2 {
         max-width: $size02;

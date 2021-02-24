@@ -626,7 +626,15 @@ a {
     width: 100%;
     content: ' ';
     color: #062D2D;
-    border: 0.1px solid #00A1C2; }
+    border: 0.1px solid #A9CCE3;
+    box-shadow: 0 0 15px #00A1C2; }
+  .foot-bg .avtori {
+    max-width: 1080px;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .foot-bg .foot-conteiner-2 {
     max-width: 1080px;
     width: 100%;
