@@ -14,18 +14,39 @@
     .nav-container {
         max-width: $size02;
         width: $size0;
-        padding: 5px 0 20px;
-        @include d-flex (flex,space-around,center);
+        padding: 5px 0 5px;
+        @include d-flex (flex,space-between,center);
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+        @media (max-width: 900px) {
+            width: 35%;
+            padding: 10px 0 10px;
+            margin-right: 100px;
+        }
+        @media (max-width: 800px) {
+            width: 90%;
+            padding: 10px 0 10px;
+        }
         @media (max-width: 768px) {
             flex-wrap: wrap;
         }
         .nav-logo {
-            max-width: 90px;
+            max-width: 70px;
             width: $size0;
-            height: 105px;
+            height: 85px;
             &:hover {
-                box-shadow: 1px 1px 28px $color02;
+                box-shadow: 1px 1px 15px $color02;
                 @include transition-hover (all,0.4s,ease,0.4s);
+            }
+            @media (max-width: 900px) {
+                width: 80px;
+                height: 100px;
+            }
+            @media (max-width: 800px) {
+                width: 80px;
+                height: 80px;
+                text-align: left;
             }
             @media (max-width: 768px) {
                 text-align: left;
@@ -37,26 +58,43 @@
     }
     .navi {
         @include d-flex (flex,space-between,center);
-        max-width: $size020;
+        max-width: 930px;
         width: $size0;
+        @media (max-width: 1024px) {
+            width: 780px;
+        }
+        @media (max-width: 900px) {
+            width: 60%;
+            flex-direction: column-reverse;
+        }
+        @media (max-width: 800px) {
+            width: 60%;
+            flex-direction: column-reverse;
+        }
         @media (max-width: 768px) {
             flex-direction: column;
         }
         .nav-ul {
-            max-width: 444px;
+            max-width: 630px;
             width: $size0;
             @include d-flex (flex,space-between,center);
+            @media (max-width: 1024px) {
+                width: 500px;
+            }
+            @media (max-width: 900px) {
+                
+            }
             @media (max-width: 768px) {
                 display: none;
             }
             .nav-li {
                 @include d-flex (flex,center,center);
                 @media (max-width: 768px) {
-                    padding-bottom: 20px;;
+                    padding-bottom: 10px;;
                 }
                 .nav-a {
-                    Color: $color011;
-                    font-size: 15px;
+                    Color: $color03;
+                    font-size: 10px;
                     font-family: 'ALKDots';
                     &:hover {
                         text-shadow: 1px 1px 28px $color02;
@@ -76,33 +114,69 @@
             }
         }
         .soc-ul {
-            max-width: 230px;
+            max-width: 220px;
             width: $size0;
-            height: 110px;
             @include d-flex (flex,space-between,center);
             flex-wrap: wrap;
+            @media (max-width: 900px) {
+                flex-wrap: wrap-reverse;
+                margin-left: 200px;
+            }
+            @media (max-width: 800px) {
+                flex-wrap: wrap-reverse;
+                margin-left: 200px;
+            }
             @media (max-width: 768px) {
                 display: none;
+                margin-left: 0;
             }
             .contact-ul {
                 max-width: 250px;
                 width: 100%;
-                height: 85px;
-                @include d-flex (flex,space-around,normal);
+                height: 70px;
+                @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
+                padding-bottom: 10px;
+                @media (max-width: 900px) {
+                    height: 70px;
+                    flex-direction: column-reverse;
+                }
+                @media (max-width: 800px) {
+                    height: 70px;
+                    flex-direction: column-reverse;
+                }
+                @media (max-width: 600px) {
+                    height: 60px;
+                }
+                @media (max-width: 414px) {
+                    height: 60px;
+                }
+                @media (max-width: 330px) {
+                    height: 60px;
+                }
+                @media (max-width: 375px) {
+                    height: 60px;
+                }
             }
             .soc-a {
                 max-width: 230px;
                 width: 100%;
-                font-size: 17px;
-                color: #062D2D;
-                font-family: 'ALKDots';
+                font-size: 22px;
+                color: #255A5A;
+                font-family: 'ArchyEDT-Bold';
                 @include d-flex (flex,space-between,flex-start);
+                @media (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 900px) {
+                    
+                }
             }
             .soc-li {
                 .fa {
                     font-size: 20px;
                     color: $color02;
+                    padding-right: 10px;
                     &:hover {
                         box-shadow: 5px 15px 28px $color02;
                         @include border (0, solid, $color02);
@@ -406,10 +480,53 @@
         max-width: $size02;
         width: $size0;
         @include d-flex (flex,space-around,baseline);
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+        @media (max-width: 414px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        @media (max-width: 375px) {
+            flex-wrap: wrap-reverse;
+        }
+        @media (max-width: 330px) {
+            flex-wrap: wrap-reverse;
+        }
         .foot-box {
+            max-width: 310px;
+            width: 100%;
             height: 155px;
-            @include d-flex (flex,space-evenly,flex-start);
+            @include d-flex (flex,space-evenly,center);
             flex-direction: column;
+            text-align: center;
+            @media (max-width: 800px) {
+                align-items: center;
+                text-align: center;
+            }
+            @media (max-width: 768px) {
+                align-items: center;
+                text-align: center;
+            }
+            @media (max-width: 600px) {
+                text-align: center;
+                align-items: center;
+            }
+            @media (max-width: 414px) {
+                text-align: center;
+                align-items: center;
+            }
+            @media (max-width: 375px) {
+                text-align: center;
+                align-items: center;
+            }
+            @media (max-width: 330px) {
+                text-align: center;
+                align-items: center;
+            }
             .foot-h2 {
                 font-size: 20px;
                 color: $color03;
@@ -419,6 +536,7 @@
                 max-width: $size03;
                 width: $size0;
                 color: $color03;
+                font-family: 'BPG Nino Medium Caps';
             }
             .foot-ul {
                 max-width: $size04;
@@ -437,18 +555,41 @@
                 }  
             }
             .cont-p {
-                width: $size04;
+                max-width: $size04;
+                width: $size0;
                 height: 55px;
-                @include d-flex (flex,space-around,normal);
+                @include d-flex (flex,space-around,center);
                 flex-direction: column;
+                @media (max-width: 800px) {
+                    width: 140px;
+                }
+                @media (max-width: 600px) {
+                    width: 140px;
+                }
+                @media (max-width: 414px) {
+                    width: 150px;
+                }
+                @media (max-width: 375px) {
+                    width: 150px;
+                }
+                @media (max-width: 330px) {
+                    width: 150px;
+                }
                 .li-box {
+                    max-width: 150px;
+                    width: 100%;
                     @include d-flex (flex,space-between,center);
+                    @media (max-width: 768px) {
+                        width: 140px;
+                    }
                     .fa-foot {
                         color: $color02;
                         font-size: 15px;
                     }
                     .contact {
-                        color: $color04;
+                        font-size: 14px;
+                        color: $color03;
+                        font-family: 'BPG Nino Medium Caps';
                     }
                 }
             }
@@ -462,21 +603,135 @@
         color: #062D2D;
         @include border (0.1px, solid, $color04);
         box-shadow: 0 0 15px $color02;
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+        @media (max-width: 414px) {
+            width: 80%;
+        }
+        @media (max-width: 375px) {
+            width: 80%;
+        }
+        @media (max-width: 330px) {
+            width: 80%;
+        }
     }
     .avtori {
         max-width: 1080px;
         width: $size0;
         padding-bottom: 20px;
         @include d-flex (flex,space-between,center);
+        @media (max-width: 1024px) {
+            width: 85%;
+        }
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
+        @media (max-width: 414px) {
+            height: 55px;
+            flex-direction: column;
+        }
+        @media (max-width: 375px) {
+            height: 55px;
+            flex-direction: column;
+        }
+        @media (max-width: 330px) {
+            height: 55px;
+            flex-direction: column;
+        }
+        .avtori-p {
+            font-size: 12px;
+            color: $color03;
+            font-family: 'BPG Nino Medium Caps';
+            @media (max-width: 600px) {
+                padding-bottom: 10px;
+            }
+        }
+        .copy {
+            font-size: 12px;
+            color: $color03;
+            font-family: 'BPG Nino Medium Caps';
+        }
     }
     .foot-conteiner-2 {
         max-width: $size02;
         width: $size0;
         @include d-flex (flex,space-around,baseline);
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+            
+        }
+        @media (max-width: 414px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 375px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 330px) {
+            flex-direction: column;
+            align-items: center;
+        }
         .foot-2-box {
             height: $size04;
             @include d-flex (flex,space-evenly,flex-start);
             flex-direction: column;
+            @media (max-width: 600px) {
+                width: 250px;
+                align-items: center;
+            }
+            @media (max-width: 414px) {
+                align-items: center;
+                &:after{
+                    margin:25px 0 25px 0;
+                    max-width: 1080px;
+                    width: 100%;
+                    content: ' ';
+                    color: #062D2D;
+                    @include border (0.1px, solid, $color04);
+                    box-shadow: 0 0 15px $color02;
+                }
+            }
+            @media (max-width: 375px) {
+                align-items: center;
+                &:after{
+                    margin:25px 0 25px 0;
+                    max-width: 1080px;
+                    width: 100%;
+                    content: ' ';
+                    color: #062D2D;
+                    @include border (0.1px, solid, $color04);
+                    box-shadow: 0 0 15px $color02;
+                }
+            }
+            @media (max-width: 330px) {
+                align-items: center;
+                &:after{
+                    margin:25px 0 25px 0;
+                    max-width: 1080px;
+                    width: 100%;
+                    content: ' ';
+                    color: #062D2D;
+                    @include border (0.1px, solid, $color04);
+                    box-shadow: 0 0 15px $color02;
+                }
+            }
             .foot-2-h2 {
                 font-size: 20px;
                 color: $color03;
@@ -487,8 +742,22 @@
                 height: 130px;
                 @include d-flex (flex,space-around,end);
                 flex-direction: column;
+                @media (max-width: 600px) {
+                    align-items: center;
+                }
+                @media (max-width: 414px) {
+                    align-items: center;
+                }
+                @media (max-width: 375px) {
+                    align-items: center;
+                }
+                @media (max-width: 330px) {
+                    align-items: center;
+                }
                 .foot-2-li {
+                    font-size: 14px;
                     color: $color03;
+                    font-family: 'BPG Nino Medium Caps';
                 }
             }
         }
