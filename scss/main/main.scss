@@ -29,7 +29,8 @@
             padding: 10px 0 10px;
         }
         @media (max-width: 768px) {
-            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 0 auto;
         }
         .nav-logo {
             max-width: 70px;
@@ -41,15 +42,15 @@
             }
             @media (max-width: 900px) {
                 width: 80px;
-                height: 100px;
+                height: 110px;
             }
             @media (max-width: 800px) {
                 width: 80px;
-                height: 80px;
-                text-align: left;
+                height: 110px;
+                margin-left: 120px;
             }
             @media (max-width: 768px) {
-                text-align: left;
+                margin: 0 auto;
             }
             .img-logo {
                 width: $size0;
@@ -82,10 +83,17 @@
                 width: 500px;
             }
             @media (max-width: 900px) {
-                
+                width: 550px;
+                padding-top: 10px;
+            }
+            @media (max-width: 800px) {
+                width: 620px;
+                margin-right: 170px;
             }
             @media (max-width: 768px) {
                 display: none;
+                margin: 0 auto;
+                width: 100%;
             }
             .nav-li {
                 @include d-flex (flex,center,center);
@@ -128,7 +136,7 @@
             }
             @media (max-width: 768px) {
                 display: none;
-                margin-left: 0;
+                margin: 0 auto;
             }
             .contact-ul {
                 max-width: 250px;
@@ -144,6 +152,9 @@
                 @media (max-width: 800px) {
                     height: 70px;
                     flex-direction: column-reverse;
+                }
+                @media (max-width: 768px) {
+                    align-items: center;
                 }
                 @media (max-width: 600px) {
                     height: 60px;
@@ -193,6 +204,9 @@
     }
     .burger-icon {
         display: none;
+        @media (max-width: 800px) {
+            margin-right: 70px;
+        }
         @media (max-width: 768px) {
             color: $color02;
             display: block;
@@ -201,6 +215,9 @@
             top: 40px;
             right: 30px;
             cursor:pointer;
+        }
+        @media (max-width: 320px) {
+            margin: 0 auto;
         }
     }
 }
@@ -603,6 +620,9 @@
         color: #062D2D;
         @include border (0.1px, solid, $color04);
         box-shadow: 0 0 15px $color02;
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
         @media (max-width: 800px) {
             width: 90%;
         }
@@ -650,6 +670,9 @@
         @media (max-width: 330px) {
             height: 55px;
             flex-direction: column;
+        }
+        @media (max-width: 320px) {
+            text-align: center;
         }
         .avtori-p {
             font-size: 12px;
