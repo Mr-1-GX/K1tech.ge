@@ -4,3 +4,10 @@ $("#burger-menu").on("click", function(){
     $("#socicon").toggleClass("open-socicon");
   })
 
+  $('.sect-conteiner-1').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
