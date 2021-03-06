@@ -224,24 +224,51 @@
 .sect-bg {
     background-position: center;
     background-size: cover;
-    margin-top: 132px;
+    margin-top: 170px;
     .sect-conteiner-1 {
         width: 80%;
-        height: 260px;
         margin: 0 auto;
-        position: static;
-        .cont-1-img-box {
-            background-color: #255A5A;
-            width: 320px;
-            height: 250px;
-            .img-wid {
+        .slider-cont {
+            box-shadow: 1px 1px 15px 10px $color03;
+            .cont-1-img-box {
                 width: 100%;
+                height: 215px;
+                @include border (2px, ridge, $color011);
+                padding: 1px;
+                .img-wid {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .arrow-prev {
+            position: absolute;
+            top: 28%;
+            left: 1%;
+            font-size: 120px;
+            color: $color04;
+            text-shadow: 3px 1px $color011;
+            @media (max-width: 768px) {
+                font-size: 90px;
+            }
+        }
+        .arrow-next {
+            position: absolute;
+            top: 28%; 
+            left: 92%;
+            font-size: 120px;
+            color: $color04;
+            text-shadow: 3px 1px $color011;
+            @media (max-width: 768px) {
+                font-size: 90px;
             }
         }
     }
     .sect-conteiner-2 {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 110px;
         .cont-2-h2 {
             color: $color03;
             font-size: 36px;
@@ -261,6 +288,7 @@
             background-color: $color04;
             background-position: center;
             background-repeat: no-repeat;
+            margin-right: 20px;
             .cont-2-text {
                 max-width: 280px;
                 width: $size0;
