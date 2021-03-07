@@ -10,9 +10,11 @@ $("#burger-menu").on("click", function(){
   });
 
   $('.cont').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    prevArrow: $('.arrow-prev-2'),
+    nextArrow: $('.arrow-next-2'),
   });
       
