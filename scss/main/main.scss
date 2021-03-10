@@ -1,5 +1,11 @@
+.body-bg {
+    background-color: $color010;
+    background-image: url(../img/k1.PNG);
+    background-repeat: repeat;
+    background-position: right -20% bottom 0px, top left;
+    background-size: auto 10px;
 //Heder
-.head-bg {
+    .head-bg {
     width: $size0;
     top: 0;
     left: 0;
@@ -226,64 +232,29 @@
             margin: 0 auto;
         }
     }
-}
-.sect-bg {
-    background-position: center;
-    background-size: cover;
+    }
+//Section-1
+    .sect-bg {
     margin: 170px 0 25px 0;
     .sect-conteiner-1 {
         width: 80%;
         margin: 0 auto;
         .slider-cont {
             box-shadow: 1px 1px 15px 10px $color03;
+            @include border (2px, ridge, $color011);
+            border-radius: 10px;
+            position: initial;
             .cont-1-img-box {
-                background-image: url(../img/Cover.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
                 height: 215px;
-                @include border (2px, ridge, $color011);
-                border-radius: 10px;
                 margin: 0 1px;
                 @media (max-width: 590px) {
                     font-size: 60px;
                     top: 32%;
                 }
+                .cont-img {
+                    width: 100%;
+                }
                 
-            }
-        }
-        .arrow-prev {
-            position: absolute;
-            top: 29%;
-            left: 2%;
-            font-size: 110px;
-            color: $color04;
-            text-shadow: 3px 1px $color011;
-            @media (max-width: 900px) {
-                left: 1%;
-            }
-            @media (max-width: 768px) {
-                font-size: 90px;
-            }
-            @media (max-width: 590px) {
-                font-size: 60px;
-                top: 32%;
-            }
-        }
-        .arrow-next {
-            position: absolute;
-            top: 29%; 
-            left: 92%;
-            font-size: 110px;
-            color: $color04;
-            text-shadow: -3px 1px $color011;
-            @media (max-width: 768px) {
-                font-size: 90px;
-            }
-            @media (max-width: 590px) {
-                font-size: 60px;
-                top: 32%;
-                left: 93%;
             }
         }
     }
@@ -358,17 +329,16 @@
             text-shadow: 1px 1px $color011;
         }
         .cont {
-            width: 95%;
+            width: 83%;
             @include d-flex (flex,space-around,center);
             margin: 0 auto;
+            border-radius: 10px;
+            position: initial;
+            @include border (2px, solid, $color011);
             .conteiner-2-box {
-                max-width: 280px;
+                max-width: 220px;
                 width: $size0;
-                height: 320px;
-                background-image: url(../img/sect-2-img.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                height: 210px;
                 margin: 0 10px;
                 box-shadow: 10px 10px 15px 1px $color03;
                 @include border (2px, solid, $color011);
@@ -406,45 +376,10 @@
                 }
             }
         }
-        .arrow-prev-2 {
-            position: absolute;
-            top: 218%;
-            left: 40%;
-            font-size: 110px;
-            color: $color04;
-            text-shadow: 3px 1px $color011;
-            @media (max-width: 900px) {
-                left: 1%;
-            }
-            @media (max-width: 768px) {
-                font-size: 90px;
-            }
-            @media (max-width: 590px) {
-                font-size: 60px;
-                top: 32%;
-            }
-        }
-        .arrow-next-2 {
-            position: absolute;
-            top: 218%; 
-            left: 55%;
-            font-size: 110px;
-            color: $color04;
-            text-shadow: -3px 1px $color011;
-            @media (max-width: 768px) {
-                font-size: 90px;
-            }
-            @media (max-width: 590px) {
-                font-size: 60px;
-                top: 32%;
-                left: 93%;
-            }
-        }
-
     }
-}
+    }
 //Section 2
-.sect-2-bg {
+    .sect-2-bg {
     .sect-2-cont-3 {
         height: 220px;
         @include d-flex (flex,space-around,center);
@@ -460,21 +395,21 @@
         .sect-2-cont-3-wrap {
             display: flex;
             .sect-2-cont-3-box {
-            max-width: 320px;
-            width: 100%;
-            @include d-flex (flex,space-around,center);
-            .sect-2-cont-3-img {
-                max-width: 150px;
-                .sect-2-cont-3-img-box {
-                    width: $size0;
+                max-width: 320px;
+                width: 100%;
+                @include d-flex (flex,space-around,center);
+                .sect-2-cont-3-img {
+                    max-width: 150px;
+                    .sect-2-cont-3-img-box {
+                        width: $size0;
+                    }
                 }
-            }
-            .sect-2-cont-3-h3 {
-                color: $color03;
-            }
-            .sect-2-cont-3-p {
-                color: $color03;
-            }
+                .sect-2-cont-3-h3 {
+                    color: $color03;
+                }
+                .sect-2-cont-3-p {
+                    color: $color03;
+                }
             }
         }
     }
@@ -520,8 +455,9 @@
             }
         }
     }
-}
-.foot-bg {
+    }
+//Footer
+    .foot-bg {
     background-color: $color010;
     @include d-flex (flex,space-around,center);
     flex-direction: column;
@@ -828,4 +764,5 @@
         }
     }
     
+    }
 }
