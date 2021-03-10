@@ -262,6 +262,10 @@
         max-width: 1920px;
         width: $size0;
         height: 800px;
+        background-color: $color010;
+        @include border (2px, solid, $color02);
+        box-shadow: 1px 1px 10px 1px $color03;
+        border-radius: 50px;
         @include d-flex (flex,space-around,center);
         flex-direction: column;
         margin-top: 70px;
@@ -321,20 +325,23 @@
     .sect-conteiner-2 {
         text-align: center;
         margin-top: 110px;
+        background-color: $color010;
+        @include border (2px, solid, $color02);
+        box-shadow: 1px 1px 10px 1px $color03;
+        border-radius: 20px;
         .cont-2-h2 {
             color: $color03;
-            font-size: 36px;
+            font-size: 30px;
             font-family: 'Poopins-B';
-            margin-bottom: 30px;
+            margin: 25px auto;
             text-shadow: 1px 1px $color011;
         }
         .cont {
             width: 83%;
             @include d-flex (flex,space-around,center);
-            margin: 0 auto;
+            margin: 25px auto;
             border-radius: 10px;
             position: initial;
-            @include border (2px, solid, $color011);
             .conteiner-2-box {
                 max-width: 220px;
                 width: $size0;
@@ -385,6 +392,10 @@
         @include d-flex (flex,space-around,center);
         flex-direction: column;
         margin: 35px 0;
+        background-color: $color010;
+        @include border (2px, solid, $color02);
+        box-shadow: 1px 1px 10px 1px $color03;
+        border-radius: 20px;
         .sect-2-cont-3-h2 {
             color: $color03;
             text-shadow: 1px 1px $color011;
@@ -393,11 +404,18 @@
 
         }
         .sect-2-cont-3-wrap {
-            display: flex;
+            max-width: 1050px;
+            width: 100%;
+            @include d-flex (flex,space-around,center);
             .sect-2-cont-3-box {
                 max-width: 320px;
                 width: 100%;
+                height: 140px;
                 @include d-flex (flex,space-around,center);
+                background-color: $color010;
+                @include border (2px, solid, $color011);
+                box-shadow: 1px 1px 10px 1px $color03;
+                border-radius: 20px;
                 .sect-2-cont-3-img {
                     max-width: 150px;
                     .sect-2-cont-3-img-box {

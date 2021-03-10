@@ -4,4 +4,3 @@ $("#burger-menu").on("click", function(){
     $("#socicon").toggleClass("open-socicon");
   })
 
-
