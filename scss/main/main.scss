@@ -456,6 +456,116 @@
         }
     }
     }
+//Conatct
+.contact-bg {
+    width: 90%;
+    margin: 170px 0 25px 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color010;
+    @include border (2px, solid, $color02);
+    box-shadow: 1px 1px 10px 1px $color03;
+    border-radius: 5px;
+    .cotact-abaut {
+        width: 80%;
+        margin: 60px auto;
+    }
+    .xazi {
+        margin: 0 auto;
+        max-width: 1080px;
+        width: 100%;
+        content: ' ';
+        color: #062D2D;
+        @include border (0.1px, solid, $color04);
+        box-shadow: 0 0 15px $color02;
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+        @media (max-width: 414px) {
+            width: 80%;
+        }
+        @media (max-width: 375px) {
+            width: 80%;
+        }
+        @media (max-width: 330px) {
+            width: 80%;
+        }
+    }
+    .contact-coment {
+        margin: 30px auto;
+        .contact-formbox {
+            display: flex;
+            .formbox-1 {
+                .form-1-box {
+                    width: 500px;
+                    height: 170px;
+                    resize: none;
+                }
+            }
+            .formbox-2 {
+                @include d-flex (flex,space-around,center);
+                flex-direction: column;
+                margin: 0 10px;
+                .form-2-box {
+                    height: 40px;
+                }
+                .btn {
+                    width: 150px;
+                    height: 30px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .xazi {
+        margin: 0 auto;
+        max-width: 1080px;
+        width: 100%;
+        content: ' ';
+        color: #062D2D;
+        @include border (0.1px, solid, $color04);
+        box-shadow: 0 0 15px $color02;
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        @media (max-width: 600px) {
+            width: 80%;
+        }
+        @media (max-width: 414px) {
+            width: 80%;
+        }
+        @media (max-width: 375px) {
+            width: 80%;
+        }
+        @media (max-width: 330px) {
+            width: 80%;
+        }
+    }
+    .contact-nev {
+        @include d-flex (flex,space-around,center);
+        margin: 40px;
+        .contact-conteiner-1 {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
 //Footer
     .foot-bg {
     background-color: $color010;

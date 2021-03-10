@@ -627,6 +627,105 @@ a {
       margin-bottom: 23px; }
       .body-bg .sect-2-bg .sect-2-conteiner .sect-2-img .sect-2-img-box {
         width: 100%; }
+  .body-bg .contact-bg {
+    width: 90%;
+    margin: 170px 0 25px 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F4F6F6;
+    border: 2px solid #00A1C2;
+    box-shadow: 1px 1px 10px 1px #565555;
+    border-radius: 5px; }
+    .body-bg .contact-bg .cotact-abaut {
+      width: 80%;
+      margin: 60px auto; }
+    .body-bg .contact-bg .xazi {
+      margin: 0 auto;
+      max-width: 1080px;
+      width: 100%;
+      content: ' ';
+      color: #062D2D;
+      border: 0.1px solid #A9CCE3;
+      box-shadow: 0 0 15px #00A1C2; }
+      @media (max-width: 1024px) {
+        .body-bg .contact-bg .xazi {
+          width: 90%; } }
+      @media (max-width: 800px) {
+        .body-bg .contact-bg .xazi {
+          width: 90%; } }
+      @media (max-width: 768px) {
+        .body-bg .contact-bg .xazi {
+          width: 90%; } }
+      @media (max-width: 600px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+      @media (max-width: 414px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+      @media (max-width: 375px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+      @media (max-width: 330px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+    .body-bg .contact-bg .contact-coment {
+      margin: 30px auto; }
+      .body-bg .contact-bg .contact-coment .contact-formbox {
+        display: flex; }
+        .body-bg .contact-bg .contact-coment .contact-formbox .formbox-1 .form-1-box {
+          width: 500px;
+          height: 170px;
+          resize: none; }
+        .body-bg .contact-bg .contact-coment .contact-formbox .formbox-2 {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          margin: 0 10px; }
+          .body-bg .contact-bg .contact-coment .contact-formbox .formbox-2 .form-2-box {
+            height: 40px; }
+          .body-bg .contact-bg .contact-coment .contact-formbox .formbox-2 .btn {
+            width: 150px;
+            height: 30px;
+            font-size: 10px; }
+    .body-bg .contact-bg .xazi {
+      margin: 0 auto;
+      max-width: 1080px;
+      width: 100%;
+      content: ' ';
+      color: #062D2D;
+      border: 0.1px solid #A9CCE3;
+      box-shadow: 0 0 15px #00A1C2; }
+      @media (max-width: 1024px) {
+        .body-bg .contact-bg .xazi {
+          width: 90%; } }
+      @media (max-width: 800px) {
+        .body-bg .contact-bg .xazi {
+          width: 90%; } }
+      @media (max-width: 768px) {
+        .body-bg .contact-bg .xazi {
+          width: 90%; } }
+      @media (max-width: 600px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+      @media (max-width: 414px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+      @media (max-width: 375px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+      @media (max-width: 330px) {
+        .body-bg .contact-bg .xazi {
+          width: 80%; } }
+    .body-bg .contact-bg .contact-nev {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 40px; }
+      .body-bg .contact-bg .contact-nev .contact-conteiner-1 {
+        width: 80%;
+        margin: 0 auto; }
   .body-bg .foot-bg {
     background-color: #F4F6F6;
     display: flex;
