@@ -1,0 +1,16 @@
+.book-bg {
+    width: 90%;
+    margin: 170px 0 25px 60px;
+    background-color: $color010;
+    @include border (2px, solid, $color02);
+    box-shadow: 1px 1px 10px 1px $color03;
+    border-radius: 5px;
+    .book-container {
+        width: 90%;
+        height: 200px;
+        background-color: $color010;
+        @include border (2px, solid, $color011);
+        box-shadow: 3px 3px 6px 2px $color03;
+        border-radius: 10px;
+    }
+}

@@ -236,25 +236,24 @@
 //Section-1
     .sect-bg {
     margin: 170px 0 25px 0;
-    .sect-conteiner-1 {
+    .slick-slider {
         width: 80%;
         margin: 0 auto;
-        .slider-cont {
+        .vertical-center {
             box-shadow: 1px 1px 15px 10px $color03;
             @include border (2px, ridge, $color011);
             border-radius: 10px;
             position: initial;
             .cont-1-img-box {
-                height: 215px;
-                margin: 0 1px;
-                @media (max-width: 590px) {
-                    font-size: 60px;
-                    top: 32%;
-                }
+                height: 70px;
+                margin: 0 auto;
                 .cont-img {
                     width: 100%;
                 }
-                
+                @media (max-width: 590px) {
+                    font-size: 60px;
+                    top: 32%;
+                }  
             }
         }
     }
@@ -265,7 +264,7 @@
         background-color: $color010;
         @include border (2px, solid, $color02);
         box-shadow: 1px 1px 10px 1px $color03;
-        border-radius: 50px;
+        border-radius: 30px;
         @include d-flex (flex,space-around,center);
         flex-direction: column;
         margin-top: 70px;
@@ -296,7 +295,7 @@
                 max-width: 270px;
                 width: $size0;
                 height: 260px;
-                background-color: $color011;
+                background-color: $color010;
                 @include d-flex (flex,space-around,center);
                 flex-direction: column;
                 @include border (2px, solid, $color011);
@@ -310,11 +309,11 @@
                 }
                 .cont-3-h3 {
                     color: $color03;
-                }
-                .cont-3-cost {
-                    .cont-3-h4 {
-                        color: $color03;
-                    }
+                    font-size: 30px;
+                    font-family: 'Poopins-B';
+                    margin: 25px auto;
+                    text-shadow: 1px 1px $color011;
+                    text-transform: uppercase;
                 }
             }
         }
