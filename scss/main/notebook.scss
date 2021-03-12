@@ -37,9 +37,16 @@
                     width: $size0;
                 }
                 .book-p {
-                    font-size: 25px;
+                    font-size: 15px;
+                    font-family: 'Poppins-R';
+                    color: $color011;
+                    margin: 10px auto;
+                }
+                .book-h3 {
+                    font-size: 15px;
                     font-family: 'Poppins-B';
-                    text-shadow: 1px 1px $color011;
+                    color: $color011;
+                    margin: 10px auto;
                 }
             }
         }

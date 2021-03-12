@@ -7,10 +7,27 @@
     border-radius: 5px;
     .book-container {
         width: 90%;
-        height: 200px;
+        height: 900px;
         background-color: $color010;
-        @include border (2px, solid, $color011);
-        box-shadow: 3px 3px 6px 2px $color03;
-        border-radius: 10px;
+        margin: 0 auto;
+        padding: 20px;
+        .book-box {
+            @include d-flex (flex,space-between,end);
+            .img-box {
+                max-width: 400px;
+                width: $size0;
+                height: 320px;
+                @include border (2px, solid, $color011);
+                box-shadow: 3px 3px 6px 2px $color03;
+                border-radius: 10px;
+                .img-size {
+                    width: $size0;
+                }
+            }
+            .book-text-box {
+                width: 700px;
+                text-align: left;
+            }
+        }
     }
 }
