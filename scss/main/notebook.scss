@@ -16,6 +16,9 @@
         margin: 15px;
         .notebook-h2 {
             color: $color03;
+            font-size: 25px;
+            font-family: 'Poppins-B';
+            text-shadow: 1px 1px $color011;
             margin: 20px;
         }
         .book-cont {
@@ -30,6 +33,14 @@
                 box-shadow: 3px 3px 6px 2px $color03;
                 border-radius: 10px;
                 text-align: center;
+                .img-size {
+                    width: $size0;
+                }
+                .book-p {
+                    font-size: 25px;
+                    font-family: 'Poppins-B';
+                    text-shadow: 1px 1px $color011;
+                }
             }
         }
     }

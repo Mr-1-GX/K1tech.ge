@@ -250,6 +250,9 @@ a {
     margin: 15px; }
     .notebook-bg .book-conteiner .notebook-h2 {
       color: #565555;
+      font-size: 25px;
+      font-family: 'Poppins-B';
+      text-shadow: 1px 1px #85929E;
       margin: 20px; }
     .notebook-bg .book-conteiner .book-cont {
       margin: 5px;
@@ -265,6 +268,12 @@ a {
         box-shadow: 3px 3px 6px 2px #565555;
         border-radius: 10px;
         text-align: center; }
+        .notebook-bg .book-conteiner .book-cont .book-box .img-size {
+          width: 100%; }
+        .notebook-bg .book-conteiner .book-cont .book-box .book-p {
+          font-size: 25px;
+          font-family: 'Poppins-B';
+          text-shadow: 1px 1px #85929E; }
 
 .product-bg {
   width: 90%;
@@ -519,7 +528,7 @@ a {
         height: 85px; }
         .body-bg .head-bg .nav-container .nav-logo:hover {
           box-shadow: 1px 1px 15px #00A1C2;
-          transition: all 0.4s ease 0.4s; }
+          transition: all 0.7s ease 0.7s; }
         @media (max-width: 900px) {
           .body-bg .head-bg .nav-container .nav-logo {
             width: 80px;
@@ -753,14 +762,14 @@ a {
           height: 260px;
           background-color: #F4F6F6;
           display: flex;
-          justify-content: space-around;
+          justify-content: flex-end;
           align-items: center;
           flex-direction: column;
           border: 2px solid #85929E;
           box-shadow: 3px 3px 6px 2px #565555;
           border-radius: 10px; }
           .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-img {
-            max-width: 220px; }
+            max-width: 200px; }
             .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-img .sect-3-img-box {
               width: 100%; }
           .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-h3 {
@@ -768,8 +777,7 @@ a {
             font-size: 30px;
             font-family: 'Poopins-B';
             margin: 25px auto;
-            text-shadow: 1px 1px #85929E;
-            text-transform: uppercase; }
+            text-shadow: 1px 1px #85929E; }
       .body-bg .sect-bg .sect-conteiner-3 .sect-3-load {
         color: #00A1C2; }
     .body-bg .sect-bg .sect-conteiner-2 {

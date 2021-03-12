@@ -46,7 +46,7 @@
             height: 85px;
             &:hover {
                 box-shadow: 1px 1px 15px $color02;
-                @include transition-hover (all,0.4s,ease,0.4s);
+                @include transition-hover (all,0.7s,ease,0.7s);
             }
             @media (max-width: 900px) {
                 width: 80px;
@@ -296,13 +296,13 @@
                 width: $size0;
                 height: 260px;
                 background-color: $color010;
-                @include d-flex (flex,space-around,center);
+                @include d-flex (flex,flex-end,center);
                 flex-direction: column;
                 @include border (2px, solid, $color011);
                 box-shadow: 3px 3px 6px 2px $color03;
                 border-radius: 10px;
                 .cont-3-img {
-                    max-width: 220px;
+                    max-width: 200px;
                     .sect-3-img-box {
                         width: $size0;
                     }
@@ -313,7 +313,6 @@
                     font-family: 'Poopins-B';
                     margin: 25px auto;
                     text-shadow: 1px 1px $color011;
-                    text-transform: uppercase;
                 }
             }
         }
