@@ -291,15 +291,7 @@ a {
     width: 80%;
     margin: 60px auto; }
     .contact-bg .cotact-abaut .contact-text-h2 {
-      margin-bottom: 20px;
-      font-size: 14px;
-      color: #565555;
-      font-family: 'BPG Nino Medium Caps';
-      text-shadow: 1px 1px #85929E; }
-    .contact-bg .cotact-abaut .contact-text-p {
-      width: 700px;
-      margin: 0 auto;
-      font-size: 14px;
+      font-size: 20px;
       color: #565555;
       font-family: 'BPG Nino Medium Caps';
       text-shadow: 1px 1px #85929E; }
@@ -339,6 +331,7 @@ a {
       .contact-bg .contact-coment .contact-formbox .formbox-1 .form-1-box {
         width: 500px;
         height: 170px;
+        padding: 20px;
         resize: none;
         background-color: #F4F6F6;
         box-shadow: 1px 2px 10px 0px #565555;
@@ -346,12 +339,13 @@ a {
         border-radius: 5px; }
       .contact-bg .contact-coment .contact-formbox .formbox-2 {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         margin: 0 10px; }
         .contact-bg .contact-coment .contact-formbox .formbox-2 .form-2-box {
           height: 40px;
+          text-align: center;
           background-color: #F4F6F6;
           box-shadow: 1px 2px 10px 0px #565555;
           border: 1px solid #85929E;
@@ -364,6 +358,9 @@ a {
           box-shadow: 1px 2px 10px 0px #565555;
           border: 1px solid #85929E;
           border-radius: 5px; }
+          .contact-bg .contact-coment .contact-formbox .formbox-2 .btn .btn-icon {
+            color: #00A1C2;
+            font-size: 14px; }
   .contact-bg .xazi {
     margin: 0 auto;
     max-width: 1080px;
@@ -412,6 +409,26 @@ a {
         color: #565555;
         font-family: 'BPG Nino Medium Caps';
         text-shadow: 1px 1px #85929E; }
+      .contact-bg .contact-nev .contact-conteiner-1 .sect-2-cont-3-wrap {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .contact-bg .contact-nev .contact-conteiner-1 .sect-2-cont-3-wrap .sect-2-cont-3-box {
+          width: 20%;
+          height: 100px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #F4F6F6;
+          border: 2px solid #85929E;
+          box-shadow: 1px 1px 10px 1px #565555;
+          border-radius: 20px; }
+          .contact-bg .contact-nev .contact-conteiner-1 .sect-2-cont-3-wrap .sect-2-cont-3-box .sect-2-cont-3-img {
+            max-width: 150px; }
+            .contact-bg .contact-nev .contact-conteiner-1 .sect-2-cont-3-wrap .sect-2-cont-3-box .sect-2-cont-3-img .sect-2-cont-3-img-box {
+              width: 100%; }
 
 .sect-2-conteiner {
   background-color: #00A1C2;

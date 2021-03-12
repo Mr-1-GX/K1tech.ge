@@ -13,16 +13,7 @@
         width: 80%;
         margin: 60px auto;
         .contact-text-h2 {
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: $color03;
-            font-family: 'BPG Nino Medium Caps';
-            text-shadow: 1px 1px $color011;
-        }
-        .contact-text-p {
-            width: 700px;
-            margin:  0 auto;
-            font-size: 14px;
+            font-size: 20px;
             color: $color03;
             font-family: 'BPG Nino Medium Caps';
             text-shadow: 1px 1px $color011;
@@ -66,6 +57,7 @@
                 .form-1-box {
                     width: 500px;
                     height: 170px;
+                    padding: 20px;
                     resize: none;
                     background-color: $color010;
                     box-shadow: 1px 2px 10px 0px $color03;
@@ -74,11 +66,12 @@
                 }
             }
             .formbox-2 {
-                @include d-flex (flex,space-around,center);
+                @include d-flex (flex,space-between,center);
                 flex-direction: column;
                 margin: 0 10px;
                 .form-2-box {
                     height: 40px;
+                    text-align: center;
                     background-color: $color010;
                     box-shadow: 1px 2px 10px 0px $color03;
                     @include border (1px, solid, $color011);
@@ -92,6 +85,10 @@
                     box-shadow: 1px 2px 10px 0px $color03;
                     @include border (1px, solid, $color011);
                     border-radius: 5px;
+                    .btn-icon {
+                        color: $color02;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -144,6 +141,26 @@
                 color: $color03;
                 font-family: 'BPG Nino Medium Caps';
                 text-shadow: 1px 1px $color011;
+            }
+            .sect-2-cont-3-wrap {
+                width: 90%;
+                margin: 0 auto;
+                @include d-flex (flex,space-around,center);
+                .sect-2-cont-3-box {
+                    width: 20%;
+                    height: 100px;
+                    @include d-flex (flex,space-around,center);
+                    background-color: $color010;
+                    @include border (2px, solid, $color011);
+                    box-shadow: 1px 1px 10px 1px $color03;
+                    border-radius: 20px;
+                    .sect-2-cont-3-img {
+                        max-width: 150px;
+                        .sect-2-cont-3-img-box { 
+                            width: $size0;
+                        }
+                    }
+                }
             }
         }
     }
