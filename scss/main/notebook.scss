@@ -22,17 +22,20 @@
             margin: 20px;
         }
         .book-cont {
-            margin: 5px;
+            margin: 10px;
             @include d-flex (flex,space-around,center);
             .book-box {
                 max-width: 170px;
                 width: 100%;
                 height: 220px;
-                background-color: $color010;
                 @include border (2px, solid, $color011);
                 box-shadow: 3px 3px 6px 2px $color03;
                 border-radius: 10px;
                 text-align: center;
+                background-image: url(../img/k1.PNG);
+                background-repeat: repeat;
+                background-position: right -20% bottom 0px, top left;
+                background-size: auto 1px;
                 .img-size {
                     width: $size0;
                 }
