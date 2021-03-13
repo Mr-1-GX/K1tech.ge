@@ -1,11 +1,17 @@
+//Body-BG
+@mixin background ($rep,$posit,$size) {
+    background: $rep $posit $size;
+}
+//Header
 @mixin d-flex ($dysplai,$justyfi,$alig) {
     display: $dysplai;
     justify-content: $justyfi;
     align-items: $alig;
 }
-@mixin border ($width,$type,$color) {
-    border: $width $type $color;
+@mixin border ($width,$type,$color,$radi) {
+    border: $width $type $color $radi;
 }
+//Nav-logo
 @mixin transition-hover ($property,$duration,$type,$delay) {
     transition: $property $duration $type $delay;
 }

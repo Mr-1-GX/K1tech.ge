@@ -1,0 +1,77 @@
+//Body
+%body-bg {
+    background-image: url(../img/k1.PNG);
+    background-color: $color-0;
+    @include background (repeat,right -20% bottom 0px, top left,auto 10px);
+}
+//header
+%hed-bg {
+    width: $size-0;
+    top: 0;
+    left: 0;
+    background-color: $color-01;
+    position: fixed;
+    @include d-flex (flex,space-around,center);
+    @include border ($size-02, solid, $color-02,$size-05);
+    box-shadow: $size-01 $size-01 $size-010 $size-01 $color-03;
+}
+%hed-med {
+    @media (max-width: $size-0768){
+        display: block;
+        text-align: center;
+    }
+}
+//Nav-Container
+%nav-cont {
+    max-width: $size02;
+    width: $size0;
+    padding: $size-05 0 $size-05;
+    @include d-flex (flex,space-between,center);
+}
+%nav-cont-med {
+    @media (max-width: $size-010) {
+        width: $size-3;
+    }
+    @media (max-width: $size-0900) {
+        width: $size-2;
+        padding: $size-010 0 $size-010;
+        margin-right: $size-100;
+    }
+    @media (max-width: $size-0800) {
+        width: $size-3;
+        padding: $size-010 0 $size-010;
+    }
+    @media (max-width: $size-0768) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+//Nav-Logo
+%nav-logo {
+    max-width: $size-070;
+    width: $size-0;
+    height: $size-085;
+    &:hover {
+        box-shadow: $size-01 $size-01 $size-015 $color-02;
+        @include transition-hover (all,0.2s,ease,0.2s);
+    }
+}
+%nav-logo-med {
+    @media (max-width: $size-0900) {
+        width: $size-080;
+        height: $size-0110;
+    }
+    @media (max-width: $size-0800) {
+        width: $size-080;
+        height: $size-0110;
+        margin-left: $size-0120;
+    }
+    @media (max-width: $size-0768) {
+        margin: 0 auto;
+    }
+}
+%img-logo {
+    width: $size0;
+    box-shadow: $size-01 $size-01 $size-010 $size-01 $color03;
+    border-radius: $size-05;
+}

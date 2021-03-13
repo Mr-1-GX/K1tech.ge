@@ -1,69 +1,18 @@
+//Body
 .body-bg {
-    background-color: $color010;
-    background-image: url(../img/k1.PNG);
-    background-repeat: repeat;
-    background-position: right -20% bottom 0px, top left;
-    background-size: auto 10px;
+    @extend %body-bg;
 //Heder
     .head-bg {
-    width: $size0;
-    top: 0;
-    left: 0;
-    background-color: $color010;
-    position: fixed;
-    @include d-flex (flex,space-around,center);
-    @include border (2px, solid, $color02);
-    box-shadow: 1px 1px 10px 1px $color03;
-    border-radius: 5px;
-    @media (max-width: 768px){
-        display: block;
-        text-align: center;
-    }
+    @extend %hed-bg;
+    @extend %hed-med;
     .nav-container {
-        max-width: $size02;
-        width: $size0;
-        padding: 5px 0 5px;
-        @include d-flex (flex,space-between,center);
-        @media (max-width: 1024px) {
-            width: 90%;
-        }
-        @media (max-width: 900px) {
-            width: 35%;
-            padding: 10px 0 10px;
-            margin-right: 100px;
-        }
-        @media (max-width: 800px) {
-            width: 90%;
-            padding: 10px 0 10px;
-        }
-        @media (max-width: 768px) {
-            flex-direction: column;
-            margin: 0 auto;
-        }
+        @extend %nav-cont;
+        @extend %nav-cont-med;
         .nav-logo {
-            max-width: 70px;
-            width: $size0;
-            height: 85px;
-            &:hover {
-                box-shadow: 1px 1px 15px $color02;
-                @include transition-hover (all,0.2s,ease,0.2s);
-            }
-            @media (max-width: 900px) {
-                width: 80px;
-                height: 110px;
-            }
-            @media (max-width: 800px) {
-                width: 80px;
-                height: 110px;
-                margin-left: 120px;
-            }
-            @media (max-width: 768px) {
-                margin: 0 auto;
-            }
+            @extend %nav-logo;
+            @extend %nav-logo-med;
             .img-logo {
-                width: $size0;
-                box-shadow: 1px 1px 10px 1px $color03;
-                border-radius: 5px;
+                @extend %img-logo;
             } 
         }
     }
