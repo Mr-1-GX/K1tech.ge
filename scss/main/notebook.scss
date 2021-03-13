@@ -21,6 +21,36 @@
             text-shadow: 1px 1px $color011;
             margin: 20px;
         }
+        .xazi {
+            margin:20px 0 25px 0;
+            max-width: 1080px;
+            width: 100%;
+            content: ' ';
+            color: #062D2D;
+            @include border (0.1px, solid, $color04);
+            box-shadow: 0 0 15px $color02;
+            @media (max-width: 1024px) {
+                width: 90%;
+            }
+            @media (max-width: 800px) {
+                width: 90%;
+            }
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+            @media (max-width: 600px) {
+                width: 80%;
+            }
+            @media (max-width: 414px) {
+                width: 80%;
+            }
+            @media (max-width: 375px) {
+                width: 80%;
+            }
+            @media (max-width: 330px) {
+                width: 80%;
+            }
+        }
         .book-cont {
             margin: 10px;
             @include d-flex (flex,space-around,center);

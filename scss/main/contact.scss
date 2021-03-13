@@ -130,11 +130,41 @@
             width: 80%;
             margin: 0 auto;
             .contact-text-h2 {
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 font-size: 14px;
                 color: $color03;
                 font-family: 'BPG Nino Medium Caps';
                 text-shadow: 1px 1px $color011;
+            }
+            .xazi {
+                margin: 0 auto 50px;
+                max-width: 160px;
+                width: 100%;
+                content: ' ';
+                color: #062D2D;
+                @include border (0.1px, solid, $color04);
+                box-shadow: 0 0 15px $color02;
+                @media (max-width: 1024px) {
+                    width: 90%;
+                }
+                @media (max-width: 800px) {
+                    width: 90%;
+                }
+                @media (max-width: 768px) {
+                    width: 90%;
+                }
+                @media (max-width: 600px) {
+                    width: 80%;
+                }
+                @media (max-width: 414px) {
+                    width: 80%;
+                }
+                @media (max-width: 375px) {
+                    width: 80%;
+                }
+                @media (max-width: 330px) {
+                    width: 80%;
+                }
             }
             .contact-text-p {
                 font-size: 14px;

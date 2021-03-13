@@ -3,7 +3,6 @@
     .sect-conteiner-3 {
         max-width: 1920px;
         width: $size0;
-        height: 800px;
         background-color: $color010;
         @include border (2px, solid, $color02);
         box-shadow: 1px 1px 10px 1px $color03;
@@ -11,6 +10,43 @@
         @include d-flex (flex,space-evenly,center);
         flex-direction: column;
         margin-bottom: 70px;
+        .prod-cont-3 {
+            color: $color03;
+            font-size: 25px;
+            font-family: 'Poppins-B';
+            text-shadow: 1px 1px $color011;
+            margin: 20px 0;
+        }
+        .xazi {
+            max-width: 1080px;
+            width: 100%;
+            content: ' ';
+            color: #062D2D;
+            @include border (0.1px, solid, $color04);
+            box-shadow: 0 0 15px $color02;
+            margin-bottom: 50px;
+            @media (max-width: 1024px) {
+                width: 90%;
+            }
+            @media (max-width: 800px) {
+                width: 90%;
+            }
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+            @media (max-width: 600px) {
+                width: 80%;
+            }
+            @media (max-width: 414px) {
+                width: 80%;
+            }
+            @media (max-width: 375px) {
+                width: 80%;
+            }
+            @media (max-width: 330px) {
+                width: 80%;
+            }
+        }
         .cont-3-h2 {
             color: $color03;
             font-size: 36px;
@@ -33,6 +69,7 @@
         .container-3 {
             max-width: 1240px;
             width: $size0;
+            margin: 15px;
             @include d-flex (flex,space-around,center);
             .cont-3-box {
                 max-width: 270px;

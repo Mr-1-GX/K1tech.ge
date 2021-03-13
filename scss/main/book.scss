@@ -13,6 +13,14 @@
         padding: 20px;
         .book-box {
             @include d-flex (flex,space-between,end);
+            @include border (2px, solid, $color011);
+            box-shadow: 3px 3px 6px 2px $color03;
+            border-radius: 10px;
+            padding: 20px;
+            background-image: url(../img/k1.PNG);
+            background-repeat: repeat;
+            background-position: right -20% bottom 0px, top left;
+            background-size: auto 1px;
             .img-box {
                 max-width: 400px;
                 width: $size0;
@@ -20,13 +28,126 @@
                 @include border (2px, solid, $color011);
                 box-shadow: 3px 3px 6px 2px $color03;
                 border-radius: 10px;
+                background-color: $color010;
                 .img-size {
                     width: $size0;
                 }
             }
             .book-text-box {
-                width: 700px;
+                max-width: 700px;
+                width: $size0;
+                height: 700px;
                 text-align: left;
+                padding: 20px;
+                background-color: $color010;
+                @include border (2px, solid, $color011);
+                box-shadow: 3px 3px 6px 2px $color03;
+                border-radius: 10px;
+                margin-left: 25px;
+                .book-h2 {
+                    color: $color011;
+                    font-size: 30px;
+                    font-family: 'BPG Nino Medium Caps';
+                    margin-bottom: 15px;
+                }
+                .xazi {
+                    margin: 0 auto 25px;
+                    max-width: 740px;
+                    width: 100%;
+                    content: ' ';
+                    color: #062D2D;
+                    @include border (0.1px, solid, $color04);
+                    box-shadow: 0 0 15px $color02;
+                    @media (max-width: 1024px) {
+                        width: 90%;
+                    }
+                    @media (max-width: 800px) {
+                        width: 90%;
+                    }
+                    @media (max-width: 768px) {
+                        width: 90%;
+                    }
+                    @media (max-width: 600px) {
+                        width: 80%;
+                    }
+                    @media (max-width: 414px) {
+                        width: 80%;
+                    }
+                    @media (max-width: 375px) {
+                        width: 80%;
+                    }
+                    @media (max-width: 330px) {
+                        width: 80%;
+                    }
+                }
+                .book-h3 {
+                    color: $color03;
+                    font-size: 30px;
+                    font-family: 'BPG Nino Medium Caps';
+                    margin-bottom: 30px;
+                }
+                .book-specy {
+                    max-width: 650px;
+                    width: $size0;
+                    margin: 0 auto;
+                    .book-h4-box {
+                        text-align: center;
+                        .book-h4 {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .xazi {
+                        margin: 0 auto 25px;
+                        max-width: 340px;
+                        width: 100%;
+                        content: ' ';
+                        color: #062D2D;
+                        @include border (0.1px, solid, $color04);
+                        box-shadow: 0 0 15px $color02;
+                        @media (max-width: 1024px) {
+                            width: 90%;
+                        }
+                        @media (max-width: 800px) {
+                            width: 90%;
+                        }
+                        @media (max-width: 768px) {
+                            width: 90%;
+                        }
+                        @media (max-width: 600px) {
+                            width: 80%;
+                        }
+                        @media (max-width: 414px) {
+                            width: 80%;
+                        }
+                        @media (max-width: 375px) {
+                            width: 80%;
+                        }
+                        @media (max-width: 330px) {
+                            width: 80%;
+                        }
+                    }
+                    .book-tbl {
+                        max-width: 640px;
+                        width: $size0;
+                        margin: 0 auto;
+                        .book-tr {
+                            max-width: 640px;
+                            width: $size0;
+                            margin: 20px 0;
+                            @include d-flex (flex,space-between,end);
+                            text-decoration-line:  underline; 
+                            &:nth-child(1n){
+                                text-align: start;
+                            }
+                            &:nth-child(2n){
+                                text-align: end;
+                            }
+                            .book-th {
+                                color: $color03;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
