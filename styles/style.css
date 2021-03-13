@@ -1016,6 +1016,12 @@ a {
       align-items: center;
       flex-direction: column;
       margin-top: 70px; }
+      @media (max-width: 1120px) {
+        .body-bg .sect-bg .sect-conteiner-3 {
+          height: 580px; } }
+      @media (max-width: 780px) {
+        .body-bg .sect-bg .sect-conteiner-3 {
+          height: 950px; } }
       .body-bg .sect-bg .sect-conteiner-3 .cont-3-h2 {
         color: #565555;
         font-size: 36px;
@@ -1038,6 +1044,14 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: center; }
+        @media (max-width: 1120px) {
+          .body-bg .sect-bg .sect-conteiner-3 .container-3 {
+            width: 90%; } }
+        @media (max-width: 780px) {
+          .body-bg .sect-bg .sect-conteiner-3 .container-3 {
+            width: 80%;
+            height: 500px;
+            flex-wrap: wrap; } }
         .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box {
           max-width: 270px;
           width: 100%;
@@ -1053,8 +1067,29 @@ a {
           border: 2px solid #85929E;
           box-shadow: 3px 3px 6px 2px #565555;
           border-radius: 10px; }
+          @media (max-width: 1120px) {
+            .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box {
+              width: 230px; } }
+          @media (max-width: 1060px) {
+            .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box {
+              width: 180px;
+              height: 200px; } }
+          @media (max-width: 800px) {
+            .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box {
+              width: 160px;
+              height: 170px; } }
+          @media (max-width: 780px) {
+            .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box {
+              width: 210px;
+              height: 160px; } }
           .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-img {
             max-width: 200px; }
+            @media (max-width: 1060px) {
+              .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-img {
+                width: 130px; } }
+            @media (max-width: 800px) {
+              .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-img {
+                width: 110px; } }
             .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-img .sect-3-img-box {
               width: 100%; }
           .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-h3 {
@@ -1063,6 +1098,9 @@ a {
             font-family: 'ALKDots';
             margin: 25px auto;
             text-shadow: 1px 1px #565555; }
+            @media (max-width: 800px) {
+              .body-bg .sect-bg .sect-conteiner-3 .container-3 .cont-3-box .cont-3-h3 {
+                font-size: 15px; } }
       .body-bg .sect-bg .sect-conteiner-3 .sect-3-load {
         color: #00A1C2; }
     .body-bg .sect-bg .sect-conteiner-2 {
@@ -1148,6 +1186,9 @@ a {
                 font-family: 'Poppins-B';
                 color: #F4F6F6;
                 margin: 10px auto; }
+                @media (max-width: 800px) {
+                  .body-bg .sect-bg .sect-conteiner-2 .cont .conteiner-2-box .cont-2-text .cont-2-sale .cont-2-box-h2 {
+                    font-size: 10px; } }
             .body-bg .sect-bg .sect-conteiner-2 .cont .conteiner-2-box .cont-2-text .cont-2-img-box .cont-2-text-img {
               width: 100%; }
             .body-bg .sect-bg .sect-conteiner-2 .cont .conteiner-2-box .cont-2-text .cont-2-p {
@@ -1229,8 +1270,15 @@ a {
         background-repeat: repeat;
         background-position: right -20% bottom 0px, top left;
         background-size: auto 1px; }
+        @media (max-width: 900px) {
+          .body-bg .sect-2-bg .sect-2-cont-3 .sect-2-cont-3-wrap .sect-2-cont-3-box {
+            width: 90%;
+            margin: 0 auto; } }
         .body-bg .sect-2-bg .sect-2-cont-3 .sect-2-cont-3-wrap .sect-2-cont-3-box .sect-2-cont-3-img {
           max-width: 150px; }
+          @media (max-width: 800px) {
+            .body-bg .sect-2-bg .sect-2-cont-3 .sect-2-cont-3-wrap .sect-2-cont-3-box .sect-2-cont-3-img {
+              max-width: 120px; } }
           .body-bg .sect-2-bg .sect-2-cont-3 .sect-2-cont-3-wrap .sect-2-cont-3-box .sect-2-cont-3-img .sect-2-cont-3-img-box {
             width: 100%; }
         .body-bg .sect-2-bg .sect-2-cont-3 .sect-2-cont-3-wrap .sect-2-cont-3-box .sect-2-cont-3-h3 {

@@ -266,6 +266,12 @@
         @include d-flex (flex,space-evenly,center);
         flex-direction: column;
         margin-top: 70px;
+        @media (max-width: 1120px) {
+            height: 580px;
+        }
+        @media (max-width: 780px) {
+            height: 950px;
+        }
         .cont-3-h2 {
             color: $color03;
             font-size: 36px;
@@ -289,6 +295,14 @@
             max-width: 1240px;
             width: $size0;
             @include d-flex (flex,space-around,center);
+            @media (max-width: 1120px) {
+                width: 90%;
+            }
+            @media (max-width: 780px) {
+                width: 80%;
+                height: 500px;
+                flex-wrap: wrap;
+            }
             .cont-3-box {
                 max-width: 270px;
                 width: $size0;
@@ -302,8 +316,29 @@
                 @include border (2px, solid, $color011);
                 box-shadow: 3px 3px 6px 2px $color03;
                 border-radius: 10px;
+                @media (max-width: 1120px) {
+                    width: 230px;
+                }
+                @media (max-width: 1060px) {
+                    width: 180px;
+                    height: 200px;
+                }
+                @media (max-width: 800px) {
+                    width: 160px;
+                    height: 170px;
+                }
+                @media (max-width: 780px) {
+                    width: 210px;
+                    height: 160px;
+                }
                 .cont-3-img {
                     max-width: 200px;
+                    @media (max-width: 1060px) {
+                        width: 130px;
+                    }
+                    @media (max-width: 800px) {
+                        width: 110px;
+                    }
                     .sect-3-img-box {
                         width: $size0;
                     }
@@ -314,6 +349,9 @@
                     font-family: 'ALKDots';
                     margin: 25px auto;
                     text-shadow: 1px 1px $color03;
+                    @media (max-width: 800px) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -402,6 +440,9 @@
                             font-family: 'Poppins-B';
                             color: $color010;
                             margin: 10px auto;
+                            @media (max-width: 800px) {
+                                font-size: 10px;
+                            }
                         }
                     }
                     .cont-2-img-box {
@@ -499,8 +540,15 @@
                 background-repeat: repeat;
                 background-position: right -20% bottom 0px, top left;
                 background-size: auto 1px;
+                @media (max-width: 900px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
                 .sect-2-cont-3-img {
                     max-width: 150px;
+                    @media (max-width: 800px) {
+                        max-width: 120px;
+                    }
                     .sect-2-cont-3-img-box {
                         width: $size0;
                     }
