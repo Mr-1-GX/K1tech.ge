@@ -24,12 +24,12 @@
 //Nav-Container
 %nav-cont {
     max-width: $size02;
-    width: $size0;
+    width: $size-0;
     padding: $size-05 0 $size-05;
     @include d-flex (flex,space-between,center);
 }
 %nav-cont-med {
-    @media (max-width: $size-010) {
+    @media (max-width: $size-01024) {
         width: $size-3;
     }
     @media (max-width: $size-0900) {
@@ -74,4 +74,53 @@
     width: $size0;
     box-shadow: $size-01 $size-01 $size-010 $size-01 $color03;
     border-radius: $size-05;
+}
+%navi-size {
+    @include d-flex (flex,space-between,center);
+    max-width: $size-0930;
+    width: $size-0;
+}
+%navi-med {
+    @media (max-width: $size-01024) {
+        width: $size-0780;
+    }
+    @media (max-width: $size-0900) {
+        width: $size-6;
+        flex-direction: column-reverse;
+    }
+    @media (max-width: $size-0800) {
+        width: $size-6;
+        flex-direction: column-reverse;
+    }
+    @media (max-width: $size-0768) {
+        flex-direction: column;
+    }
+}
+%nav-ul-size {
+    max-width: $size-0630;
+    width: $size-0;
+    @include d-flex (flex,space-between,center);
+}
+%nav-ul-med {
+    @media (max-width: $size-01024) {
+        width: $size-0500;
+    }
+    @media (max-width: $size-0900) {
+        width: $size-0550;
+        padding-top: $size-010;
+    }
+    @media (max-width: $size-0800) {
+        width: $size-0630;
+        margin-right: $size-0170;
+    }
+    @media (max-width: $size-0768) {
+        display: none;
+        margin: 0 auto;
+        width: $size-0;
+    }
+}
+%nav-li-med {
+    @media (max-width: $size-0768) {
+        padding-bottom: $size-010;
+    }
 }

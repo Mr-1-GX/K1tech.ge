@@ -17,48 +17,14 @@
         }
     }
     .navi {
-        @include d-flex (flex,space-between,center);
-        max-width: 930px;
-        width: $size0;
-        @media (max-width: 1024px) {
-            width: 780px;
-        }
-        @media (max-width: 900px) {
-            width: 60%;
-            flex-direction: column-reverse;
-        }
-        @media (max-width: 800px) {
-            width: 60%;
-            flex-direction: column-reverse;
-        }
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
+        @extend %navi-size;
+        @extend %navi-med;
         .nav-ul {
-            max-width: 630px;
-            width: $size0;
-            @include d-flex (flex,space-between,center);
-            @media (max-width: 1024px) {
-                width: 500px;
-            }
-            @media (max-width: 900px) {
-                width: 550px;
-                padding-top: 10px;
-            }
-            @media (max-width: 800px) {
-                width: 620px;
-                margin-right: 170px;
-            }
-            @media (max-width: 768px) {
-                display: none;
-                margin: 0 auto;
-                width: 100%;
-            }
+            @extend %nav-ul-size;
+            @extend %nav-ul-med;
             .nav-li {
                 @include d-flex (flex,center,center);
-                @media (max-width: 768px) {
-                    padding-bottom: 10px;;
-                }
+                @extend %nav-li-med;
                 .nav-a {
                     Color: $color03;
                     font-size: 10px;
