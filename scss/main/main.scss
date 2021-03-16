@@ -1,117 +1,93 @@
 //Body
 .body-bg {
     @extend %body-bg;
-//Heder
+    //Heder
     .head-bg {
-    @extend %hed-bg;
-    @extend %hed-med;
-    .nav-container {
-        @extend %nav-cont;
-        @extend %nav-cont-med;
-        .nav-logo {
-            @extend %nav-logo;
-            @extend %nav-logo-med;
-            .img-logo {
-                @extend %img-logo;
-            } 
-        }
-    }
-    .navi {
-        @extend %navi-size;
-        @extend %navi-med;
-        .nav-ul {
-            @extend %nav-ul-size;
-            @extend %nav-ul-med;
-            .nav-li {
-                @include d-flex (flex,center,center);
-                @extend %nav-li-med;
-                .nav-a {
-                    @extend %nav-a-sty;
-                    &:hover {
-                        text-shadow: $size-01 $size-01 $size-028 $color02;
-                        @include transition-hover (all,0.4s,ease,0.4s);
-                    }
-                    @extend %nav-a-med;
-                }
+        @extend %hed-bg;
+        @extend %hed-med;
+        .nav-container {
+            @extend %nav-cont;
+            @extend %nav-cont-med;
+            .nav-logo {
+                @extend %nav-logo;
+                @extend %nav-logo-med;
+                .img-logo {
+                    @extend %img-logo;
+                } 
             }
         }
-        @extend %nav-ul-open-med;
-        .soc-ul {
-            max-width: 220px;
-            width: $size0;
-            @include d-flex (flex,space-between,center);
-            @extend  %soc-ul-med;
-            .contact-ul {
-                @extend %contact-ul-size;
-                @include d-flex (flex,space-around,baseline);
-                flex-direction: column;
-                padding-bottom: $size-010;
-                @extend %contact-ul-med;
-            }
-            .soc-a {
-                max-width: 230px;
-                width: 100%;
-                @extend %soc-a-font;
-                @include d-flex (flex,space-between,flex-start);
-                @extend %soc-a-med;
-            }
-            .soc-li {
-                .fa {
-                    font-size: 20px;
-                    color: $color02;
-                    padding-right: 10px;
-                    &:hover {
-                        box-shadow: 5px 15px 28px $color02;
-                        @include border (0, solid, $color02);
-                        @include transition-hover (all,0.4s,ease,0.4s);
+        .navi {
+            @extend %navi-size;
+            @extend %navi-med;
+            .nav-ul {
+                @extend %nav-ul-size;
+                @extend %nav-ul-med;
+                .nav-li {
+                    @include d-flex (flex,center,center);
+                    @extend %nav-li-med;
+                    .nav-a {
+                        @extend %nav-a-sty;
+                        &:hover {
+                            text-shadow: $size-01 $size-01 $size-028 $color02;
+                            @include transition-hover (all,0.4s,ease,0.4s);
+                        }
+                        @extend %nav-a-med;
                     }
                 }
             }
-        }
-        @media (max-width: 768px) {
-            .open-socicon {
-                display: flex;
+            @extend %nav-ul-open-med;
+            .soc-ul {
+                @extend %soc-ul-size;
+                @include d-flex (flex,space-between,center);
+                @extend  %soc-ul-med;
+                .contact-ul {
+                    @extend %contact-ul-size;
+                    @include d-flex (flex,space-around,baseline);
+                    flex-direction: column;
+                    padding-bottom: $size-010;
+                    @extend %contact-ul-med;
+                }
+                .soc-a {
+                    @extend %soc-a-size;
+                    @extend %soc-a-font;
+                    @include d-flex (flex,space-between,flex-start);
+                    @extend %soc-a-med;
+                }
+                .soc-li {
+                    .fa {
+                        @extend %fa-font;
+                        padding-right: $size-010;
+                        &:hover {
+                            box-shadow: $size-05 $size-015 $size-028 $color02;
+                            @include border (0, solid, $color02);
+                            @include transition-hover (all,0.4s,ease,0.4s);
+                        }
+                    }
+                }
             }
+            @extend %open-soci-med;
+        }
+        .burger-icon {
+            display: none;
+            @extend %burg-icon-med;
         }
     }
-    .burger-icon {
-        display: none;
-        @media (max-width: 800px) {
-            margin-right: 70px;
-        }
-        @media (max-width: 768px) {
-            color: $color02;
-            display: block;
-            font-size: 30px;
-            position: absolute;
-            top: 40px;
-            right: 30px;
-            cursor:pointer;
-        }
-        @media (max-width: 320px) {
-            margin: 0 auto;
-        }
-    }
-    }
-//Section-1
+    //Section-1
     .sect-bg {
-        margin: 170px 0 25px 0;
+        margin: $size-0170 0 $size-025 0;
     .slick-slider {
-        width: 95%;
+        width: $size-95;
         margin: 0 auto;
         .vertical-center {
-            box-shadow: 1px 1px 15px 10px $color03;
-            @include border (2px, ridge, $color011);
-            border-radius: 10px;
+            box-shadow: $size-01 $size-01 $size-015 $size-010 $color03;
+            @include border ($size-02, ridge, $color011);
+            border-radius: $size-010;
             position: initial;
             .cont-1-img-box {
                 .cont-img {
-                    width: 100%;
+                    width: $size-0;
                 }
-                @media (max-width: 590px) {
-                    font-size: 60px;
-                    top: 32%;
-                }  
+                @extend %cont-1-img-bnox-med;  
             }
         }
     }
@@ -335,7 +311,7 @@
         }
     }
     }
-//Section 2
+    //Section 2
     .sect-2-bg {
         .sect-2-cont-3 {
             height: 270px;
@@ -465,7 +441,7 @@
         }
         }
     }
-//Footer
+    //Footer
     .foot-bg {
     background-color: $color010;
     @include d-flex (flex,space-around,center);

@@ -192,17 +192,56 @@
     }
 }
 %soc-ul-size {
-    max-width: $size-022;
-    width: $size0;
+    max-width: $size-0220;
+    width: $size-0;
+}
+%open-soci-med {
+    @media (max-width: $size-0768) {
+        .open-socicon {
+            display: flex;
+        }
+    }
+}
+%soc-a-size {
+    max-width: $size-0230;
+    width: $size-0;
 }
 %soc-a-font {
     font-size: $size-022;
     font-family: 'ArchyEDT-Bold';
     color: $color-04;
-    text-shadow: 1px 1px $color011;
+    text-shadow: $size-01 $size-01 $color011;
 }
 %soc-a-med {
     @media (max-width: $size-01024) {
         font-size: $size-020;
+    }
+}
+%fa-font {
+    font-size: $size-020;
+    color: $color-02;
+}
+%burg-icon-med {
+    @media (max-width: $size-0800) {
+        margin-right: $size-070;
+    }
+    @media (max-width: $size-0768) {
+        color: $color02;
+        display: block;
+        font-size: $size-030;
+        position: absolute;
+        top: $size-040;
+        right: $size-030;
+        cursor:pointer;
+    }
+    @media (max-width: $size-0320) {
+        margin: 0 auto;
+    }
+}
+//Sectoin-1
+%cont-1-img-bnox-med {
+    @media (max-width: $size-0590) {
+        font-size: $size-060;
+        top: $size-032;
     }
 }

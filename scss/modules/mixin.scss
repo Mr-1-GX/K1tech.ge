@@ -12,8 +12,8 @@
     justify-content: $justyfi;
     align-items: $alig;
 }
-@mixin border ($width,$type,$color,$radi) {
-    border: $width $type $color $radi;
+@mixin border ($width,$type,$color) {
+    border: $width $type $color;
 }
 //Nav-logo
 @mixin transition-hover ($property,$duration,$type,$delay) {
