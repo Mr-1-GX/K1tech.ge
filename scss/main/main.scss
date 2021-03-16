@@ -40,64 +40,20 @@
             max-width: 220px;
             width: $size0;
             @include d-flex (flex,space-between,center);
-            
-            @media (max-width: 900px) {
-                flex-wrap: wrap-reverse;
-                margin-left: 200px;
-            }
-            @media (max-width: 800px) {
-                flex-wrap: wrap-reverse;
-                margin-left: 200px;
-            }
-            @media (max-width: 768px) {
-                display: none;
-                margin: 0 auto;
-            }
+            @extend  %soc-ul-med;
             .contact-ul {
-                max-width: 250px;
-                width: 100%;
-                height: 70px;
+                @extend %contact-ul-size;
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
-                padding-bottom: 10px;
-                @media (max-width: 900px) {
-                    height: 70px;
-                    flex-direction: column-reverse;
-                }
-                @media (max-width: 800px) {
-                    height: 70px;
-                    flex-direction: column-reverse;
-                }
-                @media (max-width: 768px) {
-                    align-items: center;
-                }
-                @media (max-width: 600px) {
-                    height: 60px;
-                }
-                @media (max-width: 414px) {
-                    height: 60px;
-                }
-                @media (max-width: 330px) {
-                    height: 60px;
-                }
-                @media (max-width: 375px) {
-                    height: 60px;
-                }
+                padding-bottom: $size-010;
+                @extend %contact-ul-med;
             }
             .soc-a {
                 max-width: 230px;
                 width: 100%;
-                font-size: 22px;
-                color: #255A5A;
-                font-family: 'ArchyEDT-Bold';
-                text-shadow: 1px 1px $color011;
+                @extend %soc-a-font;
                 @include d-flex (flex,space-between,flex-start);
-                @media (max-width: 1024px) {
-                    font-size: 20px;
-                }
-                @media (max-width: 900px) {
-                    
-                }
+                @extend %soc-a-med;
             }
             .soc-li {
                 .fa {
