@@ -1,7 +1,6 @@
 //Body
 %body-bg {
-    background-image: url(../img/k1.PNG);
-    background-color: $color-0;
+    @include bg-img (url(../img/k1.PNG),$color-0);
     @include background (repeat,right -20% bottom 0px, top left,auto 10px);
 }
 //header
@@ -119,8 +118,27 @@
         width: $size-0;
     }
 }
+%nav-ul-open-med {
+    @media (max-width: $size-0768) {
+        .open-menu {
+            display: block;
+            text-align: -webkit-center;
+            padding: $size-020 0;
+        }
+    }
+}
 %nav-li-med {
     @media (max-width: $size-0768) {
         padding-bottom: $size-010;
+    }
+}
+%nav-a-sty {
+    Color: $color03;
+    @include font-style ($size-010,'ALKDots');
+    text-shadow: $size-01 $suze-01 $color011;
+}
+%nav-a-med {
+    @media (max-width: $size-0768) {
+        display: block;
     }
 }
