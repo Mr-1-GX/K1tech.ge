@@ -84,97 +84,50 @@
             border-radius: $size-010;
             position: initial;
             .cont-1-img-box {
+                @extend %cont-1-img-bnox-med;
                 .cont-img {
                     width: $size-0;
-                }
-                @extend %cont-1-img-bnox-med;  
+                }  
             }
         }
     }
     .sect-conteiner-3 {
-        max-width: 1920px;
-        width: $size0;
-        height: 800px;
+        @extend %sect-cont-3-size;
         background-color: $color010;
-        @include border (2px, solid, $color02);
-        box-shadow: 1px 1px 10px 1px $color03;
-        border-radius: 30px;
+        @include border ($size-02, solid, $color02);
+        box-shadow: $size-01 $size-01 $size-010 $size-01 $color03;
+        border-radius: $size-030;
         @include d-flex (flex,space-evenly,center);
         flex-direction: column;
-        margin-top: 70px;
-        @media (max-width: 1120px) {
-            height: 580px;
-        }
-        @media (max-width: 780px) {
-            height: 950px;
-        }
+        @extend %sect-cont-3-med;
         .cont-3-h2 {
-            color: $color03;
-            font-size: 36px;
-            font-family: 'Poopins-B';
-            text-shadow: 1px 1px $color011;
+            @extend %cont-3-h2-font;
         }
         .cont-3-ul {
-            max-width: 680px;
-            width: $size0;
+            @extend %cont-3-ul-size;
             @include d-flex (flex,space-around,center);
             .cont-3-li {
                 .cont-3-a {
-                    Color: $color04;
-                    font-size: 15px;
-                    font-family: 'Poppins-B';
-                    text-shadow: 1px 1px $color011;
+                    @extend %cont-3-a-font;
                 }
             }
         }
         .container-3 {
-            max-width: 1240px;
-            width: $size0;
+            @extend %container-3-size;
             @include d-flex (flex,space-around,center);
-            @media (max-width: 1120px) {
-                width: 90%;
-            }
-            @media (max-width: 780px) {
-                width: 80%;
-                height: 500px;
-                flex-wrap: wrap;
-            }
+            @extend %container-3-med;
             .cont-3-box {
-                max-width: 270px;
-                width: $size0;
-                height: 260px;
-                background-image: url(../img/k1.PNG);
-                background-repeat: repeat;
-                background-position: right -20% bottom 0px, top left;
-                background-size: auto 3px;
+                @extend %cont-3-box-size;
+                @extend %cont-3-box-bg;
                 @include d-flex (flex,flex-end,center);
                 flex-direction: column;
-                @include border (2px, solid, $color011);
-                box-shadow: 3px 3px 6px 2px $color03;
-                border-radius: 10px;
-                @media (max-width: 1120px) {
-                    width: 230px;
-                }
-                @media (max-width: 1060px) {
-                    width: 180px;
-                    height: 200px;
-                }
-                @media (max-width: 800px) {
-                    width: 160px;
-                    height: 170px;
-                }
-                @media (max-width: 780px) {
-                    width: 210px;
-                    height: 160px;
-                }
+                @include border ($size-01, solid, $color011);
+                box-shadow: $size-01 $size-01 $size-05 0 $color03;
+                border-radius: $size-010;
+                @extend %cont-3-box-med;
                 .cont-3-img {
-                    max-width: 200px;
-                    @media (max-width: 1060px) {
-                        width: 130px;
-                    }
-                    @media (max-width: 800px) {
-                        width: 110px;
-                    }
+                    max-width: $size-0200;
+                    @extend %cont-3-img-med;
                     .sect-3-img-box {
                         width: $size0;
                     }

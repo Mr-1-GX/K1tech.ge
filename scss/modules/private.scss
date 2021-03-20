@@ -245,3 +245,83 @@
         top: $size-032;
     }
 }
+%sect-cont-3-size {
+    max-width: $size-01920;
+        width: $size0;
+        height: $size-0800;
+        margin-top: $size-070;
+}
+%sect-cont-3-med {
+    @media (max-width: $size-01120) {
+            height: $size-0590;
+        }
+        @media (max-width: $size-0580) {
+            height: $size-0950;
+        }
+}
+%cont-3-h2-font {
+    color: $color03;
+    font-size: $size-036;
+    font-family: 'Poopins-B';
+    text-shadow: $size-01 $size-01 $color011;
+}
+%cont-3-ul-size {
+    max-width: $size-0680;
+    width: $size0;
+}
+%cont-3-a-font {
+    Color: $color04;
+    font-size: $size-015;
+    font-family: 'Poppins-B';
+    text-shadow: $size-01 $size-01 $color011;
+}
+%container-3-size {
+    max-width: $size-01240;
+    width: $size-0;
+}
+%container-3-med {
+    @media (max-width: $size-01120) {
+        width: $size-90;
+    }
+    @media (max-width: $size-0780) {
+        width: $size-80;
+        height: $size-0500;
+        flex-wrap: wrap;
+    }
+}
+%cont-3-box-size {
+    max-width: $size-0270;
+    width: $size0;
+    height: $size-0270;
+}
+%cont-3-box-bg {
+    background-image: url(../img/k1.PNG);
+    background-repeat: repeat;
+    background-position: right -20% bottom 0px, top left;
+    background-size: auto $size-03;
+}
+%cont-3-box-med {
+    @media (max-width: $size-01120) {
+        width: $size-0230;
+    }
+    @media (max-width: $size-01060) {
+        width: $size-0200;
+        height: $size-0200;
+    }
+    @media (max-width: $size-0800) {
+        width: $size-0160;
+        height: $size-0170;
+    }
+    @media (max-width: $size-0780) {
+        width: $size-0230;
+        height: $size-0170;
+    }
+}
+%cont-3-img-med {
+    @media (max-width: 1060px) {
+        width: 130px;
+    }
+    @media (max-width: 800px) {
+        width: 110px;
+    }
+}
