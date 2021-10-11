@@ -1,0 +1,45 @@
+//PC-K1-spec
+//----------
+%pc-k1-img-p-fonts {
+    font-size: 30px;
+    color: $color-03;
+    font-family: 'archy-s';
+    letter-spacing: 2px;
+    text-shadow: 1px 0px 1px $color-02;
+}
+%pc-k1-img-p-span-fonts {
+    font-size: 30px;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 1px 0px 1px $color-02;
+}
+%pc-k1-butt-r-h4 {
+    font-size: 23px;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px $color-02;
+}
+%pc-k1-ico-nm-h2 {
+    font-size: 30px;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 1px $color-02;
+}
+%pc-k1-img-li-font {
+    font-size: 20px;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 1px 0 1px $color-02;
+}
+%pc-k1-img-li-span {
+    font-size: 20px;
+    color: $color-03;
+    font-family: 'archy-s';
+    letter-spacing: 0px;
+    text-shadow: 0 0 1px $color-02;
+}
+

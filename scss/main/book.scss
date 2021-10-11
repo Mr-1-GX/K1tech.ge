@@ -1,20 +1,20 @@
 .book-bg {
     width: 90%;
     margin: 170px 0 25px 60px;
-    background-color: $color010;
-    @include border (2px, solid, $color02);
-    box-shadow: 1px 1px 10px 1px $color03;
+    background-color: $color-01;
+    @include border (2px, solid, $color-02);
+    box-shadow: 1px 1px 10px 1px $color-03;
     border-radius: 5px;
     .book-container {
         width: 90%;
         height: 900px;
-        background-color: $color010;
+        background-color: $color-01;
         margin: 0 auto;
         padding: 20px;
         .book-box {
             @include d-flex (flex,space-between,end);
-            @include border (2px, solid, $color011);
-            box-shadow: 3px 3px 6px 2px $color03;
+            @include border (2px, solid, $color-05);
+            box-shadow: 3px 3px 6px 2px $color-03;
             border-radius: 10px;
             padding: 20px;
             background-image: url(../img/k1.PNG);
@@ -23,29 +23,29 @@
             background-size: auto 1px;
             .img-box {
                 max-width: 400px;
-                width: $size0;
+                width: $size-0;
                 height: 320px;
-                @include border (2px, solid, $color011);
-                box-shadow: 3px 3px 6px 2px $color03;
+                @include border (2px, solid, $color-05);
+                box-shadow: 3px 3px 6px 2px $color-03;
                 border-radius: 10px;
-                background-color: $color010;
+                background-color: $color-01;
                 .img-size {
-                    width: $size0;
+                    width: $size-0;
                 }
             }
             .book-text-box {
                 max-width: 700px;
-                width: $size0;
+                width: $size-0;
                 height: 700px;
                 text-align: left;
                 padding: 20px;
-                background-color: $color010;
-                @include border (2px, solid, $color011);
-                box-shadow: 3px 3px 6px 2px $color03;
+                background-color: $color-01;
+                @include border (2px, solid, $color-05);
+                box-shadow: 3px 3px 6px 2px $color-03;
                 border-radius: 10px;
                 margin-left: 25px;
                 .book-h2 {
-                    color: $color011;
+                    color: $color-03;
                     font-size: 30px;
                     font-family: 'BPG Nino Medium Caps';
                     margin-bottom: 15px;
@@ -56,39 +56,18 @@
                     width: 100%;
                     content: ' ';
                     color: #062D2D;
-                    @include border (0.1px, solid, $color04);
-                    box-shadow: 0 0 15px $color02;
-                    @media (max-width: 1024px) {
-                        width: 90%;
-                    }
-                    @media (max-width: 800px) {
-                        width: 90%;
-                    }
-                    @media (max-width: 768px) {
-                        width: 90%;
-                    }
-                    @media (max-width: 600px) {
-                        width: 80%;
-                    }
-                    @media (max-width: 414px) {
-                        width: 80%;
-                    }
-                    @media (max-width: 375px) {
-                        width: 80%;
-                    }
-                    @media (max-width: 330px) {
-                        width: 80%;
-                    }
+                    @include border (0.1px, solid, $color-04);
+                    box-shadow: 0 0 15px $color-02;
                 }
                 .book-h3 {
-                    color: $color03;
+                    color: $color-03;
                     font-size: 30px;
                     font-family: 'BPG Nino Medium Caps';
                     margin-bottom: 30px;
                 }
                 .book-specy {
                     max-width: 650px;
-                    width: $size0;
+                    width: $size-0;
                     margin: 0 auto;
                     .book-h4-box {
                         text-align: center;
@@ -102,37 +81,16 @@
                         width: 100%;
                         content: ' ';
                         color: #062D2D;
-                        @include border (0.1px, solid, $color04);
-                        box-shadow: 0 0 15px $color02;
-                        @media (max-width: 1024px) {
-                            width: 90%;
-                        }
-                        @media (max-width: 800px) {
-                            width: 90%;
-                        }
-                        @media (max-width: 768px) {
-                            width: 90%;
-                        }
-                        @media (max-width: 600px) {
-                            width: 80%;
-                        }
-                        @media (max-width: 414px) {
-                            width: 80%;
-                        }
-                        @media (max-width: 375px) {
-                            width: 80%;
-                        }
-                        @media (max-width: 330px) {
-                            width: 80%;
-                        }
+                        @include border (0.1px, solid, $color-04);
+                        box-shadow: 0 0 15px $color-02;
                     }
                     .book-tbl {
                         max-width: 640px;
-                        width: $size0;
+                        width: $size-0;
                         margin: 0 auto;
                         .book-tr {
                             max-width: 640px;
-                            width: $size0;
+                            width: $size-0;
                             margin: 20px 0;
                             @include d-flex (flex,space-between,end);
                             text-decoration-line:  underline; 
@@ -143,7 +101,7 @@
                                 text-align: end;
                             }
                             .book-th {
-                                color: $color03;
+                                color: $color-03;
                             }
                         }
                     }

@@ -5,18 +5,18 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: $color010;
-    @include border (2px, solid, $color02);
-    box-shadow: 1px 1px 10px 1px $color03;
+    background-color: $color-01;
+    @include border (2px, solid, $color-02);
+    box-shadow: 1px 1px 10px 1px $color-03;
     border-radius: 5px;
     .cotact-abaut {
         width: 80%;
         margin: 60px auto;
         .contact-text-h2 {
             font-size: 20px;
-            color: $color03;
+            color: $color-03;
             font-family: 'BPG Nino Medium Caps';
-            text-shadow: 1px 1px $color011;
+            text-shadow: 1px 1px $color-05;
         }
     }
     .xazi {
@@ -25,29 +25,8 @@
         width: 100%;
         content: ' ';
         color: #062D2D;
-        @include border (0.1px, solid, $color04);
-        box-shadow: 0 0 15px $color02;
-        @media (max-width: 1024px) {
-            width: 90%;
-        }
-        @media (max-width: 800px) {
-            width: 90%;
-        }
-        @media (max-width: 768px) {
-            width: 90%;
-        }
-        @media (max-width: 600px) {
-            width: 80%;
-        }
-        @media (max-width: 414px) {
-            width: 80%;
-        }
-        @media (max-width: 375px) {
-            width: 80%;
-        }
-        @media (max-width: 330px) {
-            width: 80%;
-        }
+        @include border (0.1px, solid, $color-04);
+        box-shadow: 0 0 15px $color-02;
     }
     .contact-coment {
         margin: 50px auto;
@@ -59,9 +38,9 @@
                     height: 170px;
                     padding: 20px;
                     resize: none;
-                    background-color: $color010;
-                    box-shadow: 1px 2px 10px 0px $color03;
-                    @include border (1px, solid, $color011);
+                    background-color: $color-01;
+                    box-shadow: 1px 2px 10px 0px $color-03;
+                    @include border (1px, solid, $color-05);
                     border-radius: 5px;
                 }
             }
@@ -72,21 +51,21 @@
                 .form-2-box {
                     height: 40px;
                     text-align: center;
-                    background-color: $color010;
-                    box-shadow: 1px 2px 10px 0px $color03;
-                    @include border (1px, solid, $color011);
+                    background-color: $color-01;
+                    box-shadow: 1px 2px 10px 0px $color-03;
+                    @include border (1px, solid, $color-05);
                     border-radius: 5px;
                 }
                 .btn {
                     width: 150px;
                     height: 30px;
                     font-size: 10px;
-                    background-color: $color010;
-                    box-shadow: 1px 2px 10px 0px $color03;
-                    @include border (1px, solid, $color011);
+                    background-color: $color-01;
+                    box-shadow: 1px 2px 10px 0px $color-03;
+                    @include border (1px, solid, $color-05);
                     border-radius: 5px;
                     .btn-icon {
-                        color: $color02;
+                        color: $color-02;
                         font-size: 14px;
                     }
                 }
@@ -99,42 +78,21 @@
         width: 100%;
         content: ' ';
         color: #062D2D;
-        @include border (0.1px, solid, $color04);
-        box-shadow: 0 0 15px $color02;
-        @media (max-width: 1024px) {
-            width: 90%;
-        }
-        @media (max-width: 800px) {
-            width: 90%;
-        }
-        @media (max-width: 768px) {
-            width: 90%;
-        }
-        @media (max-width: 600px) {
-            width: 80%;
-        }
-        @media (max-width: 414px) {
-            width: 80%;
-        }
-        @media (max-width: 375px) {
-            width: 80%;
-        }
-        @media (max-width: 330px) {
-            width: 80%;
-        }
+        @include border (0.1px, solid, $color-04);
+        box-shadow: 0 0 15px $color-02;
     }
     .contact-nev {
         @include d-flex (flex,space-around,center);
         margin: 40px;
         .contact-conteiner-1 {
-            width: 80%;
+            width: 50%;
             margin: 0 auto;
             .contact-text-h2 {
                 margin-bottom: 10px;
                 font-size: 14px;
-                color: $color03;
+                color: $color-03;
                 font-family: 'BPG Nino Medium Caps';
-                text-shadow: 1px 1px $color011;
+                text-shadow: 1px 1px $color-05;
             }
             .xazi {
                 margin: 0 auto 50px;
@@ -142,46 +100,26 @@
                 width: 100%;
                 content: ' ';
                 color: #062D2D;
-                @include border (0.1px, solid, $color04);
-                box-shadow: 0 0 15px $color02;
-                @media (max-width: 1024px) {
-                    width: 90%;
-                }
-                @media (max-width: 800px) {
-                    width: 90%;
-                }
-                @media (max-width: 768px) {
-                    width: 90%;
-                }
-                @media (max-width: 600px) {
-                    width: 80%;
-                }
-                @media (max-width: 414px) {
-                    width: 80%;
-                }
-                @media (max-width: 375px) {
-                    width: 80%;
-                }
-                @media (max-width: 330px) {
-                    width: 80%;
-                }
+                @include border (0.1px, solid, $color-04);
+                box-shadow: 0 0 15px $color-02;
             }
             .contact-text-p {
                 font-size: 14px;
-                color: $color03;
+                color: $color-03;
                 font-family: 'BPG Nino Medium Caps';
-                text-shadow: 1px 1px $color011;
+                text-shadow: 1px 1px $color-05;
             }
             .sect-2-cont-3-wrap {
                 width: 85%;
                 margin: 0 auto;
                 @include d-flex (flex,space-around,center);
                 .sect-2-cont-3-box {
-                    width: 100%;
+                    margin-left: 9px;
+                    width: 90%;
                     height: 150px;
                     @include d-flex (flex,space-around,center);
-                    @include border (2px, solid, $color011);
-                    box-shadow: 1px 1px 10px 1px $color03;
+                    @include border (2px, solid, $color-05);
+                    box-shadow: 1px 1px 10px 1px $color-03;
                     border-radius: 20px;
                     background-image: url(../img/k1.PNG);
                     background-repeat: repeat;
@@ -190,7 +128,7 @@
                     .sect-2-cont-3-img {
                         max-width: 150px;
                         .sect-2-cont-3-img-box { 
-                            width: $size0;
+                            width: $size-0;
                         }
                     }
                 }
@@ -199,34 +137,34 @@
     }
 }
 .sect-2-conteiner {
-    background-color: $color02;
+    background-color: $color-02;
     max-width: 1920px;
-    width: $size0;
+    width: $size-0;
     height: 330px;
     margin-bottom: 20px;
     @include d-flex (flex,space-evenly,center);
-    box-shadow: 15px 1px 15px 3px $color03;
-    @include border (2px, solid, $color011);
+    box-shadow: 15px 1px 15px 3px $color-03;
+    @include border (2px, solid, $color-05);
     border-radius: 20px;
     .sect-2-text {
         max-width: 330px;
-        width: $size0;
+        width: $size-0;
         height: 224px;
         @include d-flex (flex,space-around,baseline);
         flex-direction: column;
         .sect-2-h2 {
-            color: $color01;
+            color: $color-01;
             font-size: 36px;
             font-family: 'Poopins-B';
         }
         .sect-2-p {
-            color: $color01;
+            color: $color-01;
             font-size: 14px;
             font-family: 'Poppins-R';
         }
         .sect-2-shop {
             .sect-2-h4 {
-                color: $color01;
+                color: $color-01;
                 font-size: 14px;
                 font-family: 'Poppins-R';
             }
@@ -236,7 +174,7 @@
         max-width: 340px;
         margin-bottom: 23px;
         .sect-2-img-box {
-            width: $size0;
+            width: $size-0;
         }
     }
 }

@@ -4,7 +4,10 @@
     background-color: $color;
 }
 @mixin background ($rep,$posit,$size) {
-    background: $rep $posit $size;
+    background-repeat: $rep;
+    background-position: $posit;
+    background-size: $size;
+   
 }
 //Header
 @mixin d-flex ($dysplai,$justyfi,$alig) {

@@ -1,327 +1,806 @@
-//Body
-%body-bg {
-    @include bg-img (url(../img/k1.PNG),$color-0);
-    @include background (repeat,right -20% bottom 0px, top left,auto 10px);
+//IMAGE-100%
+%bg-banner {
+    @include bg-img (url(../img/iphone-b.png),$color-02);
+    @include background (no-repeat,left,initial,);
 }
-//header
-%hed-bg {
-    width: $size-0;
-    top: 0;
-    left: 0;
-    background-color: $color-01;
-    position: fixed;
-    @include d-flex (flex,space-around,center);
-    @include border ($size-02, solid, $color-02,$size-05);
-    box-shadow: $size-01 $size-01 $size-010 $size-01 $color-03;
+//Font
+//---------------
+%font-h1-def {
+    font-size: $size-035;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
 }
-%hed-med {
-    @media (max-width: $size-0768){
-        display: block;
-        text-align: center;
-    }
+%font-h2-def {
+    font-size: $size-015;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
-//Nav-Container
-%nav-cont {
-    max-width: $size02;
-    width: $size-0;
-    padding: $size-05 0 $size-05;
-    @include d-flex (flex,space-between,center);
+%font-h3-def {
+    font-size: $size-020;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
-%nav-cont-med {
-    @media (max-width: $size-01024) {
-        width: $size-3;
-    }
-    @media (max-width: $size-0900) {
-        width: $size-2;
-        padding: $size-010 0 $size-010;
-        margin-right: $size-100;
-    }
-    @media (max-width: $size-0800) {
-        width: $size-3;
-        padding: $size-010 0 $size-010;
-    }
-    @media (max-width: $size-0768) {
-        flex-direction: column;
-        margin: 0 auto;
-    }
+%font-h3-flt {
+    font-size: $size-025;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-01;
+    text-shadow: 0 0 $size-01 $color-02;
 }
-//Nav-Logo
-%nav-logo {
-    max-width: $size-070;
-    width: $size-0;
-    height: $size-085;
-    &:hover {
-        box-shadow: $size-01 $size-01 $size-015 $color-02;
-        @include transition-hover (all,0.2s,ease,0.2s);
-    }
-}
-%nav-logo-med {
-    @media (max-width: $size-0900) {
-        width: $size-080;
-        height: $size-0110;
-    }
-    @media (max-width: $size-0800) {
-        width: $size-080;
-        height: $size-0110;
-        margin-left: $size-0120;
-    }
-    @media (max-width: $size-0768) {
-        margin: 0 auto;
-    }
-}
-%img-logo {
-    width: $size0;
-    box-shadow: $size-01 $size-01 $size-010 $size-01 $color03;
+%font-bol-def {
+    font-size: $size-030;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
     border-radius: $size-05;
 }
-%navi-size {
-    @include d-flex (flex,space-between,center);
-    max-width: $size-0930;
-    width: $size-0;
+%font-fa-def {
+    font-size: 25px;
+    color: $color-02;
+    letter-spacing: 10px;
+    text-shadow: 0 0 1px $color-03;
+    border-radius: 5px;
 }
-%navi-med {
-    @media (max-width: $size-01024) {
-        width: $size-0780;
+%search-fa {
+    font-size: 32px;
+    color: $color-02;
+    text-shadow: 0 0 1px $color-03;
+    border-radius: 5px;
+}
+%font-p-def {
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $size-01 0 $color-06;
+}
+%font-h1-baner {
+    font-size: $size-035;
+    color: $color-01;
+    font-family: 'archy-B';
+    letter-spacing: $size-01;
+    text-shadow: $size-01 0 $color-06;
+}
+%font-p-baner {
+    font-size: $size-015;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: $size-01;
+    text-shadow: $size-01 0 $color-06;
+}
+//Effects-Defaulty
+//---------------
+//slick-dots-def
+%slick-dots {
+    li {
+        button {
+            &:before {
+                color: $color-06;
+                font-size: 15px;
+            }
+        }
     }
-    @media (max-width: $size-0900) {
-        width: $size-6;
-        flex-direction: column-reverse;
-    }
-    @media (max-width: $size-0800) {
-        width: $size-6;
-        flex-direction: column-reverse;
-    }
-    @media (max-width: $size-0768) {
-        flex-direction: column;
+    .slick-active {
+        margin: 1px 15px;
+        button {
+            &:before {
+                color: $color-02;
+                font-size: 25px;
+            }
+        }
     }
 }
-%nav-ul-size {
-    max-width: $size-0630;
-    width: $size-0;
-    @include d-flex (flex,space-between,center);
+//Xazi
+//--------
+%xazi {
+    width: 100%;
+    margin:10px auto;
+    content: ' ';
+    color: $color-06;
+    @include border (0.1px, solid, $color-08);
+    box-shadow: 0 0 13px $color-02;
 }
-%nav-ul-med {
-    @media (max-width: $size-01024) {
-        width: $size-0500;
-    }
-    @media (max-width: $size-0900) {
-        width: $size-0550;
-        padding-top: $size-010;
-    }
-    @media (max-width: $size-0800) {
-        width: $size-0630;
-        margin-right: $size-0170;
-    }
-    @media (max-width: $size-0768) {
-        display: none;
-        margin: 0 auto;
-        width: $size-0;
+//Border
+//Border-Defaulti
+//---------------
+%border-def {
+    border-radius: $size-03;
+    @include border (1px, solid, $color-05);
+    box-shadow: 0 0 0 $size-01 $color-010;
+}
+%border-srch {
+    border-radius: 3px;
+    @include border (0px, solid, $color-02);
+    box-shadow: 0 0 1px 1px $color-02;
+}
+//Pro-navi-Defaulti-Size
+//-------------------
+%pro-navi-def {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 58px;
+    z-index: 300;
+    background-color: $color-010;
+}
+%pro-fa-def {
+    font-size: 27px;
+    color: $color-02;
+    text-shadow: 0 0 1px $color-03;
+    border-radius: 5px;
+    margin-left: 20px;
+    &:after {
+        max-width: 20px;
+        width: 100%;
+        margin: 0 20px;
+        content: ' ';
+        color: $color-06;
+        @include border ($xazi-brd, solid, $color-08);
+        box-shadow: $xazi-shad $color-02;
     }
 }
-%nav-ul-open-med {
-    @media (max-width: $size-0768) {
-        .open-menu {
+%pro-navi-h4-def {
+    font-size: 21px;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px $color-02;
+    &:after {
+        max-width: 20px;
+        width: 100%;
+        margin: 0 20px;
+        content: ' ';
+        color: $color-06;
+        @include border ($xazi-brd, solid, $color-08);
+        box-shadow: $xazi-shad $color-02;
+    }
+}
+
+//Hover
+//Hower-font-efect-Defaulty
+//-------------------
+%pro-navi-ico-fe {
+    &:hover {
+        font-size: 28px;
+        letter-spacing: 7px;
+    }
+}
+%pro-navi-fe {
+    &:hover {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+}
+%flt-ico-nm-h2-fe {
+    &:hover {
+        font-size: 32px;
+        letter-spacing: 6px;
+    }
+}
+%s2-flt-li-fe {
+    &:hover {
+        background-color: $color-08;
+    }
+}
+%pc-ico-nm-h2-fe {
+    &:hover {
+        font-size: 21px;
+        letter-spacing: 3px;
+    }
+}
+%font-hover-def {
+    &:hover {
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-decoration: underline dotted $color-02;
+    }
+}
+//-------------------
+//Hower-image-efect-Defaulty
+//-------------------
+%cont-1-img-href-ie {
+    &:hover {
+        height: 400px;
+        padding: 2px;
+        margin-bottom: 30px;
+    }
+}
+%pc-1-img-hrf-hover {
+    &:hover {
+        height: 170px;
+        margin-bottom: 30px;
+    }
+}
+%image-hover-def {
+    &:hover {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+}
+//-----------------
+%hover-def {
+    &:hover {
+        background-color: $color-08;
+        box-shadow: 0 0 $size-010 $color-02;
+        @include transition-hover (all,0.3s,linear,0.2s)
+    }
+}
+%hover-sale {
+    &:hover {
+        max-width: 170px;
+        width: 100%;
+        height: 25px;
+        border-bottom-right-radius: 50px 35px;
+        background-color: $color-07;
+        @include d-flex (flex,space-around,center);
+        @include transition-hover (all,0.3s,linear,0.2s);
+    }
+}
+%hover-dop {
+    &:hover {
+        .nav-drop-ul {
             display: block;
-            text-align: -webkit-center;
-            padding: $size-020 0;
         }
     }
 }
-%nav-li-med {
-    @media (max-width: $size-0768) {
-        padding-bottom: $size-010;
-    }
-}
-%nav-a-sty {
-    Color: $color03;
-    @include font-style ($size-010,'ALKDots');
-    text-shadow: $size-01 $suze-01 $color011;
-}
-%nav-a-med {
-    @media (max-width: $size-0768) {
-        display: block;
-    }
-}
-%soc-ul-size {
-    max-width: $size-0250;
-    width: $size-0;
-    height: $size-070;
-}
-%soc-ul-med {
-    @media (max-width: $size-0900) {
-        flex-wrap: wrap-reverse;
-        margin-left: $size-0200;
-    }
-    @media (max-width: $size-0800) {
-        flex-wrap: wrap-reverse;
-        margin-left: $size-0200;
-    }
-    @media (max-width: $size-0768) {
-        display: none;
-        margin: 0 auto;
-    }
-}
-%contact-ul-size {
-    max-width: $size-0250;
-    width: $size-0;
-    height: $size-070;
-}
-%contact-ul-med {
-    @media (max-width: $size-0900) {
-        height: $size-070;
-        flex-direction: column-reverse;
-    }
-    @media (max-width: $size-0800) {
-        height: $size-070;
-        flex-direction: column-reverse;
-    }
-    @media (max-width: $size-0768) {
-        align-items: center;
-    }
-    @media (max-width: $size-0600) {
-        height: $size-060;
-    }
-    @media (max-width: $size-0414) {
-        height: $size-060;
-    }
-    @media (max-width: $size-0330) {
-        height: $size-060;
-    }
-    @media (max-width: $size-0375) {
-        height: $size-060;
-    }
-}
-%soc-ul-size {
-    max-width: $size-0220;
-    width: $size-0;
-}
-%open-soci-med {
-    @media (max-width: $size-0768) {
-        .open-socicon {
-            display: flex;
+%head-cont-stk {
+        &:before {
+            width: 30%;
         }
-    }
+        &:after {
+            display: block;
+        }
 }
-%soc-a-size {
-    max-width: $size-0230;
-    width: $size-0;
+//Fixed
+%fixed {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 22;
+}
+//HEADER
+%banner-font-fa {
+    font-size: 28px;
+    color: $color-01;
+    letter-spacing: 5px;
+    text-shadow: 0 0 1px $font-fa-shdw;
+    border-radius: 5px;
+}
+%head-cont-size {
+    width: 100%;
+    margin: 2px auto;
+    position: relative;
+}
+%element-search-size {
+    width: 100%;
+    height: 100%;
+}
+%nav-a-h1-font {
+    font-size: 15px;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 1px $color-02;
+    border-radius: 5px;
+}
+%font-fa {
+    font-size: $font-fa-sz;
+    color: $font-fa-col;
+    letter-spacing: $font-fa-ls;
+    text-shadow: $font-fa-shad $font-fa-shdw;
+    border-radius: $font-fa-rad;
+}
+%font-fa-header {
+    font-size: $font-fa-sz;
+    color: $color-01;
+    letter-spacing: $font-fa-ls;
+    text-shadow: $font-fa-shad $font-fa-shdw;
+    border-radius: $font-fa-rad;
 }
 %soc-a-font {
-    font-size: $size-022;
-    font-family: 'ArchyEDT-Bold';
-    color: $color-04;
-    text-shadow: $size-01 $size-01 $color011;
+    font-size: 26px;
+    color: $color-01;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 1px $color-02;
+    border-radius: 5px;
 }
-%soc-a-med {
-    @media (max-width: $size-01024) {
-        font-size: $size-020;
-    }
-}
-%fa-font {
-    font-size: $size-020;
+%head-flt-li-font {
+    font-size: 22px;
     color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: 1px;
 }
-%burg-icon-med {
-    @media (max-width: $size-0800) {
-        margin-right: $size-070;
-    }
-    @media (max-width: $size-0768) {
-        color: $color02;
-        display: block;
-        font-size: $size-030;
-        position: absolute;
-        top: $size-040;
-        right: $size-030;
-        cursor:pointer;
-    }
-    @media (max-width: $size-0320) {
-        margin: 0 auto;
-    }
+%head-li-img-size {
+    width: 100%;
+    height: 45px;
 }
-//Sectoin-1
-%cont-1-img-bnox-med {
-    @media (max-width: $size-0590) {
-        font-size: $size-060;
-        top: $size-032;
-    }
+//Sections-1
+%sect-1-size {
+    margin: 15px auto;
 }
-%sect-cont-3-size {
-    max-width: $size-01920;
-        width: $size0;
-        height: $size-0800;
-        margin-top: $size-070;
+%sect-1-box-size {
+    border-radius: $sect-1-box-rad;
+    margin: $sect-1-box-mrg;
 }
-%sect-cont-3-med {
-    @media (max-width: $size-01120) {
-            height: $size-0590;
-        }
-        @media (max-width: $size-0580) {
-            height: $size-0950;
-        }
+%sect-1-img-size {
+    margin: $sect-1-img-mrg;
+    width: $size-0-def;
+    height: $sect-1-img-heig;
+    box-shadow: $sect-1-img-shad $color-03;
+    border-radius: $sect-1-img-rad;
 }
-%cont-3-h2-font {
-    color: $color03;
-    font-size: $size-036;
-    font-family: 'Poopins-B';
-    text-shadow: $size-01 $size-01 $color011;
+//Section-2
+%sect-2-size {
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $sect-2-bg;
 }
-%cont-3-ul-size {
-    max-width: $size-0680;
-    width: $size0;
+%sect-2-big-size {
+    max-width: 1850px;
+    width: 100%;
+    margin: 35px 0;
 }
-%cont-3-a-font {
-    Color: $color04;
-    font-size: $size-015;
-    font-family: 'Poppins-B';
-    text-shadow: $size-01 $size-01 $color011;
+%flt-icon-1-size {
+    max-width: $flt-icon-1-wid;
 }
-%container-3-size {
-    max-width: $size-01240;
-    width: $size-0;
+%flt-icon-size {
+    max-width: $flt-icon-wid;
 }
-%container-3-med {
-    @media (max-width: $size-01120) {
-        width: $size-90;
-    }
-    @media (max-width: $size-0780) {
-        width: $size-80;
-        height: $size-0500;
-        flex-wrap: wrap;
-    }
+%flt-icon-box-size {
+    width: $size-0-def;
 }
-%cont-3-box-size {
-    max-width: $size-0270;
-    width: $size0;
-    height: $size-0270;
+%flt-ico-nm-size {
+    width: 100%;
+    height: 65px;
+    padding-top: 7px;
 }
-%cont-3-box-bg {
-    background-image: url(../img/k1.PNG);
-    background-repeat: repeat;
-    background-position: right -20% bottom 0px, top left;
-    background-size: auto $size-03;
+%ico-nm-h2-font {
+    font-size: $ico-nm-h2-sz;
+    color: $ico-nm-h2-col;
+    font-family: 'archy-B';
+    letter-spacing: $ico-nm-h2-ls;
+    text-shadow: $ico-nm-h2-shad $ico-nm-h2-shdw;
+    border-radius: $ico-nm-h2-rad;
+    margin: $ico-nm-h2-mrg;
 }
-%cont-3-box-med {
-    @media (max-width: $size-01120) {
-        width: $size-0230;
-    }
-    @media (max-width: $size-01060) {
-        width: $size-0200;
-        height: $size-0200;
-    }
-    @media (max-width: $size-0800) {
-        width: $size-0160;
-        height: $size-0170;
-    }
-    @media (max-width: $size-0780) {
-        width: $size-0230;
-        height: $size-0170;
-    }
+%s2-flt-ul-size {
+    max-width: 500px;
+    width: $size-0-def;
+    padding: 15px 0 0 0;
 }
-%cont-3-img-med {
-    @media (max-width: 1060px) {
-        width: 130px;
-    }
-    @media (max-width: 800px) {
-        width: 110px;
-    }
+%s2-flt-li-size {
+    height: 55px;
+    padding: $s2-flt-li-pdng;
 }
+%s2-flt-li-font {
+    font-size: $s2-flt-li-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $s2-flt-li-ls;
+    text-shadow: $s2-flt-li-shad $color-02;
+}
+%flt-li-box-size {
+    max-width: $flt-li-box-wid;
+    height: $flt-li-box-heig;
+}
+%flt-li-img-size {
+    width: $size-0-def;
+    height: $flt-li-img-heig;
+}
+%s2-flt-cont-2-size {
+    max-width: $s2-flt-cont-2-wid;
+    width: $size-0-def;
+    height: $s2-flt-cont-2-heig;
+}
+%sect-2-box-size {
+    max-width: $sect-2-box-wid;
+    width: $size-0-def;
+    height: $sect-2-box-heig;
+}
+%cont-1-list-size {
+    max-width: $cont-1-list-wid;
+    width: $size-0-def;
+}
+%cont-1-list-box-size {
+    max-width: $cont-1-list-box-wid;
+    width: $size-0-def;
+    height: $cont-1-list-box-heig;
+}
+%cont-1-img-size {
+    max-width: $cont-1-img-wid;
+    height: $cont-1-img-heig;
+}
+%cont-1-img-hrf-size {
+    max-width: $cont-1-img-hrf-wid;
+    height: $cont-1-img-hrf-heig;
+    padding: 20px;
+}
+%cont-1-img-box-size {
+    width: $size-0-def;
+    height: $cont-1-img-box-heig;
+}
+%cont-1-img-text-size {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+%flt-icon-size {
+    max-width: $flt-icon-wid;
+}
+%cont-1-fit-size {
+    max-width: $cont-1-fit-wid;
+    width: $size-0-def;
+    height: $cont-1-fit-heig;
+    padding: $cont-1-fit-pad;
+}
+%cont-1-fit-ul-size {
+    height: $cont-1-fit-ul-heig;
+}
+%cont-1-fit-li-size {
+    max-width: $cont-1-fit-li-wid;
+    width: $size-0-def;
+}
+%cont-1-fit-li-font {
+    font-size: $size-018;
+    color: $color-06;
+    font-family: 'BPG-A';
+    letter-spacing: $size-01;
+    text-shadow: 0 0 $size-01 $color-03;
+}
+%sect-2-sm-size {
+    max-width: 1850px;
+    width: 100%;
+}
+%cont-1-sm-box-size {
+    max-width: $cont-1-sm-box-wid;
+    width: $size-0-def;
+    height: $cont-1-sm-box-heig;
+}
+%cont-1-sm-h3-size {
+    margin: $cont-1-sm-h3-mrg;
+}
+//Section-3
+%sect-3-size {
+    max-width: $sect-3-wid;
+    width: $size-0-def;
+    margin: $sect-3-mrg;
+    padding: $sect-3-pdng;
+}
+%sect-3-h1-font {
+    font-size: $sect-3-h1-sz;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $sect-3-h1-ls;
+}
+%sect-3-cont-size {
+    max-width: $sect-3-cont-wid;
+    height: $sect-3-cont-heig;
+    margin: $sect-3-cont-mrgn;
+}
+%cont-2-box-size {
+    height: $cont-2-box-heig;
+    margin: $cont-2-box-megn;
+}
+%cont-2-text-size {
+    max-width: $cont-2-text-wid;
+    width: $size-0-def;
+    height: $cont-2-text-heig;
+}
+%cont-2-p-box-size {
+    max-width: $cont-2-p-box-wid;
+    width: $size-0-def;
+    height: $cont-2-p-box-heig;
+}
+%cont-2-p-font {
+    font-size: 23px;
+    color: $color-06;
+    font-family: 'BPG-A';
+    letter-spacing: $cont-2-p-font-ls;
+    text-shadow: $cont-2-p-font-shdw $color-03;
+}
+%cont-2-h4-font {
+    font-size: 36px;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $cont-2-h4-font-ls;
+    text-shadow: $cont-2-h4-font-shdw $color-03;
+}
+//Section-BanBox
+%sect-banbox-size {
+    max-width: $sect-banbox-wid;
+    width: $size-0-def; 
+    margin: $sect-banbox-mrg;
+    padding: $sect-banbox-pdng; 
+}
+%banbox-cont-size {
+    max-width: $banbox-cont-def-wid;
+    width: $size-0-def;
+    height: $banbox-cont-heig;
+}
+%banbox-box-size {
+    max-width: $banbox-box-wid;
+    width: $size-0-def;
+    height: $banbox-box-heig;
+}
+%consol-size {
+    max-width: $consol-wid;
+    width: $size-0-def;
+}
+%consol-li-font {
+    font-size: $consol-li-font-sz;
+    color: $color-06;
+    font-family: 'archy-B';
+    letter-spacing: $consol-li-font-ls;
+    text-shadow: $consol-li-font-shdw $color-03;
+}
+%consol-li-dec {
+    text-decoration: underline dotted $color-02;
+}
+%box-box-ico-size {
+    max-width: $box-box-ico-wid;
+    width: $size-0-def;
+    height: $box-box-ico-heig;
+}
+%box-img-ico-size {
+    width: $size-0-def;
+    height: $box-img-ico-heig;
+}
+%box-box-size {
+    max-width: $box-box-wid;
+    width: $size-0-def;
+    height: $box-box-heig;
+}
+%banbox-cont-2-size {
+    max-width: $banbox-cont-def-wid;
+    width: $size-0-def;
+}
+%box-img-size {
+    width: $size-0-def;
+    height: $box-img-heig;
+}
+%sect-ban-cont-size {
+    max-width: $sect-ban-cont-wid;
+    width: $size-0-def;
+    height: $sect-ban-cont-def-heig;
+}
+%tv-box-size {
+    max-width: $tv-box-wid;
+    width: $size-0-def;
+    margin:$tv-box-size-mrgn;
+}
+%tv-size {
+    width: $size-0-def;
+    height: $tv-heig;
+}
+%tv-text-cont-size {
+    max-width: $tv-text-cont-wid;
+    width: $size-0-def;
+    height: $tv-text-cont-heig;
+    margin: $tv-text-cont-mrgn;
+}
+%tv-ico-nm-size {
+    max-width: $tv-ico-nm-wid;
+    width: $size-0-def;
+    height: $tv-ico-nm-heig;
+}
+%tv-ban-h1-size {
+    width: $size-0-def;
+    height: $tv-ban-h1-heig;
+    padding: $tv-ban-h1-pdng;
+}
+%sect-ban-h1-font {
+    font-size: $sect-ban-h1-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $sect-ban-h1-font-ls;
+    text-shadow: $sect-ban-h1-font-shad $color-02;
+}
+%sect-ban-cont-2-size {
+    max-width: $sect-ban-cont-2-wid;
+    width: $size-0-def;
+    height: $sect-ban-cont-def-heig;
+}
+%sect-ban-box-size {
+    width: $size-0-def;
+    height: $sect-ban-box-heig;
+}
+%ban-box-img-size {
+    max-width: $ban-box-img-wid;
+    width: $size-0-def;
+    height: $ban-box-img-heig;
+}
+%cinema-size {
+    width: $size-0-def;
+    height: $cinema-heig;
+}
+%tvh-text-cont-size {
+    max-width: $tvh-text-cont-wid;
+    width: $size-0-def;
+    height: $tvh-text-cont-heig;
+}
+%tvh-ico-nm-size {
+    max-width: $tvh-ico-nm-wid;
+    width: $size-0-def;
+    height: $tvh-ico-nm-heig;
+}
+%tvh-ban-h1-size {
+    max-width: $tvh-ban-h1-wid;
+    width: $size-0-def;
+    height: $tvh-ban-h1-heig;
+    padding: $tvh-ban-h1-pdng;
+}
+%tvh-ban-h1-font {
+    font-size: $tvh-ban-h1-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $tvh-ban-h1-font-ls;
+    text-shadow:  $tvh-ban-h1-font-shdw $color-02;
+}
+//Section-4
+%sect-4-size {
+    max-width: $sect-4-wid;
+    width: $size-0-def;
+    margin: $sect-4-mrg;
+    padding: $sect-4-pdng;
+}
+%sect-4-cont-size {
+    max-width: $sect-4-cont-wid;
+    width: $size-0-def;
+    height: $sect-4-cont-heig;
+    margin: $sect-4-cont-mrgn;
+}
+%sect-4-box-size {
+    max-width: $sect-4-box-wid;
+    width: $size-0-def;
+    height: $sect-4-box-heig;
+    margin: $sect-4-box-mrgn;
+}
+%sect-4-img-size {
+    max-width: $sect-4-img-wid;
+    height: $sect-4-img-heig;
+}
+%sect-4-text-size {
+    max-width: $sect-4-text-wid;
+    width: $size-0-def;
+    height: $sect-4-text-heig;
+}
+%sect-4-h3-font {
+    font-size: $sect-4-h3-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $sect-4-h3-font-ls;
+    text-shadow: $sect-4-h3-font-shad $color-02;
+}
+%sect-4-p-size {
+    height: $sect-4-p-heig;
+    margin: $sect-4-p-mrgn;
+}
+%sect-4-p-font {
+    font-size: $sect-4-p-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $sect-4-p-shad $color-06;
+}
+//Section-Banner
+%sect-baner-size {
+    max-width: $sect-baner-wid;
+    width: $size-0-def;
+    height: $sect-baner-heig;
+    margin: $sect-baner-mrgn;
+}
+%sect-baner-text-size {
+    max-width: $sect-baner-text-wid;
+    width: $size-0-def;
+    height: $sect-baner-text-heig;
+}
+%sect-baner-h1-font {
+    font-size: $sect-baner-h1-font-sz;
+    color: $color-01;
+    font-family: 'archy-B';
+    letter-spacing: $sect-baner-h1-font-ls;
+    text-shadow: $sect-baner-h1-font-shad $color-06;
+}
+%sect-baner-p-font {
+    font-size: $sect-baner-p-font-sz;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: $sect-baner-p-font-ls;
+    text-shadow: $sect-baner-p-font-shad $color-06;
+}
+%sect-baner-h4-font {
+    font-size: $sect-baner-p-font-sz;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: $sect-baner-p-font-ls;
+    text-shadow: $sect-baner-p-font-shad $color-06;
+}
+%sect-baner-img-size {
+    max-width: $size-0450;
+    margin-bottom: $size-019;
+}
+//Footer
+%foot-lok-size {
+    max-width: $foot-lok-wid;
+    width: $size-0-def;
+}
+%foot-cont-size {
+    max-width: $foot-cont-wid;
+    width: $size-0-def;
+    padding: $foot-cont-pdng;
+}
+%foot-box-size {
+    max-width: $foot-box-wid;
+    width: $size-0-def;
+}
+%foot-h1-font {
+    font-size: $foot-h1-font-sz;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $foot-h1-font-ls;
+}
+%foot-p-size {
+    max-width: $foot-p-wid;
+    width: $size-0-def;
+}
+%foot-p-font {
+    font-size: $foot-p-font-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $foot-p-font-shad $color-06;
+}
+%foot-ul-fa-size {
+    max-width: $foot-ul-fa-wid;
+    width: $size-0-def;
+}
+%foot-li-fa-font {
+    font-size: $foot-li-fa-font-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $foot-li-fa-font-shad $color-06;
+}
+%foot-ul-size {
+    max-width: $foot-ul-wid;
+    width: $size-0-def;
+}
+%foot-li-font {
+    font-size: $foot-li-font-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $foot-li-font-ls $color-06;
+}
+%contact-font {
+    font-size: $contact-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $contact-font-ls;
+    text-shadow: $contact-font-shad $color-02;
+    border-radius: $contact-font-rad;
+}
+%avtori-size {
+    max-width: $avtori-wid;
+    width: $size-0-def;
+    margin: $avtori-mrgn;
+}
+%avtori-p-font {
+    font-size: $avtori-p-font-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $avtori-p-font-shad $color-06;
+}
+%avtori-a-font {
+    font-size: $avtori-a-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $avtori-a-font-ls;
+    text-shadow: $avtori-a-font-shad $color-02;
+}
+
+
+

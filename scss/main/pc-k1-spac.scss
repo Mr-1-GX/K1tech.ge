@@ -1,0 +1,193 @@
+.pc-k1-spec {
+    width: 100%;
+    @include d-flex (flex,space-between,center);
+    @extend %pc-k1-spec-med;
+    .pc-k1-img-list-big {
+        width: 100%;
+        @include d-flex (flex,space-between,center);
+        flex-direction: column;
+        height: 830px;
+        @extend %pc-k1-img-list-big-med;
+        .pc-k1-img-cont {
+            width: 100%;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
+            .pc-k1-img-box {
+                max-width: 390px;
+                width: 100%;
+                height: 530px;
+                padding: 10px;
+                @extend %pc-k1-img-box-med;
+                .pc-k1-img-box-slide {
+                    .pc-k1-img {
+                        width: 100%;
+                        height: 450px;
+                        @extend %pc-k1-img-med;
+                    }
+                }
+            }
+            .pc-k1-img-list-sm {
+                max-width: 610px;
+                width: 100%;
+                @extend %pc-k1-img-list-sm-med;
+                .pc-k1-img-box-sm {
+                    padding: 20px 40px;
+                    margin: 0 10px;
+                    @extend %border-def;
+                    @extend %pc-k1-img-box-sm-med;
+                    &:hover {
+                        border-color: $color-02;
+                        cursor: pointer;
+                    }
+                    .pc-k1-img-sm {
+                        width: 100%;
+                        height: 85px;
+                        @extend %pc-k1-img-sm-med;
+                    }
+                }
+            }
+        }
+    }
+    .pc-k1-cont {
+        width: 100%;
+        margin: 70px 0 40px;
+        @include d-flex (flex,space-between,center);
+        @extend %pc-k1-cont-med;
+        .pc-k1-img-list {
+            width: 100%;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
+            .pc-k1-img-text {
+                max-width: 690px;
+                width: 100%;
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                @extend %pc-k1-img-text-med;
+                .pc-k1-img-p {
+                    @extend %pc-k1-img-p-fonts;
+                    @extend %pc-k1-img-p-med;
+                    .pc-k1-img-p-span {
+                        @extend %pc-k1-img-p-span-fonts;
+                        @extend %pc-k1-img-p-span-med;
+                    }
+                }
+                .p-xazi {
+                    width: 100%;
+                    margin:10px auto;
+                    content: ' ';
+                    color: $color-06;
+                    @include border ($xazi-brd, solid, $color-08);
+                    box-shadow: $xazi-shad $color-02;
+                    margin-bottom: 40px;
+                }
+                .pc-k1-img-prais {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    .pc-k1-img-p-span {
+                        @extend %pc-k1-img-p-span-fonts;
+                        @extend %pc-k1-img-p-span-med;
+                    }
+                    .pc-k1-img-h3 {
+                        margin-bottom: 40px;
+                        text-align: end;
+                        @extend %pc-k1-img-p-fonts;
+                    }
+                    .pc-k1-bags {
+                        width: 100%;
+                        @include d-flex (flex,space-between,center);
+                        .pc-k1-button {
+                            border-color: $color-02;
+                            color: $color-06;
+                            padding: 16px 32px;
+                            text-align: center;
+                            display: inline-block;
+                            font-size: 16px;
+                            margin: 4px 2px;
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #008CBA;
+                                color: white;
+                            }
+                            @extend %pc-k1-button-med;
+                        }
+                        .pc-k1-butt-r {
+                            @include d-flex (flex,space-between,center);
+                            @extend %pc-k1-butt-r-med;
+                            .pc-k1-butt-r-h4 {
+                                @extend %pc-k1-butt-r-h4;
+                                @extend %pc-k1-butt-r-h4-med;
+                            }
+                            .pc-k1-butt-inp-h4 {
+                                max-width: 80px;
+                                width: 100%;
+                                height: 45px;
+                                margin-left: 25px;
+                                font-size: 22px;
+                                text-align: center;
+                                border-color: $color-02;
+                                color: $color-06;
+                                @extend %pc-k1-butt-inp-h4-med;
+                            }
+                        }
+                    }
+                }
+                .pc-1-img-text {
+                    width: 100%;
+                    height: 70px;
+                    padding: 10px 0px;
+                    @include d-flex (flex,space-between,end);
+                    @extend %pc-1-img-text-med;
+                    .pc-flt-icon {
+                        max-width: 47px;
+                        @include d-flex (flex,space-between,center);
+                        @extend %pc-flt-icon-med;
+                        .pc-flt-icon-box {
+                            width: 100%;
+                        }
+                    }
+                    .pc-flt-ico-nm {
+                        width: 100%;
+                        height: 65px;
+                        padding-top: 5px;
+                        text-align: end;
+                        @extend %pc-flt-ico-nm-med;
+                        .pc-k1-ico-nm-h2 {
+                            margin: 0 15px 12px 0;
+                            @extend %pc-k1-ico-nm-h2;
+                            @extend %pc-k1-ico-nm-h2-med;
+                        }
+                        .pc-xazi {
+                            width: 100%;
+                            margin:10px auto;
+                            content: ' ';
+                            color: $color-06;
+                            @include border ($xazi-brd, solid, $color-08);
+                            box-shadow: $xazi-shad $color-02;
+                        }
+                    }
+                }
+                .pc-k1-img-ul {
+                    width: 100%;
+                    background-color: $color-01;
+                    .pc-k1-img-li {
+                        margin: 15px 0;
+                        background-color: $color-010;
+                        @include d-flex (flex,space-between,flex-start);
+                        @extend %pc-k1-img-li-font;
+                        @extend %pc-k1-img-li-med;
+                        .pc-k1-img-li-span {
+                            @extend %pc-k1-img-li-span;
+                            @extend %pc-k1-img-li-span-med;
+                            .pc-k1-img-tr {
+                                height: 25px;
+                                text-align: end;
+                                background-color: $color-010;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,706 +1,922 @@
 //Body
 .body-bg {
-    @extend %body-bg;
-    //Heder
-    .head-bg {
-        @extend %hed-bg;
-        @extend %hed-med;
-        .nav-container {
-            @extend %nav-cont;
-            @extend %nav-cont-med;
-            .nav-logo {
-                @extend %nav-logo;
-                @extend %nav-logo-med;
-                .img-logo {
-                    @extend %img-logo;
-                } 
+    background-color: $color-01;
+}
+//HEADER
+.sect-baner-s {
+    height: 50px;
+    background-color: $color-02;
+    @include d-flex (flex,space-around,center);
+    @extend %border-def;
+    @extend %sect-baner-s-med;
+    .baner-s {
+        width: 100%;
+        @include d-flex (flex,center,center);
+        .nav-ul {
+            max-width: 1800px;
+            width: 100%;
+            @include d-flex (flex,space-between,center);
+            @extend %nav-ul-med;
+            .nav-li {
+                @extend %nav-li-med;
+                @extend %hover-dop;
+                @include d-flex (flex,space-between,center);
+                .geo-img {
+                    max-width: 30px;
+                    margin-right: 10px;
+                    @extend %geo-img-med;
+                    .geo {
+                        width: 100%;
+                        height: 25px;
+                        @extend %geo-med;
+                    }
+                }
+                .fa {
+                    margin-right: 30px;
+                    @extend %banner-font-fa;
+                    @extend %nav-fa-med;
+                    @extend %baner-s-fa-med;
+                }
+                .nav-a {
+                    @extend %nav-a-h1-font;
+                    @extend %nav-a-med;
+                }
+                
+            }
+            .soc-ul {
+                max-width: 875px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                @extend %soc-ul-med;
+                .soc-li {
+                    @extend %soc-li-med;
+                    .fa {
+                        @extend %font-fa-header;
+                        @extend %fa-med;
+                    }
+                    .soc-a {
+                        @extend %soc-a-font;
+                        @extend %hover-def;
+                        @extend %soc-a-med;
+                    }
+                }
+                .contact-ul {
+                    @include d-flex (flex,space-between,end);
+                    @extend %contact-ul-med;
+                }
+                .contact-box {
+                    max-width: 600px;
+                    width: 100%;
+                    @include d-flex (flex,space-between,end);
+                    @extend %contact-box-med;
+                }
+            }
+        }
+    }
+}
+.head-cont {
+    background-color: $color-01;
+    @extend %head-cont-size;
+    @extend %border-def;
+    @extend %head-cont-med;
+    .nav-box {
+        max-width: 1820px;
+        width: 100%;
+        margin: 0px auto;
+        @include d-flex (flex,space-between,center);
+        @extend %nav-box-med;
+        .nav-logo {
+            max-width: 90px;
+            width: 100%;
+            @extend %hover-def;
+            @extend %nav-logo-med;
+            .img-100 {
+                width: 100%;
+            }
+        }
+        .head-flt-cont {
+            max-width: 920px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px 0 10px;
+            @include d-flex (flex,space-between,center);
+            @extend %head-flt-cont-med;
+            .head-flt-ul {
+                width: 100%;
+                margin: 0 auto;
+                @include d-flex (flex,space-between,center);
+                @extend %head-flt-ul-med;
+                .head-flt-li {
+                    @extend %head-flt-li-font;
+                    @extend %head-flt-li-med;
+                    text-align: center;
+                }
             }
         }
         .navi {
-            @extend %navi-size;
+            max-width: 580px;
+            width: 100%;
+            @include d-flex (flex,space-between,center);
             @extend %navi-med;
-            .nav-ul {
-                @extend %nav-ul-size;
-                @extend %nav-ul-med;
-                .nav-li {
-                    @include d-flex (flex,center,center);
-                    @extend %nav-li-med;
-                    .nav-a {
-                        @extend %nav-a-sty;
-                        &:hover {
-                            text-shadow: $size-01 $size-01 $size-028 $color02;
-                            @include transition-hover (all,0.4s,ease,0.4s);
-                        }
-                        @extend %nav-a-med;
-                    }
-                }
-            }
             @extend %nav-ul-open-med;
-            .soc-ul {
-                @extend %soc-ul-size;
+            .navi-cont {
+                width: 100%;
                 @include d-flex (flex,space-between,center);
-                @extend  %soc-ul-med;
-                .contact-ul {
-                    @extend %contact-ul-size;
-                    @include d-flex (flex,space-around,baseline);
-                    flex-direction: column;
-                    padding-bottom: $size-010;
-                    @extend %contact-ul-med;
-                }
-                .soc-a {
-                    @extend %soc-a-size;
-                    @extend %soc-a-font;
-                    @include d-flex (flex,space-between,flex-start);
-                    @extend %soc-a-med;
-                }
-                .soc-li {
-                    .fa {
-                        @extend %fa-font;
-                        padding-right: $size-010;
-                        &:hover {
-                            box-shadow: $size-05 $size-015 $size-028 $color02;
-                            @include border (0, solid, $color02);
-                            @include transition-hover (all,0.4s,ease,0.4s);
+                flex-direction: column;
+                @extend %navi-cont-med;
+                .search {
+                    width: 550px;
+                    height: 60px;
+                    @extend %border-srch;
+                    @extend %search-med;
+                    .element-search {
+                        @extend %element-search-size;
+                        .inp-search {
+                            width: 480px;
+                           height: 100%;
+                           border: none;
+                           vertical-align: bottom;
+                           padding: 0 25px;
+                           @extend %font-p-def;
+                           @extend %border-srch;
+                           @extend %inp-search-med;
                         }
-                    }
+                        .srch-fa {
+                            @extend %search-fa;
+                            vertical-align: bottom;
+                            padding: 0 20px 15px;
+                            @extend %srch-fa-med;
+                        }
+                   }
                 }
             }
-            @extend %open-soci-med;
         }
         .burger-icon {
             display: none;
-            @extend %burg-icon-med;
+            @extend %burger-icon-med;
         }
     }
-    //Section-1
-    .sect-bg {
-        margin: $size-0170 0 $size-025 0;
-    .slick-slider {
-        width: $size-95;
-        margin: 0 auto;
-        .vertical-center {
-            box-shadow: $size-01 $size-01 $size-015 $size-010 $color03;
-            @include border ($size-02, ridge, $color011);
-            border-radius: $size-010;
-            position: initial;
-            .cont-1-img-box {
-                @extend %cont-1-img-bnox-med;
-                .cont-img {
-                    width: $size-0;
-                }  
+}
+//Active-Header
+.active {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 55px;
+    z-index: 500;
+    background: #F4F6F6;
+    transition: all 0.6s;
+    display: flex;
+    flex-direction: column-reverse;
+    @extend %active-med;
+    .nav-box {
+        height: 60px;
+        @extend %nav-box-act-med;
+        .nav-logo {
+            max-width: 45px;
+            height: 50px;
+            @extend %nav-logo-act-med;
+            .img-100 {
+                width: 100%
             }
         }
-    }
-    .sect-conteiner-3 {
-        @extend %sect-cont-3-size;
-        background-color: $color010;
-        @include border ($size-02, solid, $color02);
-        box-shadow: $size-01 $size-01 $size-010 $size-01 $color03;
-        border-radius: $size-030;
-        @include d-flex (flex,space-evenly,center);
-        flex-direction: column;
-        @extend %sect-cont-3-med;
-        .cont-3-h2 {
-            @extend %cont-3-h2-font;
-        }
-        .cont-3-ul {
-            @extend %cont-3-ul-size;
-            @include d-flex (flex,space-around,center);
-            .cont-3-li {
-                .cont-3-a {
-                    @extend %cont-3-a-font;
-                }
+        .head-flt-cont {
+            display: none;
+            .open-socicon {
+                height: 50px;
+                padding: 5px 0 5px;
+                display: flex;
+                @extend %open-socicon-act-med;
             }
         }
-        .container-3 {
-            @extend %container-3-size;
-            @include d-flex (flex,space-around,center);
-            @extend %container-3-med;
-            .cont-3-box {
-                @extend %cont-3-box-size;
-                @extend %cont-3-box-bg;
-                @include d-flex (flex,flex-end,center);
-                flex-direction: column;
-                @include border ($size-01, solid, $color011);
-                box-shadow: $size-01 $size-01 $size-05 0 $color03;
-                border-radius: $size-010;
-                @extend %cont-3-box-med;
-                .cont-3-img {
-                    max-width: $size-0200;
-                    @extend %cont-3-img-med;
-                    .sect-3-img-box {
-                        width: $size0;
-                    }
-                }
-                .cont-3-h3 {
-                    color: $color03;
-                    font-size: 20px;
-                    font-family: 'ALKDots';
-                    margin: 25px auto;
-                    text-shadow: 1px 1px $color03;
-                    @media (max-width: 800px) {
-                        font-size: 15px;
+        .navi {
+            max-width: 1480px;
+            height: 50px;
+            @extend %navi-act-med;
+            .navi-cont {
+                width: 100%;
+                flex-direction: row-reverse;
+                @extend %navi-cont-act-med;
+                .search {
+                    width: 1410px;
+                    height: 40px;
+                    @extend %search-act-med;
+                    .element-search {
+                        .inp-search {
+                            width: 1320px;
+                            @extend %inp-search-act-med;
+                        }
+                        .srch-fa {
+                            padding: 0 27px 4px;
+                            @extend %srch-fa-act-med;
+                        }
                     }
                 }
             }
-        }
-        .sect-3-load {
-            color: $color02;
-        }
-    }
-    .sect-conteiner-2 {
-        text-align: center;
-        margin-top: 70px;
-        background-color: $color010;
-        @include border (2px, solid, $color02);
-        box-shadow: 1px 1px 10px 1px $color03;
-        border-radius: 20px;
-        .cont-2-h2 {
-            color: $color03;
-            font-size: 30px;
-            font-family: 'Poopins-B';
-            margin: 15px auto;
-            text-shadow: 1px 1px $color011;
-        }
-        .xazi {
-            margin: 0 auto;
-            max-width: 1080px;
-            width: 100%;
-            content: ' ';
-            color: #062D2D;
-            @include border (0.1px, solid, $color04);
-            box-shadow: 0 0 15px $color02;
-            @media (max-width: 1024px) {
-                width: 90%;
-            }
-            @media (max-width: 800px) {
-                width: 90%;
-            }
-            @media (max-width: 768px) {
-                width: 90%;
-            }
-            @media (max-width: 600px) {
-                width: 80%;
-            }
-            @media (max-width: 414px) {
-                width: 80%;
-            }
-            @media (max-width: 375px) {
-                width: 80%;
-            }
-            @media (max-width: 330px) {
-                width: 80%;
-            }
-        }
-        .cont {
-            width: 83%;
-            @include d-flex (flex,space-around,center);
-            margin: 40px auto;
-            border-radius: 10px;
-            position: initial;
-            .conteiner-2-box {
-                max-width: 220px;
-                width: $size0;
-                height: 270px;
-                margin: 0 10px;
-                box-shadow: 10px 10px 15px 1px $color03;
-                @include border (2px, solid, $color011);
-                border-radius: 10px;
-                .cont-2-text {
-                    max-width: 280px;
-                    width: $size0;
-                    height: 270px;
-                    @include d-flex (flex,space-around,baseline);
-                    flex-direction: column;
-                    background-image: url(../img/k1.PNG);
-                    background-repeat: repeat;
-                    background-position: right -20% bottom 0px, top left;
-                    background-size: auto 1px;
-                    .cont-2-sale {
-                        max-width: 180px;
-                        width: $size0;
-                        box-shadow: 1px 2px 4px 1px $color03;
-                        @include border (1px, solid, $color011);
-                        border-bottom-right-radius: 50px 38px;
-                        background-color: #B91A89;
-                        margin-top: 5px;
-                        .cont-2-box-h2 {
-                            font-size: 15px;
-                            font-family: 'Poppins-B';
-                            color: $color010;
-                            margin: 10px auto;
-                            @media (max-width: 800px) {
-                                font-size: 10px;
+            .soc-ul {
+                display: none;
+                .contact-ul {
+                    max-width: 60px;
+                    width: 100%;
+                    flex-direction: row;
+                    @extend %contact-ul-act-med;
+                    .soc-li {
+                        padding: 2px 0 0 0;
+                        @extend %soc-li-act-med;
+                        .fa {
+                            font-size: 22px;
+                            letter-spacing: 5px;
+                            @extend %soc-fa-act-med;
+                        }
+                    }
+                }
+                .contact-box {
+                    max-width: 470px;
+                    width: 100%;
+                    flex-direction: row;
+                    @extend %contact-box-act-med;
+                    .soc-li {
+                        padding: 2px 0 0 0;
+                        @extend %soc-li-act-med;
+                        .soc-a {
+                            font-size: 21px;
+                            @extend %soc-a-act-med;
+                            .fa {
+                                font-size: 22px;
+                                letter-spacing: 5px;
+                                @extend %soc-fa-act-med;
                             }
                         }
                     }
-                    .cont-2-img-box {
-                        
-                        .cont-2-text-img {
-                            width: $size0;
+                }
+            }
+        }
+        .burger-icon {
+            display: block;
+            color: $color-02;
+            font-size: 30px;
+            top: 13px;
+            right: 50px;
+            cursor: pointer;
+            @extend %burger-icon-act-med;
+        }
+    }
+}
+.open-head-size {
+    height: 120px;
+    flex-direction: column;
+    @extend %open-head-size-act-med;
+}
+//----------
+//Section-1
+.sect-1 {
+    @extend %sect-1-size;
+    position: static;
+    @extend %sect-1-med;
+    .sect-1-cont {
+        z-index: 1000;
+        @extend %sect-1-cont-med;
+        .sect-1-box {
+            @extend %sect-1-box-size;
+            @extend %sect-1-box-med;
+            .slick-dots {
+                bottom: 25px;
+                @extend %slick-dots;
+                @extend %slick-dots-med;
+            }
+            .sect-1-img {
+                @extend %sect-1-img-size;
+                @extend %border-def;
+                @extend %sect-1-img-med;
+            }
+        }
+    }
+}
+//Section-2
+.sect-2 {
+    @extend %sect-2-size;
+    @include d-flex (flex,space-around,center);
+    @extend %border-def;
+    flex-direction: column;
+    @extend %sect-2-med;
+    .pro-navi {
+        @extend %pro-navi-def;
+        @extend %border-def;
+        @include d-flex (flex,end,center);
+        @extend %pro-navi-med;
+        .pro-fa {
+            @extend %pro-fa-def;
+            @extend %pro-navi-ico-fe;
+            @extend %pro-fa-med;
+        }
+        .pro-navi-href {
+            .pro-navi-h4 {
+                @extend %pro-navi-h4-def;
+                @extend %pro-navi-fe;
+                @extend %pro-navi-h4-med;
+            }
+        }
+    }
+    .sect-2-big {
+        @extend %sect-2-big-size;
+        @include d-flex (flex,space-around,flex-start);
+        @extend %sect-2-big-med;
+        .sect-2-flt {
+            max-width: 550px;
+            width: 100%;
+            @include d-flex (flex,end,center);
+            flex-direction: column;
+            position: sticky;
+            top: 110px;
+            @extend %sect-2-flt-med;
+            .cont-1-img-text {
+                @extend %cont-1-img-text-size;
+                @include d-flex (flex,space-between,end);
+                @extend %cont-1-img-text-med;
+                .flt-icon {
+                    @extend %flt-icon-size;
+                    @include d-flex (flex,space-between,center);
+                    @extend %flt-icon-med;
+                    .flt-icon-box {
+                        width: 100%;
+                        @extend %flt-icon-box-med;
+                    }
+                }
+                .flt-ico-nm {
+                    @extend %flt-ico-nm-size;
+                    text-align: end;
+                    @extend %flt-ico-nm-2-med;
+                    .ico-nm-h2 {
+                        font-size: 25px;
+                        @extend %ico-nm-h2-font;
+                        @extend %ico-nm-h2-med;
+                    }
+                    .xazi {
+                        @extend %xazi;    
+                    }
+                }
+            }
+            .s2-flt-ul {
+                @extend %s2-flt-ul-size;
+                @extend %s2-flt-ul-med;
+                .s2-flt-li {
+                    @extend %s2-flt-li-size;
+                    @extend %s2-flt-li-font;
+                    @extend %border-def;
+                    @extend %s2-flt-li-fe;
+                    @include d-flex (flex,space-between,center);
+                    @extend %s2-flt-li-med;
+                    .flt-li-box {
+                        @extend %flt-li-box-size;
+                        @extend %flt-li-box-med;
+                        margin: 10px;
+                        .flt-li-img {
+                            @extend %flt-li-img-size;
+                            @extend %flt-li-img-med;
                         }
                     }
-                    .cont-2-p {
-                        font-size: 15px;
-                        font-family: 'Poppins-R';
-                        color: $color011;
-                    }
-                    .cont-2-cost {
-                        margin: 10px;
-                        .cont-2-h4 {
-                            font-size: 15px;
-                            font-family: 'Poppins-B';
-                            color: #B91A89;
-                        }   
-                    }
-                }
-                .cont-2-img {
-                    
-                    .sect-2-img-box {
-                        width: $size0;
-                    }
                 }
             }
         }
-    }
-    }
-    //Section 2
-    .sect-2-bg {
-        .sect-2-cont-3 {
-            height: 270px;
-            @include d-flex (flex,space-around,center);
+        .sect-2-box {
+            @extend %sect-2-box-size;
+            @include d-flex (flex,space-between,center);
             flex-direction: column;
-            margin: 35px 0;
-            background-color: $color010;
-            @include border (2px, solid, $color02);
-            box-shadow: 1px 1px 10px 1px $color03;
-            border-radius: 20px;
-        .sect-2-cont-3-h2 {
-            color: $color03;
-            text-shadow: 1px 1px $color011;
-            font-size: 30px;
-            font-family: 'Poppins-B';
-            margin-top: 5px;
+            @extend %sect-2-box-med;
+            .cont-1-list {
+                @extend %cont-1-list-size;
+                @include d-flex (flex,space-evenly,center);
+                @extend %cont-1-list-med;
+                .cont-1-list-box {
+                    background-color: $color-01;
+                    @extend %cont-1-list-box-size;
+                    @include d-flex (flex,space-between,center);
+                    flex-direction: column;
+                    @extend %cont-1-list-box-med;
+                    .cont-1-img {
+                        @extend %cont-1-img-size;
+                        @include d-flex (flex,center,center);
+                        flex-direction: column;
+                        @extend %cont-1-img-med;
+                        .cont-1-img-hrf {
+                            @extend %cont-1-img-hrf-size;
+                            @include d-flex (flex,center,end);
+                            @extend %cont-1-img-href-ie;
+                            @extend %cont-1-img-hrf-med;
+                            .cont-1-img-box {
+                                @extend %cont-1-img-box-size;
+                                @extend %cont-1-img-box-med;
+                            }
+                        }
+                        .cont-1-img-text {
+                            @extend %cont-1-img-text-size;
+                            @include d-flex (flex,space-between,end);
+                            @extend %cont-1-img-text-med;
+                            .flt-icon {
+                                @extend %flt-icon-size;
+                                @include d-flex (flex,space-between,center);
+                                @extend %flt-icon-med;
+                                .flt-icon-box {
+                                    width: 100%;
+                                    @extend %flt-icon-box-med;
+                                }
+                            }
+                            .flt-ico-nm {
+                                @extend %flt-ico-nm-size;
+                                text-align: end;
+                                @extend %flt-ico-nm-2-med;
+                                .ico-nm-h2 {
+                                    font-size: 25px;
+                                    @extend %ico-nm-h2-font;
+                                    @extend %flt-ico-nm-h2-fe;
+                                    @extend %ico-nm-h2-med;
+                                }
+                                .xazi {
+                                    @extend %xazi;    
+                                }
+                            }
+                        }
+                    }
+                    .cont-1-fit {
+                        @extend %cont-1-fit-size;
+                        @extend %cont-1-fit-med;
+                        .cont-1-fit-ul {
+                            @extend %cont-1-fit-ul-size;
+                            @include d-flex (flex,space-around,end);
+                            flex-direction: column;
+                            @extend %cont-1-fit-ul-med;
+                            .cont-1-fit-li {
+                                @extend %cont-1-fit-li-size;
+                                @include d-flex (flex,space-between,center);
+                                .cont-1-fit-a {
+                                    @extend %cont-1-fit-li-font;
+                                    @extend %font-hover-def;
+                                    @extend %cont-1-fit-a-med;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-        .xazi {
-            margin: 0 auto;
-            max-width: 920px;
-            width: 100%;
-            content: ' ';
-            color: #062D2D;
-            @include border (0.1px, solid, $color04);
-            box-shadow: 0 0 15px $color02;
-            @media (max-width: 1024px) {
-                width: 90%;
+    }
+    .sect-2-sm {
+        @extend %sect-2-sm-size;
+        @include d-flex (flex,space-between,center);
+        @extend %sect-2-sm-med;
+        .cont-1-sm-box {
+            @extend %cont-1-sm-box-size;
+            @include d-flex (flex,flex-end,center);
+            background-color: $color-010;
+            @extend %border-def;
+            @extend %cont-1-sm-box-med;
+            .cont-1-sm-img {
+                margin-left: 50px;
+                max-width: 220px;
+                @extend %cont-1-sm-img-med;
+                .cont-1-sm-img-box {
+                    width: 100%;
+                    @extend %cont-1-sm-img-box-med;
+                }
             }
-            @media (max-width: 800px) {
-                width: 90%;
-            }
-            @media (max-width: 768px) {
-                width: 90%;
-            }
-            @media (max-width: 600px) {
-                width: 80%;
-            }
-            @media (max-width: 414px) {
-                width: 80%;
-            }
-            @media (max-width: 375px) {
-                width: 80%;
-            }
-            @media (max-width: 330px) {
-                width: 80%;
+            .cont-1-sm-h3 {
+                @extend %cont-1-sm-h3-size;
+                @extend %font-h3-def;
+                @extend %cont-1-sm-h3-med;
             }
         }
-        .sect-2-cont-3-wrap {
-            max-width: 1050px;
-            width: 100%;
-            margin: 35px auto;
-            @include d-flex (flex,space-around,center);
-            .sect-2-cont-3-box {
-                max-width: 320px;
+    }
+}
+//Section-3
+.sect-3 {
+    @extend %sect-3-size;
+    text-align: center;
+    background-color: $color-01;
+    @extend %sect-3-med;
+    .cont-1-img-text {
+        @extend %cont-1-img-text-size;
+        @include d-flex (flex,space-between,end);
+        @extend %cont-1-img-text-med;
+        .flt-icon {
+            @extend %flt-icon-size;
+            @include d-flex (flex,space-between,center);
+            @extend %flt-icon-med;
+            .flt-icon-box {
                 width: 100%;
-                height: 140px;
-                @include d-flex (flex,space-around,center);
-                @include border (2px, solid, $color011);
-                box-shadow: 1px 1px 10px 1px $color03;
-                border-radius: 20px;
-                background-image: url(../img/k1.PNG);
-                background-repeat: repeat;
-                background-position: right -20% bottom 0px, top left;
-                background-size: auto 1px;
-                @media (max-width: 900px) {
-                    width: 90%;
-                    margin: 0 auto;
-                }
-                .sect-2-cont-3-img {
-                    max-width: 150px;
-                    @media (max-width: 800px) {
-                        max-width: 120px;
-                    }
-                    .sect-2-cont-3-img-box {
-                        width: $size0;
-                    }
-                }
-                .sect-2-cont-3-h3 {
-                    color: $color03;
-                }
-                .sect-2-cont-3-p {
-                    color: $color03;
-                }
+                @extend %flt-icon-box-med;
+            }
+        }
+        .flt-ico-nm {
+            @extend %flt-ico-nm-size;
+            text-align: end;
+            @extend %flt-ico-nm-2-med;
+            .ico-nm-h2 {
+                font-size: 25px;
+                @extend %ico-nm-h2-font;
+                @extend %ico-nm-h2-med;
+            }
+            .xazi {
+                @extend %xazi;    
             }
         }
     }
-        .sect-2-conteiner {
-        background-color: $color02;
-        max-width: 1920px;
-        width: $size0;
-        height: 330px;
-        margin-bottom: 20px;
-        @include d-flex (flex,space-evenly,center);
-        box-shadow: 15px 1px 15px 3px $color03;
-        @include border (2px, solid, $color011);
-        border-radius: 20px;
-        .sect-2-text {
-            max-width: 330px;
-            width: $size0;
-            height: 224px;
-            @include d-flex (flex,space-around,baseline);
+    .sect-3-cont {
+        @extend %sect-3-cont-size;
+        @include d-flex (flex,space-around,center);
+        @extend %sect-3-cont-med;
+        .slick-dots {
+            @extend %slick-dots;
+        }
+        .cont-2-box {
+            @extend %cont-2-box-size;
+            @include d-flex (flex,space-between,center);
             flex-direction: column;
-            .sect-2-h2 {
-                color: $color01;
-                font-size: 36px;
-                font-family: 'Poopins-B';
+            @extend %cont-2-box-med;
+            .cont-2-text {
+                @extend %cont-2-text-size;
+                @include d-flex (flex,space-around,baseline);
+                flex-direction: column;
+                @extend %cont-2-text-med;
+                .cont-2-img-box {
+                    .cont-2-text-img {
+                        width: $size-0-def;
+                        height: 260px;
+                        @extend %cont-2-text-img-med;
+                    }
+                }
             }
-            .sect-2-p {
-                color: $color01;
-                font-size: 14px;
-                font-family: 'Poppins-R';
-            }
-            .sect-2-shop {
-                .sect-2-h4 {
-                    color: $color01;
-                    font-size: 14px;
-                    font-family: 'Poppins-R';
+            .cont-2-p-box {
+                @extend %cont-2-p-box-size;
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                @extend %cont-2-p-box-med;
+                .cont-2-p {
+                    margin-bottom: 5px;
+                    @extend %cont-2-p-font;
+                    @extend %cont-2-p-med;
+                }
+                .cont-2-cost {
+                    margin: 15px 0 10px 200px;
+                    @extend %cont-2-cost-med;
+                    .cont-2-h4 {
+                        @extend %cont-2-h4-font;
+                        @extend %cont-2-h4-med;
+                    }
                 }
             }
         }
-        .sect-2-img {
-            max-width: 340px;
-            margin-bottom: 23px;
-            .sect-2-img-box {
-                width: $size0;
+    }
+}
+//Section-BanBox
+.sect-banbox {
+    @extend %sect-banbox-size;
+    @include d-flex (flex,space-evenly,center);
+    background-color: $color-01;
+    flex-direction: column;
+    @extend %sect-banbox-med;
+    .banbox-cont {
+        @extend %banbox-cont-size;
+        @include d-flex (flex,space-around,center);
+        @extend %banbox-cont-med;
+        .banbox-box {
+            @extend %banbox-box-size;
+            @extend %border-def;
+            @include d-flex (flex,flex-end,flex-end);
+            @extend %banbox-box-med;
+            .consol {
+                @extend %consol-size;
+                @extend %consol-med;
+                .consol-ul {
+                    @include d-flex (flex,center,center);
+                    flex-direction: column;
+                    .consol-li {
+                        padding: 5px 0;
+                        @extend %consol-li-font;
+                        @extend %consol-li-dec;
+                        @extend %consol-li-med;
+                    }
+                }
+            }
+            .box-box-ico {
+                @extend %box-box-ico-size;
+                @include d-flex (flex,flex-end,center);
+                @extend %box-box-ico-med;
+                .box-img-ico {
+                    @extend %box-img-ico-size;
+                    @extend %box-img-ico-med;
+                }
+            }
+            .box-box {
+                @extend %box-box-size;
+                @include d-flex (flex,flex-end,center);
+                @extend %box-box-med;
+                .box-img {
+                    @extend %box-img-size;
+                    @extend %box-img-med;
+                }
             }
         }
+    }
+    .banbox-cont-2 {
+        @extend %banbox-cont-2-size;
+        @include d-flex (flex,space-around,center);
+        @extend %banbox-cont-2-med;
+        .sect-ban-cont {
+            @extend %sect-ban-cont-size;
+            @extend %border-def;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
+            background-color: $color-010;
+            @extend %sect-ban-cont-med;
+            .tv-box {
+                @extend %tv-box-size;
+                @include d-flex (flex,center,center);
+                @extend %tv-box-med;
+                .tv {
+                    @extend %tv-size;
+                    @extend %tv-med;
+                }
+            }
+            .tv-text-cont {
+                @extend %tv-text-cont-size;
+                @include d-flex (flex,space-between,center);
+                @extend %tv-text-cont-med;
+                .tv-icon {
+                    max-width: 80px;
+                    @include d-flex (flex,space-between,center);
+                    .tv-icon-box {
+                       width: 100%;
+                       @extend %tv-icon-box-med;
+                    }
+                }
+                .tv-ico-nm {
+                    @extend %tv-ico-nm-size;
+                    text-align: end;
+                    @extend %tv-ico-nm-med;
+                    .tv-ban-h1 {
+                        @extend %tv-ban-h1-size;
+                        @extend %sect-ban-h1-font;
+                        @extend %tv-ban-h1-med;
+                    }
+                    .xazi {
+                        @extend %xazi;
+                    }
+                }
+            }
+        }
+        .sect-ban-cont-2 {
+            @extend %sect-ban-cont-2-size;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
+            @extend %sect-ban-cont-2-med;
+            .sect-ban-box {
+                @extend %sect-ban-box-size;
+                @extend %border-def;
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                @extend %sect-ban-box-med;
+                .ban-box-img {
+                    @extend %ban-box-img-size;
+                    background-color: $color-010;
+                    @extend %ban-box-img-med;
+                    .cinema {
+                        @extend %cinema-size;
+                        @extend %cinema-med;
+                    }
+                }
+                .tvh-text-cont {
+                    @extend %tvh-text-cont-size;
+                    @include d-flex (flex,space-between,center);
+                    @extend %tvh-text-cont-med;
+                    .tvh-icon {
+                        max-width: 55px;
+                        @include d-flex (flex,space-between,center);
+                        .tvh-icon-box {
+                           width: 100%;
+                           @extend %tvh-icon-box-med;
+                        }
+                    }
+                    .tvh-ico-nm {
+                        @extend %tvh-ico-nm-size;
+                        text-align: end;
+                        @extend %tvh-ico-nm-med;
+                        .tvh-ban-h1 {
+                            @extend %tvh-ban-h1-size;
+                            @extend %tvh-ban-h1-font;
+                            @extend %tvh-ban-h1-med;
+                        }
+                        .xazi {
+                            @extend %xazi;
+                        }
+                    }
+                }
+            }
         }
     }
-    //Footer
-    .foot-bg {
-    background-color: $color010;
+}
+//Section-4
+.sect-4 {
+    @extend %sect-4-size;
+    background-color: $color-01;
+    flex-direction: column;
+    @include d-flex (flex,space-around,center);
+    @extend %sect-4-med;
+    .cont-1-img-text {
+        @extend %cont-1-img-text-size;
+        @include d-flex (flex,space-between,end);
+        @extend %cont-1-img-text-med;
+        .flt-icon {
+            @extend %flt-icon-size;
+            @include d-flex (flex,space-between,center);
+            @extend %flt-icon-med;
+            .flt-icon-box {
+                width: 100%;
+                @extend %flt-icon-box-med;
+            }
+        }
+        .flt-ico-nm {
+            @extend %flt-ico-nm-size;
+            text-align: end;
+            @extend %flt-ico-nm-2-med;
+            .ico-nm-h2 {
+                font-size: 25px;
+                @extend %ico-nm-h2-font;
+                @extend %ico-nm-h2-med;
+            }
+            .xazi {
+                @extend %xazi;    
+            }
+        }
+    }
+    .sect-4-cont {
+        @extend %sect-4-cont-size;
+        @include d-flex (flex,space-between,center);
+        @extend %sect-4-cont-med;
+        .slick-dots {
+            bottom: -40px;
+            @extend %slick-dots;
+        }
+        .sect-4-box {
+            @extend %sect-4-box-size;
+            @include d-flex (flex,space-around,center);
+            @extend %border-def;
+            background-color: $color-01;
+            @extend %sect-4-box-med;
+            .sect-4-img {
+                @extend %sect-4-img-size;
+                background-color: $color-010;
+                @include d-flex (flex,space-around,center);
+                @extend %sect-4-img-med;
+                .sect-4-img-box {
+                    width: 100px;
+                }
+            }
+            .sect-4-text {
+                @extend %sect-4-text-size;
+                @extend %sect-4-text-med;
+                .sect-4-h3 {
+                    margin: 10px;
+                    @extend %sect-4-h3-font;
+                }
+                .sect-4-p {
+                    @extend %sect-4-p-size;
+                    @extend %sect-4-p-font;
+                    @extend %sect-4-p-med;
+                }
+            }
+        }
+    }
+}
+//Section-Banner
+.sect-baner {
+    @extend %sect-baner-size;
+    @include d-flex (flex,space-evenly,center);
+    @extend %border-def;
+    @extend %bg-banner;
+    @extend %sect-baner-med;
+    .sect-baner-text {
+        @extend %sect-baner-text-size;
+        @include d-flex (flex,space-around,baseline);
+        flex-direction: column;
+        @extend %sect-baner-text-med;
+        .sect-baner-h1 {
+            @extend %sect-baner-h1-font;
+        }
+        .sect-baner-p {
+            @extend %sect-baner-p-font;
+        }
+        .sect-baner-shop {
+            .sect-baner-h4 {
+                @extend %sect-baner-h4-font;
+            }
+        }
+    }
+    .sect-baner-img {
+        @extend %sect-baner-img-size;
+        .sect-baner-img-box {
+            width: $size-0-def;
+            @extend %sect-baner-img-box-med;
+        }
+    }
+}
+//Futer
+.foot-bg {
+    background-color: $color-01;
     @include d-flex (flex,space-around,center);
     flex-direction: column;
-    @include border (2px, solid, $color02);
-    box-shadow: 1px 1px 10px 1px $color03;
-    border-radius: 5px;
     margin-top: 40px;
-    .foot-container {
-        max-width: $size02;
-        width: $size0;
-        @include d-flex (flex,space-around,baseline);
-        @media (max-width: 800px) {
-            width: 90%;
-        }
-        @media (max-width: 600px) {
-            width: 80%;
-        }
-        @media (max-width: 414px) {
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-        @media (max-width: 375px) {
-            flex-wrap: wrap-reverse;
-        }
-        @media (max-width: 330px) {
-            flex-wrap: wrap-reverse;
-        }
-        .foot-box {
-            max-width: 310px;
-            width: 100%;
-            height: 155px;
-            @include d-flex (flex,space-evenly,center);
-            flex-direction: column;
-            text-align: center;
-            @media (max-width: 800px) {
-                align-items: center;
+    @extend %border-def;
+    @extend %foot-bg-med;
+    .foot-lok {
+        @extend %foot-lok-size;
+        @include d-flex (flex,space-around,center);
+        flex-direction: row-reverse;
+        .foot-cont {
+            @extend %foot-cont-size;
+            @include d-flex (flex,space-between,end);
+            @extend %foot-cont-med;
+            .foot-box {
+                @extend %foot-box-size;
+                @include d-flex (flex,space-evenly,center);
+                flex-direction: column;
                 text-align: center;
-            }
-            @media (max-width: 768px) {
-                align-items: center;
-                text-align: center;
-            }
-            @media (max-width: 600px) {
-                text-align: center;
-                align-items: center;
-            }
-            @media (max-width: 414px) {
-                text-align: center;
-                align-items: center;
-            }
-            @media (max-width: 375px) {
-                text-align: center;
-                align-items: center;
-            }
-            @media (max-width: 330px) {
-                text-align: center;
-                align-items: center;
-            }
-            .foot-h2 {
-                font-size: 20px;
-                color: $color03;
-                font-family: 'ArchyEDT-Bold';
-                text-shadow: 1px 1px $color011;
-            }
-            .foot-p {
-                max-width: $size03;
-                width: $size0;
-                color: $color03;
-                font-family: 'BPG Nino Medium Caps';
-                text-shadow: 1px 1px $color011;
-            }
-            .foot-ul {
-                max-width: $size04;
-                width: $size0;
-                @include d-flex (flex,space-around,center);
-                .foot-li {
-                    .fa {
-                        font-size: 20px;
-                        color: $color02;
-                        &:hover {
-                            box-shadow: 5px 15px 28px $color02;
-                            @include border (0, solid, $color02);
-                            @include transition-hover (all,0.4s,ease,0.4s);
+                @extend %foot-box-med;
+                .foot-h1 {
+                    padding-bottom: 20px;
+                    @extend %foot-h1-font;
+                    @extend %foot-h1-med;
+                }
+                .foot-p {
+                    padding: 10px 0 20px 0;
+                    @extend %foot-p-size;
+                    @extend %foot-p-font;
+                    @extend %foot-p-med;
+                }
+                .foot-ul-fa {
+                    @extend %foot-ul-fa-size;
+                    @include d-flex (flex,space-around,center);
+                    .foot-li-fa {
+                        padding: 5px 0;
+                        @extend %foot-li-fa-font;
+                        .fa {
+                            @extend %font-fa-def;
+                            @extend %fa-med;
                         }
                     }
-                }  
-            }
-            .cont-p {
-                max-width: $size04;
-                width: $size0;
-                height: 55px;
-                @include d-flex (flex,space-around,center);
-                flex-direction: column;
-                @media (max-width: 800px) {
-                    width: 140px;
                 }
-                @media (max-width: 600px) {
-                    width: 140px;
+                .foot-ul {
+                    @extend %foot-ul-size;
+                    @include d-flex (flex,space-around,center);
+                    flex-direction: column;
+                    .foot-li {
+                        padding: 5px 0;
+                        @extend %foot-li-font;
+                        @extend %foot-li-med;
+                        .fa {
+                            @extend %font-fa-def;
+                        }
+                    }
                 }
-                @media (max-width: 414px) {
-                    width: 150px;
-                }
-                @media (max-width: 375px) {
-                    width: 150px;
-                }
-                @media (max-width: 330px) {
-                    width: 150px;
-                }
-                .li-box {
-                    max-width: 150px;
-                    width: 100%;
+                .cont-p {
                     @include d-flex (flex,space-between,center);
-                    @media (max-width: 768px) {
-                        width: 140px;
-                    }
-                    .fa-foot {
-                        color: $color02;
-                        font-size: 15px;
-                    }
-                    .contact {
-                        font-size: 14px;
-                        color: $color03;
-                        font-family: 'BPG Nino Medium Caps';
-                        text-shadow: 1px 1px $color011;
+                    flex-direction: column;
+                    .li-box {
+                        padding: 10px 0;
+                        @extend %li-box-med;
+                        .fa {
+                            @extend %font-fa-def;
+                            @extend %fa-med;
+                        }
+                        .contact {
+                            @extend %contact-font;
+                            @extend %hover-def;
+                            @extend %contact-med;
+                        }
                     }
                 }
             }
         }
     }
     .xazi {
-        margin:25px 0 25px 0;
-        max-width: 1080px;
-        width: 100%;
-        content: ' ';
-        color: #062D2D;
-        @include border (0.1px, solid, $color04);
-        box-shadow: 0 0 15px $color02;
-        @media (max-width: 1024px) {
-            width: 90%;
-        }
-        @media (max-width: 800px) {
-            width: 90%;
-        }
-        @media (max-width: 768px) {
-            width: 90%;
-        }
-        @media (max-width: 600px) {
-            width: 80%;
-        }
-        @media (max-width: 414px) {
-            width: 80%;
-        }
-        @media (max-width: 375px) {
-            width: 80%;
-        }
-        @media (max-width: 330px) {
-            width: 80%;
-        }
+        @extend %xazi;
+        @extend %xazi-med;
     }
     .avtori {
-        max-width: 1080px;
-        width: $size0;
-        padding-bottom: 20px;
+        @extend %avtori-size;
         @include d-flex (flex,space-between,center);
-        @media (max-width: 1024px) {
-            width: 85%;
-        }
-        @media (max-width: 800px) {
-            width: 90%;
-        }
-        @media (max-width: 768px) {
-            width: 90%;
-        }
-        @media (max-width: 600px) {
-            flex-direction: column;
-        }
-        @media (max-width: 414px) {
-            height: 55px;
-            flex-direction: column;
-        }
-        @media (max-width: 375px) {
-            height: 55px;
-            flex-direction: column;
-        }
-        @media (max-width: 330px) {
-            height: 55px;
-            flex-direction: column;
-        }
-        @media (max-width: 320px) {
-            text-align: center;
-        }
+        @extend %avtori-med;
         .avtori-p {
-            font-size: 12px;
-            color: $color03;
-            font-family: 'BPG Nino Medium Caps';
-            text-shadow: 1px 1px $color011;
-            @media (max-width: 600px) {
-                padding-bottom: 10px;
-            }
+            @extend %avtori-p-font;
+            @extend %avtori-p-med;
         }
-        .copy {
-            font-size: 12px;
-            color: $color03;
-            font-family: 'BPG Nino Medium Caps';
+        .avtori-a {
+            @extend %avtori-a-font;
+            @extend %avtori-a-med;
         }
-    }
-    .foot-conteiner-2 {
-        max-width: $size02;
-        width: $size0;
-        @include d-flex (flex,space-around,baseline);
-        @media (max-width: 768px) {
-            width: 90%;
-        }
-        @media (max-width: 600px) {
-            flex-wrap: wrap;
-            
-        }
-        @media (max-width: 414px) {
-            flex-direction: column;
-            align-items: center;
-        }
-        @media (max-width: 375px) {
-            flex-direction: column;
-            align-items: center;
-        }
-        @media (max-width: 330px) {
-            flex-direction: column;
-            align-items: center;
-        }
-        .foot-2-box {
-            height: $size04;
-            @include d-flex (flex,space-evenly,center);
-            flex-direction: column;
-            @media (max-width: 600px) {
-                width: 250px;
-                align-items: center;
-            }
-            @media (max-width: 414px) {
-                align-items: center;
-                &:after{
-                    margin:25px 0 25px 0;
-                    max-width: 1080px;
-                    width: 100%;
-                    content: ' ';
-                    color: #062D2D;
-                    @include border (0.1px, solid, $color04);
-                    box-shadow: 0 0 15px $color02;
-                }
-            }
-            @media (max-width: 375px) {
-                align-items: center;
-                &:after{
-                    margin:25px 0 25px 0;
-                    max-width: 1080px;
-                    width: 100%;
-                    content: ' ';
-                    color: #062D2D;
-                    @include border (0.1px, solid, $color04);
-                    box-shadow: 0 0 15px $color02;
-                }
-            }
-            @media (max-width: 330px) {
-                align-items: center;
-                &:after{
-                    margin:25px 0 25px 0;
-                    max-width: 1080px;
-                    width: 100%;
-                    content: ' ';
-                    color: #062D2D;
-                    @include border (0.1px, solid, $color04);
-                    box-shadow: 0 0 15px $color02;
-                }
-            }
-            .foot-2-h2 {
-                font-size: 20px;
-                color: $color03;
-                font-family: 'ArchyEDT-Bold';
-                padding-bottom: 20px;
-                text-shadow: 1px 1px $color011;
-            }
-            .foot-2-ul {
-                height: 130px;
-                @include d-flex (flex,space-around,center);
-                flex-direction: column;
-                @media (max-width: 600px) {
-                    align-items: center;
-                }
-                @media (max-width: 414px) {
-                    align-items: center;
-                }
-                @media (max-width: 375px) {
-                    align-items: center;
-                }
-                @media (max-width: 330px) {
-                    align-items: center;
-                }
-                .foot-2-li {
-                    font-size: 14px;
-                    color: $color03;
-                    font-family: 'BPG Nino Medium Caps';
-                    text-shadow: 1px 1px $color011;
-                }
-            }
-        }
-    }
-    
     }
 }
+
+
+
+
