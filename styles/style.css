@@ -292,7 +292,7 @@ a {
 .sect-2 .sect-2-big .sect-2-flt .cont-1-img-text .flt-icon, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-icon, .sect-3 .cont-1-img-text .flt-icon, .sect-4 .cont-1-img-text .flt-icon {
   max-width: 60px; }
 
-.sect-2 .sect-2-big .sect-2-flt .cont-1-img-text .flt-ico-nm, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-ico-nm, .sect-3 .cont-1-img-text .flt-ico-nm, .sect-4 .cont-1-img-text .flt-ico-nm {
+.sect-2 .sect-2-big .sect-2-flt .cont-1-img-text .flt-ico-nm, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-ico-nm, .sect-3 .cont-1-img-text .flt-ico-nm, .sect-4 .cont-1-img-text .flt-ico-nm, .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm {
   width: 100%;
   padding-top: 7px; }
 
@@ -1336,10 +1336,6 @@ a {
             .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-icon .pc-flt-icon-box {
               width: 100%; }
           .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm {
-            max-width: 215px;
-            width: 100%;
-            height: 65px;
-            padding-top: 5px;
             text-align: end; }
             .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm .pc-ico-nm-h2 {
               margin: 0 15px 20px 0; }
