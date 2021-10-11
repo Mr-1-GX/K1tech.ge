@@ -264,7 +264,7 @@
     }
 }
 .open-head-size {
-    height: 120px;
+    height: 1090px;
     flex-direction: column;
     @extend %open-head-size-act-med;
 }
@@ -303,7 +303,7 @@
     .pro-navi {
         @extend %pro-navi-def;
         @extend %border-def;
-        @include d-flex (flex,end,center);
+        @include d-flex (flex,flex-start,center);
         @extend %pro-navi-med;
         .pro-fa {
             @extend %pro-fa-def;

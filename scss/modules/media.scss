@@ -1034,7 +1034,7 @@
 }
 %open-head-size-act-med {
     @media (max-width: 1600px) {
-        height: 105px;
+        height: 1090px;
         flex-direction: column;
     }
     @media (max-width: 962px) {
@@ -1306,7 +1306,7 @@
 }
 %flt-icon-med {
     @media (max-width: 1600px) {
-        max-width: 48px;
+        max-width: 60px;
     }
     @media (max-width: 1366px) {
         max-width: 44px;
@@ -1677,7 +1677,6 @@
 }
 %cont-1-img-text-med {
     @media (max-width: 1600px) {
-        height: 65px;
         padding: 1px 15px;
     }
     @media (max-width: 1440px) {
@@ -1694,7 +1693,6 @@
 %flt-ico-nm-2-med {
     @media (max-width: 1600px) {
         width: 96%;
-        height: 35px;
         padding-top: 7px;
     }
     @media (max-width: 962px) {
