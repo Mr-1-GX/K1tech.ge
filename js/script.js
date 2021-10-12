@@ -15,7 +15,17 @@ window.onscroll = function(){
   }else {
     header.classList.remove('active');
   }
-}
+};
+ const demoBanner = document.querySelector(".demo-cont")
+ const demoBtn = document.querySelector(".demo-cont button")
+
+ setTimeout(() => {
+    demoBanner.classList.add("activ");
+ },3000);
+
+ demoBtn.addEventListener("click", () => {
+   demoBanner.classList.remove("activ");
+ });
 
 
 

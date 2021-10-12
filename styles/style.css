@@ -1227,6 +1227,41 @@ a {
   .sect-baner .sect-baner-img .sect-baner-img-box {
     width: 100%; }
 
+.demo-cont {
+  background: #00A1C2;
+  padding: 8px 32px;
+  border-radius: 8px 8px 0 0;
+  position: fixed;
+  left: 24px;
+  right: 24px;
+  bottom: -100%;
+  margin: 0 auto;
+  height: 300px;
+  transition: 400ms; }
+  .demo-cont P {
+    padding: 20px 60px;
+    margin: 16px 0;
+    color: #F4F6F6;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer; }
+  .demo-cont button {
+    border: 0;
+    padding: 20px 60px;
+    margin: 16px 0;
+    background: #F4F6F6;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 -8px 16px #565555; }
+
+.demo-cont.activ {
+  bottom: 0; }
+
 .foot-bg {
   background-color: #F4F6F6;
   display: flex;
