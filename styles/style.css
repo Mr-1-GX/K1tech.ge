@@ -130,7 +130,7 @@ a {
   border: 0.1px solid #A9CCE3;
   box-shadow: 0 0 13px #00A1C2; }
 
-.sect-baner-s, .head-cont, .sect-1 .sect-1-cont .sect-1-box .sect-1-img, .sect-2, .sect-2 .pro-navi, .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li, .sect-2 .sect-2-sm .cont-1-sm-box, .sect-banbox .banbox-cont .banbox-box, .sect-banbox .banbox-cont-2 .sect-ban-cont, .sect-banbox .banbox-cont-2 .sect-ban-cont-2 .sect-ban-box, .sect-4 .sect-4-cont .sect-4-box, .sect-baner, .foot-bg, .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-best .slide-4-box, .sect-2-big .pc-baner-s, .k1-pc-flt-li, .k1-flt-li, .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm {
+.sect-baner-s, .head-cont, .sect-1 .sect-1-cont .sect-1-box .sect-1-img, .sect-2, .sect-2 .pro-navi, .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li, .sect-2 .sect-2-sm .cont-1-sm-box, .sect-3, .sect-3 .cont-1-img-text, .sect-banbox .banbox-cont .banbox-box, .sect-banbox .banbox-cont-2 .sect-ban-cont, .sect-banbox .banbox-cont-2 .sect-ban-cont-2 .sect-ban-box, .sect-4, .sect-4 .cont-1-img-text, .sect-4 .sect-4-cont .sect-4-box, .sect-baner, .foot-bg, .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-best .slide-4-box, .sect-2-big .pc-baner-s, .k1-pc-flt-li, .k1-flt-li, .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm {
   border-radius: 3px;
   border: 1px solid #85929E;
   box-shadow: 0 0 0 1px #ECF0F1; }
@@ -399,16 +399,17 @@ a {
 .sect-3 {
   max-width: 1900px;
   width: 100%;
+  height: 890px;
   margin: 35px auto 25px;
   padding: 2px 0 30px 0; }
 
 .sect-3 .sect-3-cont {
   max-width: 1820px;
-  height: 445px;
+  height: 720px;
   margin: 10px auto; }
 
 .sect-3 .sect-3-cont .cont-2-box {
-  height: 430px;
+  height: 540px;
   margin: 10px; }
 
 .sect-3 .sect-3-cont .cont-2-box .cont-2-text {
@@ -4742,6 +4743,125 @@ a {
 @media (max-width: 600px) {
   .sect-baner .sect-baner-img .sect-baner-img-box {
     width: 82%; } }
+
+@media (max-width: 1600px) {
+  .demo-cont {
+    height: 350px; } }
+
+@media (max-width: 1536px) {
+  .demo-cont {
+    height: 240px; }
+    .demo-cont p {
+      font-size: 35px; }
+    .demo-cont button {
+      font-size: 18px; } }
+
+@media (max-width: 1440px) {
+  .demo-cont {
+    height: 180px; }
+    .demo-cont p {
+      font-size: 35px;
+      margin: 3px 0;
+      padding: 10px 5px; }
+    .demo-cont button {
+      font-size: 16px;
+      margin: 10px 65px;
+      padding: 15px 35px; } }
+
+@media (max-width: 1366px) {
+  .demo-cont {
+    height: 230px; }
+    .demo-cont p {
+      font-size: 31px; } }
+
+@media (max-width: 1280px) {
+  .demo-cont {
+    height: 175px; }
+    .demo-cont p {
+      font-size: 25px;
+      margin: 10px 0; }
+    .demo-cont button {
+      font-size: 15px;
+      margin: 6px 0;
+      padding: 10px 25px; } }
+
+@media (max-width: 1028px) {
+  .demo-cont {
+    height: 270px; }
+    .demo-cont p {
+      font-size: 32px;
+      margin: 10px 0; }
+    .demo-cont button {
+      font-size: 25px;
+      margin: 16px 0;
+      padding: 20px 40px; } }
+
+@media (max-width: 962px) {
+  .demo-cont {
+    height: 155px; }
+    .demo-cont p {
+      font-size: 20px;
+      margin: 15px 0;
+      padding: 10px 5px; }
+    .demo-cont button {
+      font-size: 17px;
+      margin: 7px 0;
+      padding: 10px 25px; } }
+
+@media (max-width: 834px) {
+  .demo-cont {
+    height: 195px; } }
+
+@media (max-width: 800px) {
+  .demo-cont {
+    height: 300px; }
+    .demo-cont p {
+      font-size: 28px;
+      margin: 10px 0;
+      padding: 10px 5px; }
+    .demo-cont button {
+      font-size: 23px;
+      margin: 25px 0;
+      padding: 17px 37px; } }
+
+@media (max-width: 768px) {
+  .demo-cont {
+    height: 240px; } }
+
+@media (max-width: 600px) {
+  .demo-cont {
+    height: 215px; }
+    .demo-cont p {
+      font-size: 22px;
+      margin: 10px 0;
+      padding: 10px 5px;
+      letter-spacing: 1px; }
+    .demo-cont button {
+      font-size: 20px;
+      margin: 6px 0;
+      padding: 15px 30px; } }
+
+@media (max-width: 414px) {
+  .demo-cont {
+    height: 270px; }
+    .demo-cont p {
+      font-size: 20px;
+      margin: 10px 0;
+      padding: 10px 5px; }
+    .demo-cont button {
+      font-size: 16px;
+      margin: 18px 75px;
+      padding: 15px 30px; } }
+
+@media (max-width: 375px) {
+  .demo-cont {
+    height: 265px; }
+    .demo-cont p {
+      font-size: 19px; }
+    .demo-cont button {
+      font-size: 14px;
+      margin: 18px 60px;
+      padding: 10px 25px; } }
 
 @media (max-width: 1600px) {
   .foot-bg .xazi {

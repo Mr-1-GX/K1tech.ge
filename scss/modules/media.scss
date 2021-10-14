@@ -2734,6 +2734,134 @@
         width: 82%;
     }
 }
+//-------- DEMO SECTION --------
+%demo-cont-med {
+    @media (max-width: 1600px) {
+        height: 350px;
+    }
+    @media (max-width: 1536px) {
+        height: 240px;
+        p {
+            font-size: 35px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 1440px) {
+        height: 180px;
+        p {
+            font-size: 35px;
+            margin: 3px 0;
+            padding: 10px 5px;
+        }
+        button {
+            font-size: 16px;
+            margin: 10px 65px;
+            padding: 15px 35px;
+        }
+    }
+    @media (max-width: 1366px) {
+        height: 230px;
+        p {
+            font-size: 31px;
+        }
+    }
+    @media (max-width: 1280px) {
+        height: 175px;
+        p {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+        button {
+            font-size: 15px;
+            margin: 6px 0;
+            padding: 10px 25px;
+        }
+    }
+    @media (max-width: 1028px) {
+        height: 270px;
+        p {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        button {
+            font-size: 25px;
+            margin: 16px 0;
+            padding: 20px 40px;
+        }
+    }
+    @media (max-width: 962px) {
+        height: 155px;
+        p {
+            font-size: 20px;
+            margin: 15px 0;
+            padding: 10px 5px;
+        }
+        button {
+            font-size: 17px;
+            margin: 7px 0;
+            padding: 10px 25px;
+        }
+    }
+    @media (max-width: 834px) {
+        height: 195px;
+    }
+    @media (max-width: 800px) {
+        height: 300px;
+        p {
+            font-size: 28px;
+            margin: 10px 0;
+            padding: 10px 5px;
+        }
+        button {
+            font-size: 23px;
+            margin: 25px 0;
+            padding: 17px 37px;
+        }
+    }
+    @media (max-width: 768px) {
+        height: 240px;
+    }
+    @media (max-width: 600px) {
+        height: 215px;
+        p {
+            font-size: 22px;
+            margin: 10px 0;
+            padding: 10px 5px;
+            letter-spacing: 1px;
+        }
+        button {
+            font-size: 20px;
+            margin: 6px 0;
+            padding: 15px 30px;
+        }
+    }
+    @media (max-width: 414px) {
+        height: 270px;
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 10px 5px;
+        }
+        button {
+            font-size: 16px;
+            margin: 18px 75px;
+            padding: 15px 30px;
+        }
+    }
+    @media (max-width: 375px) {
+        height: 265px;
+        p {
+            font-size: 19px;
+        }
+        button {
+            font-size: 14px;
+            margin: 18px 60px;
+            padding: 10px 25px;
+        }
+    }
+}
 //FOOTER
 
 %xazi-med {

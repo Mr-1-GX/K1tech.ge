@@ -322,6 +322,7 @@
         @extend %sect-2-big-size;
         @include d-flex (flex,space-around,flex-start);
         @extend %sect-2-big-med;
+//--------- SECTION 2 Filtr ------------
         .sect-2-flt {
             max-width: 550px;
             width: 100%;
@@ -379,6 +380,7 @@
                 }
             }
         }
+//--------------- END ---------------
         .sect-2-box {
             @extend %sect-2-box-size;
             @include d-flex (flex,space-between,center);
@@ -493,9 +495,11 @@
     @extend %sect-3-size;
     text-align: center;
     background-color: $color-01;
+    @extend %border-def;
     @extend %sect-3-med;
     .cont-1-img-text {
         @extend %cont-1-img-text-size;
+        @extend %border-def;
         @include d-flex (flex,space-between,end);
         @extend %cont-1-img-text-med;
         .flt-icon {
@@ -720,10 +724,12 @@
     @extend %sect-4-size;
     background-color: $color-01;
     flex-direction: column;
+    @extend %border-def;
     @include d-flex (flex,space-around,center);
     @extend %sect-4-med;
     .cont-1-img-text {
         @extend %cont-1-img-text-size;
+        @extend %border-def;
         @include d-flex (flex,space-between,end);
         @extend %cont-1-img-text-med;
         .flt-icon {
@@ -820,6 +826,7 @@
         }
     }
 }
+//-------- DEMO SECTION --------
 .demo-cont {
     background: $color-02;
     padding: 8px 32px;
@@ -831,6 +838,7 @@
     margin: 0 auto;
     height: 300px;
     transition: 400ms;
+    @extend %demo-cont-med;
     P {
         padding: 20px 60px;
         margin: 16px 0;
@@ -857,7 +865,7 @@
 .demo-cont.activ {
     bottom: 0;
 }
-//Futer
+//-------- Futer --------
 .foot-bg {
     background-color: $color-01;
     @include d-flex (flex,space-around,center);

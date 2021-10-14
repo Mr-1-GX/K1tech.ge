@@ -16,6 +16,7 @@ window.onscroll = function(){
     header.classList.remove('active');
   }
 };
+//------- DEMO BANER ------------
  const demoBanner = document.querySelector(".demo-cont")
  const demoBtn = document.querySelector(".demo-cont button")
 
