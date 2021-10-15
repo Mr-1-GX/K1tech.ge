@@ -1231,7 +1231,6 @@
 %sect-2-big-med {
     @media (max-width: 1600px) {
         width: 95%;
-        margin: 50px 0;
     }
     @media (max-width: 1024px) {
         align-items: flex-start;
@@ -1396,6 +1395,56 @@
     }
     
 }
+//------- MENU FILTR  -----------
+%sid-icon-med {
+    @media (max-width: 1600px) {
+        height: 575px;
+        i {
+            line-height: 43px;
+            width: 60%;
+        }
+    }
+    @media (max-width: 1536px) {
+        top: 141px;
+        left: -19%;
+    }
+    @media (max-width: 1440px) {
+        top: 145px;
+        left: -21%;
+    }
+}
+%side-bar-med {
+    @media (max-width: 1600px) {
+        top: 75px;
+        left: -107%;
+        width: 580px;
+    }
+    @media (max-width: 1536px) {
+        top: 82px;
+        left: -103%;
+        width: 420px;
+    }
+    @media (max-width: 1440px) {
+        left: -110%;
+    }
+}
+%itmes-med {
+    @media (max-width: 1600px) {
+        a {
+            line-height: 40px;
+        }
+    }
+}
+%bar-active-med {
+    @media (max-width: 1600px) {
+        left: -10%;
+    }
+    @media (max-width: 1440px) {
+        top: 80px;
+        width: 390px;
+    }
+}
+
 %s2-flt-ul-med {
     @media (max-width: 1600px) {
         width: 98%;
@@ -1518,7 +1567,7 @@
         height: 980px;
     }
     @media (max-width: 1440px) {
-        width: 80%;
+        width: 100%;
     }
     @media (max-width: 1366px) {
         height: 830px;
@@ -1673,6 +1722,13 @@
     }
     @media (max-width: 414px) {
         height: 140px;
+    }
+}
+%cont-1-img-text-sid-med {
+    @media (max-width: 1536px) {
+        position: absolute;
+        top: 0;
+        left: -20px;
     }
 }
 %cont-1-img-text-med {

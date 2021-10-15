@@ -397,11 +397,6 @@
     width: $size-0-def;
     height: $s2-flt-cont-2-heig;
 }
-%sect-2-box-size {
-    max-width: $sect-2-box-wid;
-    width: $size-0-def;
-    height: $sect-2-box-heig;
-}
 %cont-1-list-size {
     max-width: $cont-1-list-wid;
     width: $size-0-def;
@@ -457,9 +452,9 @@
     width: 100%;
 }
 %cont-1-sm-box-size {
-    max-width: $cont-1-sm-box-wid;
-    width: $size-0-def;
-    height: $cont-1-sm-box-heig;
+    max-width: 860px;
+    width: 100%;
+    height: 120px;
 }
 %cont-1-sm-h3-size {
     margin: $cont-1-sm-h3-mrg;
