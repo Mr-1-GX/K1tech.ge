@@ -3,101 +3,42 @@
     background-color: $color-01;
 }
 //HEADER
-.sect-baner-s {
-    height: 50px;
-    background-color: $color-02;
-    @include d-flex (flex,space-around,center);
-    @extend %border-def;
-    @extend %sect-baner-s-med;
-    .baner-s {
-        width: 100%;
-        @include d-flex (flex,center,center);
-        .nav-ul {
-            max-width: 1800px;
-            width: 100%;
-            @include d-flex (flex,space-between,center);
-            @extend %nav-ul-med;
-            .nav-li {
-                @extend %nav-li-med;
-                @extend %hover-dop;
-                @include d-flex (flex,space-between,center);
-                .geo-img {
-                    max-width: 30px;
-                    margin-right: 10px;
-                    @extend %geo-img-med;
-                    .geo {
-                        width: 100%;
-                        height: 25px;
-                        @extend %geo-med;
-                    }
-                }
-                .fa {
-                    margin-right: 30px;
-                    @extend %banner-font-fa;
-                    @extend %nav-fa-med;
-                    @extend %baner-s-fa-med;
-                }
-                .nav-a {
-                    @extend %nav-a-h1-font;
-                    @extend %nav-a-med;
-                }
-                
-            }
-            .soc-ul {
-                max-width: 875px;
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                @extend %soc-ul-med;
-                .soc-li {
-                    @extend %soc-li-med;
-                    .fa {
-                        @extend %font-fa-header;
-                        @extend %fa-med;
-                    }
-                    .soc-a {
-                        @extend %soc-a-font;
-                        @extend %hover-def;
-                        @extend %soc-a-med;
-                    }
-                }
-                .contact-ul {
-                    @include d-flex (flex,space-between,end);
-                    @extend %contact-ul-med;
-                }
-                .contact-box {
-                    max-width: 600px;
-                    width: 100%;
-                    @include d-flex (flex,space-between,end);
-                    @extend %contact-box-med;
-                }
-            }
-        }
-    }
-}
+
 .head-cont {
-    background-color: $color-01;
     @extend %head-cont-size;
-    @extend %border-def;
+    background: linear-gradient(to bottom, $color-02, transparent);
     @extend %head-cont-med;
     .nav-box {
-        max-width: 1820px;
-        width: 100%;
-        margin: 0px auto;
+        width: 85%;
+        margin: 40px auto;
         @include d-flex (flex,space-between,center);
         @extend %nav-box-med;
         .nav-logo {
-            max-width: 90px;
+            max-width: 170px;
             width: 100%;
+            @include d-flex (flex,space-between,center);
             @extend %hover-def;
             @extend %nav-logo-med;
-            .img-100 {
-                width: 100%;
+            a {
+                display: flex;
+                background: rgba(236, 240, 241, 1);
+                backdrop-filter: blur(15px);
+                border-radius: 50px;
+                width: 40%;
+                img {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            h1 {
+                color: $color-01;
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 10px;
             }
         }
         .head-flt-cont {
-            max-width: 920px;
-            width: 100%;
+            width: 48%;
             margin: 0 auto;
             padding: 5px 0 10px;
             @include d-flex (flex,space-between,center);
@@ -115,7 +56,7 @@
             }
         }
         .navi {
-            max-width: 580px;
+            max-width: 400px;
             width: 100%;
             @include d-flex (flex,space-between,center);
             @extend %navi-med;
@@ -126,14 +67,14 @@
                 flex-direction: column;
                 @extend %navi-cont-med;
                 .search {
-                    width: 550px;
-                    height: 60px;
+                    width: 390px;
+                    height: 50px;
                     @extend %border-srch;
                     @extend %search-med;
                     .element-search {
                         @extend %element-search-size;
                         .inp-search {
-                            width: 480px;
+                            width: 320px;
                            height: 100%;
                            border: none;
                            vertical-align: bottom;
@@ -145,16 +86,12 @@
                         .srch-fa {
                             @extend %search-fa;
                             vertical-align: bottom;
-                            padding: 0 20px 15px;
+                            padding: 0 20px 10px;
                             @extend %srch-fa-med;
                         }
                    }
                 }
             }
-        }
-        .burger-icon {
-            display: none;
-            @extend %burger-icon-med;
         }
     }
 }
@@ -169,29 +106,50 @@
     transition: all 0.6s;
     display: flex;
     flex-direction: column-reverse;
-    @extend %active-med;
+    @extend %border-def;
     .nav-box {
         height: 60px;
+        margin: 0 auto;
         @extend %nav-box-act-med;
         .nav-logo {
-            max-width: 45px;
-            height: 50px;
+            max-width: 35px;
+            height: 35px;
             @extend %nav-logo-act-med;
-            .img-100 {
-                width: 100%
+            max-width: 170px;
+            width: 100%;
+            @include d-flex (flex,space-between,center);
+            @extend %hover-def;
+            @extend %nav-logo-med;
+            a {
+                display: flex;
+                background: none;
+                backdrop-filter: none;
+                border-radius: 0;
+                width: 45%;
+                img {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+            }
+            h1 {
+                display: none;
             }
         }
         .head-flt-cont {
-            display: none;
-            .open-socicon {
-                height: 50px;
-                padding: 5px 0 5px;
-                display: flex;
-                @extend %open-socicon-act-med;
+            max-width: 680px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px 0 0;
+            @include d-flex (flex,space-between,center);
+            .head-flt-ul {
+                .head-flt-li {
+                    color: $color-02;
+                    font-size: 16px;
+                }
             }
         }
         .navi {
-            max-width: 1480px;
+            max-width: 390px;
             height: 50px;
             @extend %navi-act-med;
             .navi-cont {
@@ -199,80 +157,33 @@
                 flex-direction: row-reverse;
                 @extend %navi-cont-act-med;
                 .search {
-                    width: 1410px;
-                    height: 40px;
+                    width: 330px;
+                    height: 25px;
                     @extend %search-act-med;
                     .element-search {
                         .inp-search {
-                            width: 1320px;
+                            width: 260px;
                             @extend %inp-search-act-med;
                         }
                         .srch-fa {
+                            font-size: 18px;
+                            color: $color-02;
                             padding: 0 27px 4px;
                             @extend %srch-fa-act-med;
                         }
                     }
                 }
             }
-            .soc-ul {
-                display: none;
-                .contact-ul {
-                    max-width: 60px;
-                    width: 100%;
-                    flex-direction: row;
-                    @extend %contact-ul-act-med;
-                    .soc-li {
-                        padding: 2px 0 0 0;
-                        @extend %soc-li-act-med;
-                        .fa {
-                            font-size: 22px;
-                            letter-spacing: 5px;
-                            @extend %soc-fa-act-med;
-                        }
-                    }
-                }
-                .contact-box {
-                    max-width: 470px;
-                    width: 100%;
-                    flex-direction: row;
-                    @extend %contact-box-act-med;
-                    .soc-li {
-                        padding: 2px 0 0 0;
-                        @extend %soc-li-act-med;
-                        .soc-a {
-                            font-size: 21px;
-                            @extend %soc-a-act-med;
-                            .fa {
-                                font-size: 22px;
-                                letter-spacing: 5px;
-                                @extend %soc-fa-act-med;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .burger-icon {
-            display: block;
-            color: $color-02;
-            font-size: 30px;
-            top: 13px;
-            right: 50px;
-            cursor: pointer;
-            @extend %burger-icon-act-med;
         }
     }
-}
-.open-head-size {
-    height: 1090px;
-    flex-direction: column;
-    @extend %open-head-size-act-med;
 }
 //----------
 //Section-1
 .sect-1 {
     @extend %sect-1-size;
     position: static;
+    justify-content: center;
+    align-items: center;
     @extend %sect-1-med;
     .sect-1-cont {
         z-index: 1000;
@@ -299,7 +210,6 @@
     @include d-flex (flex,space-around,center);
     @extend %border-def;
     flex-direction: column;
-    @extend %sect-2-med;
     .pro-navi {
         @extend %pro-navi-def;
         @extend %border-def;
@@ -324,130 +234,140 @@
         @include d-flex (flex,space-around,flex-start);
         flex-direction: column;
         @extend %sect-2-big-med;
-        .sect-2-flt {
-            max-width: 550px;
+        //------- Filtr adn user BAR ------
+        .flt-user-cont {
+            display: flex;
             width: 100%;
-            @include d-flex (flex,end,center);
-            flex-direction: column;
-            position: sticky;
-            top: 110px;
-            @extend %sect-2-flt-med;
-            .cont-1-img-text {
-                @extend %cont-1-img-text-size;
-                @include d-flex (flex,space-between,end);
-                @extend %cont-1-img-text-sid-med;
-                .flt-icon {
-                    @extend %flt-icon-size;
-                    @include d-flex (flex,space-between,center);
-                    cursor: pointer;
-                    @extend %flt-icon-med;
-                    .flt-icon-box {
-                        width: 100%;
-                        @extend %flt-icon-box-med;
-                    }
-                }
-                .flt-ico-nm {
-                    @extend %flt-ico-nm-size;
-                    text-align: end;
-                    @extend %flt-ico-nm-2-med;
-                    .ico-nm-h2 {
-                        font-size: 25px;
-                        @extend %ico-nm-h2-font;
-                        @extend %ico-nm-h2-med;
-                    }
-                    .xazi {
-                        @extend %xazi;    
-                    }
-                }
-                .flt-ico-nm-bar {
-                    @extend %flt-ico-nm-size;
-                    text-align: end;
-                    background: rgba(255, 255, 255, 0.5);
-                    backdrop-filter: blur(15px);
-                    visibility: hidden;
-                    border-radius: 5px;
-                    @extend %flt-ico-nm-2-med;
-                    .ico-nm-h2 {
-                        font-size: 25px;
-                        @extend %ico-nm-h2-font;
-                        @extend %ico-nm-h2-med;
-                    }
-                    .xazi {
-                        @extend %xazi;    
-                    }
-                }
-            }
-            //------- MENU FILTR  -----------
-            .sid-icon {
-                @include d-flex (flex,space-between,end);
+            position: fixed;
+            top: 74px;
+            left: 0;
+            z-index: 1000;
+            //----- SIDE BAR ----------
+            .sect-2-flt {
+                max-width: 470px;
+                width: 100%;
+                @include d-flex (flex,end,center);
                 flex-direction: column;
-                position: absolute;
-                top: 140px;
-                left: -12%;
-                width: 155px;
-                height: 690px;
-                @extend %sid-icon-med;
-                i {
-                    color: $color-04;
-                    font-size: 30px;
-                    display: block;
-                    padding: 5px 10px;
-                    line-height: 50px;
-                    background: rgba(255, 255, 255, 0.5);
-                    backdrop-filter: blur(15px);
-                    border-radius: 50px;
-                    cursor: pointer;
-                    width: 50%;
-                    text-align: center;
-                    &:hover {
-                        color: $color-01;
-                        background: $color-02;
-                        transition: 0.3s ease;
+                position: sticky;
+                top: 110px;
+                @extend %sect-2-flt-med;
+                .cont-1-img-text {
+                    @extend %cont-1-img-text-size;
+                    @include d-flex (flex,space-between,end);
+                    .flt-icon {
+                        @extend %flt-icon-size;
+                        @include d-flex (flex,end,center);
+                        cursor: pointer;
+                        @extend %flt-icon-med;
+                        .flt-icon-box {
+                            width: 70%;
+                        }
+                    }
+                    .flt-ico-nm {
+                        @extend %flt-ico-nm-size;
+                        text-align: end;
+                        @extend %flt-ico-nm-2-med;
+                        .ico-nm-h2 {
+                            font-size: 25px;
+                            color: $color-01;
+                            font-family: 'archy-B';
+                            letter-spacing: 5px;
+                            text-shadow: 0 0 1px;
+                            border-radius: 5px;
+                            margin: 0 15px 10px 0;
+                            @extend %ico-nm-h2-med;
+                        }
+                        .xazi {
+                            @extend %xazi;    
+                        }
+                    }
+                    .flt-ico-nm-bar {
+                        @extend %flt-ico-nm-size;
+                        text-align: end;
+                        background: rgba(255, 255, 255, 0.5);
+                        backdrop-filter: blur(15px);
+                        visibility: hidden;
+                        border-radius: 5px;
+                        @extend %flt-ico-nm-2-med;
+                        .ico-nm-h2 {
+                            font-size: 25px;
+                            @extend %ico-nm-h2-font;
+                            @extend %ico-nm-h2-med;
+                        }
+                        .xazi {
+                            @extend %xazi;    
+                        }
                     }
                 }
-            }
-            .side-bar {
-                position: absolute;
-                top: 80px;
-                left: -100%;
-                background: rgba(255, 255, 255, 0.5);
-                backdrop-filter: blur(15px);
-                width: 560px;
-                height: 75vh;
-                overflow-y: auto;
-                transition: 0.6s ease;
-                transition-property: left;
-                border-radius: 5px;
-                @extend %side-bar-med;
-                .close-btn {
-                    position: relative;
-                    color: $color-04;
-                    font-size: 30px;
-                    margin: 10px;
-                    cursor: pointer;
-                    transition: 0.6s ease;
-                    overflow: auto;
-                    transition-property: left;
-                    text-align: end;
-                    visibility: hidden;
-                }
-                .menu {
-                    width: 100%;
-                    margin-top: 10px;
-                    .itmes {
-                        position: relative;
+                //------- MENU FILTR  -----------
+                .sid-icon {
+                    @include d-flex (flex,space-between,end);
+                    flex-direction: column;
+                    position: absolute;
+                    top: 80px;
+                    left: -13%;
+                    width: 119px;
+                    height: 480px;
+                    i {
+                        color: $color-01;
+                        font-size: 19px;
+                        display: block;
+                        padding: 5px 5px;
+                        line-height: 30px;
+                        background: rgba(62, 174, 197, 0.3);
+                        backdrop-filter: blur(15px);
+                        border-radius: 50px;
                         cursor: pointer;
-                        @extend %itmes-med;
-                        a {
-                            color: $color-04;
-                            font-size: 20px;
-                            display: block;
-                            padding: 2px 30px;
-                            line-height: 50px;
-                            &:hover {
-                                color: $color-01;
-                                background: $color-02;
-                                transition: 0.3s ease;
+                        width: 30%;
+                        text-align: center;
+                        &:hover {
+                            color: $color-01;
+                            background: $color-02;
+                            transition: 0.3s ease;
+                        }
+                    }
+                }
+                .side-bar {
+                    position: absolute;
+                    top: 70px;
+                    left: -110%;
+                    background: rgba(255, 255, 255, 0.5);
+                    backdrop-filter: blur(15px);
+                    width: 468px;
+                    height: 75vh;
+                    overflow-y: auto;
+                    transition: 0.6s ease;
+                    transition-property: left;
+                    border-radius: 5px;
+                    .close-btn {
+                        position: relative;
+                        color: $color-04;
+                        font-size: 30px;
+                        margin: 10px;
+                        cursor: pointer;
+                        transition: 0.6s ease;
+                        overflow: auto;
+                        transition-property: left;
+                        text-align: end;
+                        visibility: hidden;
+                    }
+                    .menu {
+                        width: 100%;
+                        margin-top: 5px;
+                        .itmes {
+                            position: relative;
+                            cursor: pointer;
+                            a {
+                                color: $color-04;
+                                font-size: 17px;
+                                display: block;
+                                padding: 2px 30px;
+                                line-height: 40px;
+                                &:hover {
+                                   color: $color-01;
+                                   background: $color-02;
+                                   transition: 0.3s ease;
+                                }
                             }
                             i {
                                 margin-right: 45px;
@@ -455,26 +375,179 @@
                             .dropdown {
                                 position: absolute;
                                 right: 0;
-                                margin: 20px;
+                                margin: 10px 16px;
                                 transition: 0.3s ease;
                             }
-                        }
-                        .sub-menu {
-                            background: rgba(255, 255, 255, 0.1);
-                            display: none;
-                            a {
-                                padding-left: 80px;
+                            .sub-menu {
+                                background: rgba(255, 255, 255, 0.1);
+                                display: none;
+                                a {
+                                        padding-left: 80px;
+                                }
+                                .sub-menu-2 {
+                                    background: rgba(255, 255, 255, 0.1);
+                                    display: none;
+                                    a {
+                                            padding-left: 120px;
+                                    }
+                                    .sub-menu-3 {
+                                        background: rgba(255, 255, 255, 0.1);
+                                        display: none;
+                                        a {
+                                            padding-left: 160px;
+                                        }
+                                        .sub-menu-4 {
+                                            background: rgba(255, 255, 255, 0.1);
+                                            display: none;
+                                            a {
+                                                padding-left: 210px;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
+                .bar-active {
+                    left: 0px;
+                }
+                .rotate {
+                    transform: rotate(90deg);
+                }
             }
-            .bar-active {
-                left: -30px;
-                @extend %bar-active-med;
-            }
-            .rotate {
-                transform: rotate(90deg);
+            //----- USER BAR ---------
+            .sect-2-user {
+                max-width: 550px;
+                width: 100%;
+                @include d-flex (flex,end,center);
+                flex-direction: column;
+                position: sticky;
+                top: 122px;
+                left: 850px;
+                @extend %sect-2-flt-med;
+                .cont-1-img-user {
+                    width: 93%;
+                    margin: 0 auto;
+                    padding: 10px 2px;
+                    @include d-flex (flex,space-between,center);
+                    flex-direction: row-reverse;
+                    .user-icon {
+                        @include d-flex (flex,space-between,end);
+                        flex-direction: column;
+                        position: absolute;
+                        top: 15px;
+                        left: 420px;
+                        width: 155px;
+                        i {
+                            color: $color-02;
+                            font-size: 40px;
+                            display: block;
+                            padding: 5px 10px;
+                            line-height: 50px;
+                            border-radius: 50px;
+                            cursor: pointer;
+                            width: 50%;
+                            text-align: center;
+                            &:hover {
+                                color: $color-01;
+                                background: $color-02;
+                                transition: 0.3s ease;
+                            }
+                        }
+                    }
+                    .flt-ico-nm {
+                        @extend %flt-ico-nm-size;
+                        text-align: end;
+                        @extend %flt-ico-nm-2-med;
+                        .ico-nm-h2 {
+                            font-size: 25px;
+                            @extend %ico-nm-h2-font;
+                            @extend %ico-nm-h2-med;
+                        }
+                        .xazi {
+                            @extend %xazi;    
+                        }
+                    }
+                    .user-ico-nm-bar {
+                        @extend %flt-ico-nm-size;
+                        margin-right: 20px;
+                        text-align: start;
+                        background: rgba(255, 255, 255, 0.5);
+                        backdrop-filter: blur(15px);
+                        visibility: hidden;
+                        border-radius: 5px;
+                        @extend %flt-ico-nm-2-med;
+                        .user-ico-nm-h2 {
+                            font-size: 25px;
+                            margin-left: 10px;
+                            @extend %ico-nm-h2-font;
+                            @extend %ico-nm-h2-med;
+                        }
+                        .xazi {
+                            @extend %xazi;    
+                        }
+                    }
+                }
+                //------- USER FILTR  -----------
+                .user-bar {
+                    position: absolute;
+                    top: 70px;
+                    right: -191%;
+                    background: rgba(255, 255, 255, 0.5);
+                    backdrop-filter: blur(15px);
+                    width: 960px;
+                    height: 75vh;
+                    overflow-y: auto;
+                    transition: 0.6s ease;
+                    transition-property: right;
+                    border-radius: 5px;
+                    .user-close-btn {
+                        position: relative;
+                        color: $color-04;
+                        font-size: 30px;
+                        margin: 10px;
+                        cursor: pointer;
+                        transition: 0.6s ease;
+                        overflow: auto;
+                        transition-property: left;
+                        text-align: start;
+                        visibility: hidden;
+                    }
+                }
+                .users-icon {
+                    @include d-flex (flex,space-between,end);
+                    flex-direction: column;
+                    position: absolute;
+                    top: 90px;
+                    left: 80%;
+                    width: 118px;
+                    height: 340px;
+                    i {
+                        color: $color-01;
+                        font-size: 19px;
+                        display: block;
+                        padding: 5px 5px;
+                        line-height: 30px;
+                        background: rgba(62, 174, 197, 0.3);
+                        backdrop-filter: blur(15px);
+                        border-radius: 50px;
+                        cursor: pointer;
+                        width: 35%;
+                        text-align: center;
+                        &:hover {
+                            color: $color-01;
+                            background: $color-02;
+                            transition: 0.3s ease;
+                        }
+                    }
+                }
+                .user-bar-active {
+                    right: -41px;
+                }
+                .rotate {
+                    transform: rotate(90deg);
+                }
             }
         }
         .sect-2-box {
@@ -488,6 +561,7 @@
                 @extend %cont-1-list-med;
                 .cont-1-list-box {
                     background-color: $color-01;
+                    max-width: 530px;
                     width: 100%;
                     @include d-flex (flex,space-between,center);
                     flex-direction: column;
@@ -517,7 +591,6 @@
                                 @extend %flt-icon-med;
                                 .flt-icon-box {
                                     width: 100%;
-                                    @extend %flt-icon-box-med;
                                 }
                             }
                             .flt-ico-nm {
@@ -576,7 +649,6 @@
                 @extend %cont-1-sm-img-med;
                 .cont-1-sm-img-box {
                     width: 100%;
-                    @extend %cont-1-sm-img-box-med;
                 }
             }
             .cont-1-sm-h3 {
@@ -595,8 +667,9 @@
     @extend %border-def;
     @extend %sect-3-med;
     .cont-1-img-text {
-        @extend %cont-1-img-text-size;
-        @extend %border-def;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 2px;
         @include d-flex (flex,space-between,end);
         @extend %cont-1-img-text-med;
         .flt-icon {
@@ -605,7 +678,6 @@
             @extend %flt-icon-med;
             .flt-icon-box {
                 width: 100%;
-                @extend %flt-icon-box-med;
             }
         }
         .flt-ico-nm {
@@ -823,10 +895,10 @@
     flex-direction: column;
     @extend %border-def;
     @include d-flex (flex,space-around,center);
-    @extend %sect-4-med;
     .cont-1-img-text {
-        @extend %cont-1-img-text-size;
-        @extend %border-def;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 2px;
         @include d-flex (flex,space-between,end);
         @extend %cont-1-img-text-med;
         .flt-icon {
@@ -835,7 +907,6 @@
             @extend %flt-icon-med;
             .flt-icon-box {
                 width: 100%;
-                @extend %flt-icon-box-med;
             }
         }
         .flt-ico-nm {
@@ -929,18 +1000,19 @@
     padding: 8px 32px;
     border-radius: 8px 8px 0 0;
     position: fixed;
-    left: 24px;
-    right: 24px;
+    left: 110px;
+    right: 100px;
     bottom: -100%;
     margin: 0 auto;
-    height: 300px;
+    height: 230px;
     transition: 400ms;
+    z-index: 1000;
     @extend %demo-cont-med;
     P {
         padding: 20px 60px;
         margin: 16px 0;
         color: $color-01;
-        font-size: 40px;
+        font-size: 28px;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -949,8 +1021,7 @@
     }
     button {
         border: 0;
-        padding: 20px 60px;
-        margin: 16px 0;
+        padding: 15px 40px;
         background: $color-01;
         font-size: 20px;
         font-weight: bold;
@@ -969,7 +1040,6 @@
     flex-direction: column;
     margin-top: 40px;
     @extend %border-def;
-    @extend %foot-bg-med;
     .foot-lok {
         @extend %foot-lok-size;
         @include d-flex (flex,space-around,center);
@@ -1042,7 +1112,6 @@
     }
     .xazi {
         @extend %xazi;
-        @extend %xazi-med;
     }
     .avtori {
         @extend %avtori-size;

@@ -49,7 +49,7 @@
 }
 %search-fa {
     font-size: 32px;
-    color: $color-02;
+    color: $color-01;
     text-shadow: 0 0 1px $color-03;
     border-radius: 5px;
 }
@@ -121,14 +121,14 @@
 //-------------------
 %pro-navi-def {
     width: 100%;
-    height: 50px;
+    height: 30px;
     position: sticky;
     top: 58px;
     z-index: 300;
     background-color: $color-010;
 }
 %pro-fa-def {
-    font-size: 27px;
+    font-size: 20px;
     color: $color-02;
     text-shadow: 0 0 1px $color-03;
     border-radius: 5px;
@@ -144,7 +144,7 @@
     }
 }
 %pro-navi-h4-def {
-    font-size: 21px;
+    font-size: 18px;
     color: $color-03;
     font-family: 'archy-B';
     letter-spacing: 2px;
@@ -272,8 +272,12 @@
 }
 %head-cont-size {
     width: 100%;
+    height: 20%;
     margin: 2px auto;
-    position: relative;
+    position: fixed;
+    top: -3px;
+    left: 0;
+    z-index: 1000;
 }
 %element-search-size {
     width: 100%;
@@ -310,8 +314,8 @@
     border-radius: 5px;
 }
 %head-flt-li-font {
-    font-size: 22px;
-    color: $color-02;
+    font-size: 19px;
+    color: $color-01;
     font-family: 'archy-B';
     letter-spacing: 1px;
 }
@@ -321,23 +325,26 @@
 }
 //Sections-1
 %sect-1-size {
-    margin: 15px auto;
+    margin: 35px 0px auto;
 }
 %sect-1-box-size {
     border-radius: $sect-1-box-rad;
     margin: $sect-1-box-mrg;
 }
 %sect-1-img-size {
-    margin: $sect-1-img-mrg;
-    width: $size-0-def;
-    height: $sect-1-img-heig;
-    box-shadow: $sect-1-img-shad $color-03;
-    border-radius: $sect-1-img-rad;
+    margin: 2px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
 }
 //Section-2
 %sect-2-size {
-    max-width: 1900px;
+    max-width: 1430px;
     width: 100%;
+    height: 1685px;
     margin: 0 auto;
     background-color: $sect-2-bg;
 }
@@ -360,13 +367,12 @@
     padding-top: 7px;
 }
 %ico-nm-h2-font {
-    font-size: $ico-nm-h2-sz;
-    color: $ico-nm-h2-col;
+    font-size: 35px;
+    color: $color-04;
     font-family: 'archy-B';
-    letter-spacing: $ico-nm-h2-ls;
-    text-shadow: $ico-nm-h2-shad $ico-nm-h2-shdw;
-    border-radius: $ico-nm-h2-rad;
-    margin: $ico-nm-h2-mrg;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    margin: 0 15px 15px 0;
 }
 %s2-flt-ul-size {
     max-width: 500px;
@@ -422,7 +428,7 @@
 %cont-1-img-text-size {
     width: 100%;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 2px;
 }
 %flt-icon-size {
     max-width: $flt-icon-wid;
@@ -452,7 +458,7 @@
     width: 100%;
 }
 %cont-1-sm-box-size {
-    max-width: 860px;
+    max-width: 670px;
     width: 100%;
     height: 120px;
 }
@@ -461,7 +467,7 @@
 }
 //Section-3
 %sect-3-size {
-    max-width: 1900px;
+    max-width: 1430px;
     width: 100%;
     height: 890px;
     margin: 35px auto 25px;
@@ -514,14 +520,14 @@
     padding: $sect-banbox-pdng; 
 }
 %banbox-cont-size {
-    max-width: $banbox-cont-def-wid;
-    width: $size-0-def;
-    height: $banbox-cont-heig;
+    max-width: 1430px;
+    width: 100%;
+    height: 230px;
 }
 %banbox-box-size {
-    max-width: $banbox-box-wid;
-    width: $size-0-def;
-    height: $banbox-box-heig;
+    max-width: 660px;
+    width: 100%;
+    height: 120px;
 }
 %consol-size {
     max-width: $consol-wid;
@@ -552,17 +558,17 @@
     height: $box-box-heig;
 }
 %banbox-cont-2-size {
-    max-width: $banbox-cont-def-wid;
-    width: $size-0-def;
+    max-width: 1300px;
+    width: 100%;
 }
 %box-img-size {
     width: $size-0-def;
     height: $box-img-heig;
 }
 %sect-ban-cont-size {
-    max-width: $sect-ban-cont-wid;
-    width: $size-0-def;
-    height: $sect-ban-cont-def-heig;
+    max-width: 730px;
+    width: 100%;
+    height: 700px;
 }
 %tv-box-size {
     max-width: $tv-box-wid;
@@ -597,9 +603,9 @@
     text-shadow: $sect-ban-h1-font-shad $color-02;
 }
 %sect-ban-cont-2-size {
-    max-width: $sect-ban-cont-2-wid;
-    width: $size-0-def;
-    height: $sect-ban-cont-def-heig;
+    max-width: 540px;
+    width: 100%;
+    height: 700px;
 }
 %sect-ban-box-size {
     width: $size-0-def;
@@ -639,10 +645,10 @@
 }
 //Section-4
 %sect-4-size {
-    max-width: $sect-4-wid;
-    width: $size-0-def;
-    margin: $sect-4-mrg;
-    padding: $sect-4-pdng;
+    max-width: 1430px;
+    width: 100%;
+    margin: 35px auto;
+    padding: 0 0 30px 0;
 }
 %sect-4-cont-size {
     max-width: $sect-4-cont-wid;
@@ -721,13 +727,13 @@
 }
 //Footer
 %foot-lok-size {
-    max-width: $foot-lok-wid;
-    width: $size-0-def;
+    max-width: 1430px;
+    width: 100%;
 }
 %foot-cont-size {
-    max-width: $foot-cont-wid;
-    width: $size-0-def;
-    padding: $foot-cont-pdng;
+    max-width: 1260px;
+    width: 100%;
+    padding: 40px 0 20px 0;
 }
 %foot-box-size {
     max-width: $foot-box-wid;
@@ -778,9 +784,9 @@
     border-radius: $contact-font-rad;
 }
 %avtori-size {
-    max-width: $avtori-wid;
-    width: $size-0-def;
-    margin: $avtori-mrgn;
+    max-width: 1320px;
+    width: 100%;
+    margin: 15px auto;
 }
 %avtori-p-font {
     font-size: $avtori-p-font-sz;
