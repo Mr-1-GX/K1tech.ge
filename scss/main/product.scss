@@ -1,0 +1,142 @@
+.sect-2-big {
+    .sect-2-box {
+        .cont-1-list {
+            .product-1-list-box {
+                max-width: 1160px;
+                width: 100%;
+                background-color: $color-01;
+                @include d-flex (flex,space-evenly,center);
+                @extend %pc-1-list-box-med;
+                .product-1-img {
+                    max-width: 320px;
+                    width: 100%;
+                    height: 480px;
+                    @include d-flex (flex,center,center);
+                    flex-direction: column;
+                    @extend %pc-1-img-med;
+                    a {
+                        max-width: 180px;
+                        margin-bottom: 25px;
+                        @extend %pc-1-img-hrf-med;
+                        @extend %pc-1-img-hrf-hover;
+                        img {
+                            width: 100%;
+                            height: 170px;
+                            @extend %pc-1-img-box-med;
+                        }
+                    }
+                    .product-1-img-text {
+                        max-width: 600px;
+                        width: 100%;
+                        height: 70px;
+                        padding: 10px 20px;
+                        @include d-flex (flex,space-between,end);
+                        @extend %pc-1-img-text-med;
+                        .product-flt-icon {
+                            max-width: 47px;
+                            @include d-flex (flex,space-between,center);
+                            @extend %pc-flt-icon-med;
+                            img {
+                                width: 100%;
+                                @extend %pc-flt-icon-box-med;
+                            }
+                        }
+                        .product-flt-ico-nm {
+                            @extend %flt-ico-nm-size;
+                            text-align: end;
+                            @extend %pc-flt-ico-nm-med;
+                            h2 {
+                                @extend %pc-k1-butt-r-h4;
+                                @extend %pc-ico-nm-h2-fe;
+                                @extend %pc-ico-nm-h2-med;
+                            }
+                            .product-xazi {
+                                width: 100%;
+                                margin:10px auto;
+                                content: ' ';
+                                color: $color-06;
+                                @include border ($xazi-brd, solid, $color-08);
+                                box-shadow: $xazi-shad $color-02;
+                                @extend %pc-xazi-med;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.product-1-brands-box {
+    max-width: 1255px;
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    background-color: $color-01;
+    @include d-flex (flex,space-between,center);
+    flex-direction: column;
+    @extend %pc-1-brands-box-med;
+    .product-slide-img-text {
+        max-width: 1250px;
+        width: 100%;
+        height: 110px;
+        padding: 10px 20px;
+        @include d-flex (flex,space-between,end);
+        @extend %pc-slide-img-text-med;
+        .product-slide-icon {
+            max-width: 70px;
+            @include d-flex (flex,space-between,center);
+            @extend %pc-slide-icon-med;
+            img {
+                width: 100%;
+            }
+        }
+        .product-slide-nm {
+            max-width: 1120px;
+            width: 100%;
+            height: 80px;
+            padding-top: 30px;
+            text-align: end;
+            @extend %pc-slide-nm-med;
+            h2 {
+                margin: 0 15px 10px 0;
+                @extend %pc-k1-ico-nm-h2;
+                @extend %pc-slide-nm-h2-med;
+            }
+            .product-slide-xazi {
+                width: 100%;
+                margin:10px auto;
+                content: ' ';
+                color: $color-06;
+                @include border ($xazi-brd, solid, $color-08);
+                box-shadow: $xazi-shad $color-02;
+            }
+        }
+    }
+    .product-brends {
+        max-width: 920px;
+        width: 100%;
+        height: 180px;
+        margin: 10px auto;
+        @include d-flex (flex,space-between,center);
+        @extend %pc-brends-med;
+        .product-4-box {
+            max-width: 330px;
+            width: 100%;
+            height: 110px;
+            @include d-flex (flex,space-around,center);
+            @extend %pc-4-box-med;
+            .product-4-img {
+                max-width: 95px;
+                height: 115px;
+                @include d-flex (flex,space-around,center);
+                @extend %pc-4-img-med;
+                img {
+                    width: 100%;
+                    height: 40px;
+                    @extend %pc-4-img-box-med;
+                }
+            }
+            
+        }
+    }
+}

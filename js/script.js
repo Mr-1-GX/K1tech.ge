@@ -35,6 +35,7 @@ $(document).ready(function() {
     $('.user-bar').addClass('user-bar-active');
     $('.user-close-btn').css("visibility", "visible");
     $('.user-ico-nm-bar').css("visibility", "visible");
+    $('.users-icon').css("visibility", "hidden");
   });
   $('.sid-icon').click(function() {
     $('.side-bar').addClass('bar-active');

@@ -1,23 +1,4 @@
 
-.k1-pc-flt-li {
-    @extend %s2-flt-li-size;
-    @extend %s2-flt-li-font;
-    @extend %border-def;
-    @include d-flex (flex,space-between,center);
-    @extend %s2-flt-li-med;
-    padding-left: 25px;
-}
-.k1-flt-li {
-    @extend %s2-flt-li-size;
-    @extend %k1-flt-li-font;
-    @extend %border-def;
-    @include d-flex (flex,start,center);
-    @extend %s2-flt-li-med;
-    padding-left: 50px;
-    .k1-check {
-        margin-right: 30px;
-    }
-}
 .k1-pc-text {
     margin: 10px auto;
     text-align: center;

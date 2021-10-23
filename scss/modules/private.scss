@@ -325,7 +325,7 @@
 }
 //Sections-1
 %sect-1-size {
-    margin: 35px 0px auto;
+    margin: 70px 0px auto;
 }
 %sect-1-box-size {
     border-radius: $sect-1-box-rad;
@@ -336,7 +336,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 75vh;
+    height: 77vh;
     justify-content: center;
     align-items: center;
 }
@@ -344,7 +344,6 @@
 %sect-2-size {
     max-width: 1430px;
     width: 100%;
-    height: 1685px;
     margin: 0 auto;
     background-color: $sect-2-bg;
 }
