@@ -8,14 +8,14 @@
     @extend %head-cont-size;
     background: linear-gradient(to bottom, $color-02, #05849E, transparent,);
     overflow-y: auto;
-    transition: 1.2s ease-in-out;
+    transition: 1.0s ease-in-out;
     @extend %head-cont-med;
     .nav-box {
         width: 85%;
         margin: 40px auto;
         @include d-flex (flex,space-between,center);
         overflow-y: auto;
-        transition: 1.5s ease-in-out;
+        transition: 1.2s ease-in-out;
         @extend %nav-box-med;
         .nav-logo {
             max-width: 170px;
@@ -115,13 +115,13 @@
     display: flex;
     flex-direction: column-reverse;
     overflow-y: auto;
-    transition: 1.2s ease-in-out;
+    transition: 1.0s ease-in-out;
     @extend %border-def;
     .nav-box {
         height: 60px;
         margin: 0 auto;
         overflow-y: auto;
-        transition: 1.5s ease-in-out;
+        transition: 1.2s ease-in-out;
         @extend %nav-box-act-med;
         .nav-logo {
             max-width: 170px;
@@ -210,7 +210,6 @@
             }
             .sect-1-img {
                 @extend %sect-1-img-size;
-                @extend %border-def;
                 @extend %sect-1-img-med;
             }
         }
@@ -223,6 +222,7 @@
     @extend %border-def;
     flex-direction: column;
     .pro-navi {
+        margin-top: 10px;
         @extend %pro-navi-def;
         @extend %border-def;
         @include d-flex (flex,flex-start,center);
@@ -251,7 +251,7 @@
             display: flex;
             width: 100%;
             position: fixed;
-            top: 74px;
+            top: 95px;
             left: 0;
             z-index: 1000;
             //----- SIDE BAR ----------
@@ -569,6 +569,7 @@
             @extend %sect-2-box-med;
             .cont-1-list {
                 width: 100%;
+                margin-top: 80px;
                 @include d-flex (flex,space-evenly,center);
                 @extend %cont-1-list-med;
                 .cont-1-list-box {
@@ -715,6 +716,7 @@
         }
         .cont-2-box {
             @extend %cont-2-box-size;
+            @extend %border-def;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
             @extend %cont-2-box-med;

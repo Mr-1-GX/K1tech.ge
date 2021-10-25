@@ -272,7 +272,7 @@
 }
 %head-cont-size {
     width: 100%;
-    height: 20%;
+    height: 17%;
     margin: 2px auto;
     position: fixed;
     top: -3px;
@@ -468,7 +468,7 @@
 %sect-3-size {
     max-width: 1430px;
     width: 100%;
-    height: 890px;
+    height: 670px;
     margin: 35px auto 25px;
     padding: 2px 0 30px 0;
 }
@@ -480,11 +480,11 @@
 }
 %sect-3-cont-size {
     max-width: 1820px;
-    height: 720px;
+    height: 510px;
     margin: 10px auto;
 }
 %cont-2-box-size {
-    height: 540px;
+    height: 480px;
     margin: 10px;
 }
 %cont-2-text-size {
@@ -493,9 +493,8 @@
     height: $cont-2-text-heig;
 }
 %cont-2-p-box-size {
-    max-width: $cont-2-p-box-wid;
-    width: $size-0-def;
-    height: $cont-2-p-box-heig;
+    max-width: 550px;
+    width: 100%;
 }
 %cont-2-p-font {
     font-size: 23px;

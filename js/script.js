@@ -49,6 +49,16 @@ $(document).ready(function() {
     $('.user-ico-nm-bar').css("visibility", "visible");
     $('.users-icon').css("visibility", "hidden");
   });
+  //----- Big IMAGE --------
+  $('.pc-k1-img').click(function() {
+    $('.pc-k1-img-cont').addClass('pc-k1-img-big-img');
+    $('.close-big-img').css("visibility", "visible");
+  });
+  $('.close-big-img').click(function() {
+    $('.pc-k1-img-big-img').removeClass('pc-k1-img-big-img');
+    $('.close-big-img').css("visibility", "hidden");
+  });
+  //-----------------------
   $('.close-btn').click(function() {
     $('.side-bar').removeClass('bar-active');
     $('.close-btn').css("visibility", "hidden");
