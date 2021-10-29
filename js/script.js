@@ -53,10 +53,13 @@ $(document).ready(function() {
   $('.pc-k1-img').click(function() {
     $('.pc-k1-img-cont').addClass('pc-k1-img-big-img');
     $('.close-big-img').css("visibility", "visible");
+    
+    $('.flt-user-cont').css("visibility", "hidden");
   });
   $('.close-big-img').click(function() {
     $('.pc-k1-img-big-img').removeClass('pc-k1-img-big-img');
     $('.close-big-img').css("visibility", "hidden");
+    $('.flt-user-cont').css("visibility", "visible");
   });
   //-----------------------
   $('.close-btn').click(function() {

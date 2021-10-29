@@ -208,9 +208,12 @@
                 @extend %slick-dots;
                 @extend %slick-dots-med;
             }
-            .sect-1-img {
-                @extend %sect-1-img-size;
-                @extend %sect-1-img-med;
+            a {
+                cursor: pointer;
+                img {
+                    @extend %sect-1-img-size;
+                    @extend %sect-1-img-med;
+                }
             }
         }
     }
@@ -660,11 +663,13 @@
                 margin-left: 50px;
                 max-width: 220px;
                 @extend %cont-1-sm-img-med;
-                .cont-1-sm-img-box {
-                    width: 100%;
+                a {
+                    img {
+                        width: 100%;
+                    }
                 }
             }
-            .cont-1-sm-h3 {
+            h3 {
                 @extend %cont-1-sm-h3-size;
                 @extend %font-h3-def;
                 @extend %cont-1-sm-h3-med;
@@ -744,11 +749,24 @@
                     @extend %cont-2-p-med;
                 }
                 .cont-2-cost {
-                    margin: 15px 0 10px 200px;
+                    width: 100%;
+                    height: 85px;
+                    margin-right: 10px;
+                    @include d-flex (flex,end,center);
                     @extend %cont-2-cost-med;
-                    .cont-2-h4 {
+                    h4 {
+                        &:first-child {
+                            margin-right: 50px;
+                            span {
+                                text-decoration: line-through;
+                                color: rgba(255, 0, 0, 0.938);
+                            }
+                        }
                         @extend %cont-2-h4-font;
                         @extend %cont-2-h4-med;
+                        span {
+                            color: rgba(255, 0, 0, 0.938);
+                        }
                     }
                 }
             }
@@ -956,21 +974,37 @@
                 background-color: $color-010;
                 @include d-flex (flex,space-around,center);
                 @extend %sect-4-img-med;
-                .sect-4-img-box {
+                img {
                     width: 100px;
                 }
             }
             .sect-4-text {
                 @extend %sect-4-text-size;
                 @extend %sect-4-text-med;
-                .sect-4-h3 {
+                h3 {
                     margin: 10px;
                     @extend %sect-4-h3-font;
                 }
-                .sect-4-p {
+                p {
                     @extend %sect-4-p-size;
                     @extend %sect-4-p-font;
                     @extend %sect-4-p-med;
+                }
+                .sect-4-cost {
+                    h4 {
+                        &:first-child {
+                            margin-right: 50px;
+                            span {
+                                text-decoration: line-through;
+                                color: rgba(255, 0, 0, 0.938);
+                            }
+                        }
+                        @extend %cont-2-h4-font;
+                        @extend %cont-2-h4-med;
+                        span {
+                            color: rgba(255, 0, 0, 0.938);
+                        }
+                    }
                 }
             }
         }

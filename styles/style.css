@@ -80,7 +80,7 @@ a {
   background-position: left;
   background-size: initial; }
 
-.sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-h3 {
+.sect-2 .sect-2-sm .cont-1-sm-box h3 {
   font-size: 20px;
   color: #565555;
   font-family: 'archy-B';
@@ -232,7 +232,7 @@ a {
   border-radius: 5px;
   margin: 0 auto; }
 
-.sect-1 .sect-1-cont .sect-1-box .sect-1-img {
+.sect-1 .sect-1-cont .sect-1-box a img {
   margin: 2px;
   position: relative;
   display: flex;
@@ -317,7 +317,7 @@ a {
   width: 100%;
   height: 120px; }
 
-.sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-h3 {
+.sect-2 .sect-2-sm .cont-1-sm-box h3 {
   margin: 25px auto; }
 
 .sect-3 {
@@ -352,8 +352,8 @@ a {
   letter-spacing: 1px;
   text-shadow: 0 0 1px #565555; }
 
-.sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost .cont-2-h4 {
-  font-size: 36px;
+.sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4 {
+  font-size: 23px;
   color: #00A1C2;
   font-family: 'archy-B';
   letter-spacing: 3px;
@@ -516,18 +516,18 @@ a {
   width: 100%;
   height: 250px; }
 
-.sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-h3 {
+.sect-4 .sect-4-cont .sect-4-box .sect-4-text h3 {
   font-size: 20px;
   color: #565555;
   font-family: 'archy-B';
   letter-spacing: 2px;
   text-shadow: 1px -1px 1px #00A1C2; }
 
-.sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-p {
+.sect-4 .sect-4-cont .sect-4-box .sect-4-text p {
   height: 320px;
   margin: 10px; }
 
-.sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-p {
+.sect-4 .sect-4-cont .sect-4-box .sect-4-text p {
   font-size: 20px;
   color: #565555;
   font-family: 'alk-s';
@@ -836,6 +836,8 @@ a {
     z-index: 1000; }
     .sect-1 .sect-1-cont .sect-1-box .slick-dots {
       bottom: 25px; }
+    .sect-1 .sect-1-cont .sect-1-box a {
+      cursor: pointer; }
 
 .sect-2 {
   display: flex;
@@ -1167,7 +1169,7 @@ a {
       .sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-img {
         margin-left: 50px;
         max-width: 220px; }
-        .sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-img .cont-1-sm-img-box {
+        .sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-img a img {
           width: 100%; }
 
 .sect-3 {
@@ -1215,7 +1217,19 @@ a {
         .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-p {
           margin-bottom: 5px; }
         .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost {
-          margin: 15px 0 10px 200px; }
+          width: 100%;
+          height: 85px;
+          margin-right: 10px;
+          display: flex;
+          justify-content: end;
+          align-items: center; }
+          .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4:first-child {
+            margin-right: 50px; }
+            .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4:first-child span {
+              text-decoration: line-through;
+              color: rgba(255, 0, 0, 0.938); }
+          .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4 span {
+            color: rgba(255, 0, 0, 0.938); }
 
 .sect-banbox {
   display: flex;
@@ -1338,10 +1352,17 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: center; }
-        .sect-4 .sect-4-cont .sect-4-box .sect-4-img .sect-4-img-box {
+        .sect-4 .sect-4-cont .sect-4-box .sect-4-img img {
           width: 100px; }
-      .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-h3 {
+      .sect-4 .sect-4-cont .sect-4-box .sect-4-text h3 {
         margin: 10px; }
+      .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4:first-child {
+        margin-right: 50px; }
+        .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4:first-child span {
+          text-decoration: line-through;
+          color: rgba(255, 0, 0, 0.938); }
+      .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4 span {
+        color: rgba(255, 0, 0, 0.938); }
 
 .sect-baner {
   display: flex;
@@ -1479,6 +1500,11 @@ a {
           width: 100%; }
       .sect-2-big .sect-2-box .cont-1-list .product-1-list-box .product-1-img .product-1-img-text .product-flt-ico-nm {
         text-align: end; }
+        .sect-2-big .sect-2-box .cont-1-list .product-1-list-box .product-1-img .product-1-img-text .product-flt-ico-nm h2:first-child span {
+          text-decoration: line-through;
+          color: rgba(255, 0, 0, 0.938); }
+        .sect-2-big .sect-2-box .cont-1-list .product-1-list-box .product-1-img .product-1-img-text .product-flt-ico-nm h2 span {
+          color: rgba(255, 0, 0, 0.938); }
         .sect-2-big .sect-2-box .cont-1-list .product-1-list-box .product-1-img .product-1-img-text .product-flt-ico-nm .product-xazi {
           width: 100%;
           margin: 10px auto;
@@ -1846,13 +1872,14 @@ a {
       width: 100%;
       height: 440px;
       padding: 10px; }
-      .spec-box .pc-k1-img-cont .pc-k1-img-box .slick-prev:before,
-      .spec-box .pc-k1-img-cont .pc-k1-img-box .slick-next:before {
-        font-size: 60px;
-        color: #00A1C2; }
+      .spec-box .pc-k1-img-cont .pc-k1-img-box button:before {
+        display: none; }
       .spec-box .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide {
         max-width: 450px;
-        height: 470px; }
+        height: 470px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
         .spec-box .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
           width: 100%; }
     .spec-box .pc-k1-img-cont .pc-k1-img-list-sm {
@@ -1880,12 +1907,12 @@ a {
     position: fixed;
     top: 50px;
     background: rgba(5, 116, 148, 0.3);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(4px);
     z-index: 300; }
     .spec-box .pc-k1-img-big-img .close-big-img {
       position: fixed;
-      top: 115px;
-      width: 75%;
+      top: 40px;
+      width: 93%;
       height: 50px;
       text-align: end;
       z-index: 400;
@@ -1899,16 +1926,15 @@ a {
       width: 100%;
       height: 540px;
       padding: 10px;
-      margin-top: 60px; }
-      .spec-box .pc-k1-img-big-img .pc-k1-img-box .slick-prev:before,
-      .spec-box .pc-k1-img-big-img .pc-k1-img-box .slick-next:before {
-        font-size: 60px;
-        color: #00A1C2; }
+      margin-top: 60px;
+      background: #F4F6F6; }
       .spec-box .pc-k1-img-big-img .pc-k1-img-box .pc-k1-img-box-slide {
         max-width: none;
         height: 470px;
-        margin: 0px 0 0 180px;
-        transition: 0.6s ease; }
+        margin: 0px 0 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         .spec-box .pc-k1-img-big-img .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
           max-width: 580px;
           width: 100%;
@@ -1920,7 +1946,7 @@ a {
       .spec-box .pc-k1-img-big-img .pc-k1-img-list-sm .pc-k1-img-box-sm {
         padding: 20px 40px;
         margin: 0 10px;
-        transition: 0.6s ease; }
+        background: #F4F6F6; }
         .spec-box .pc-k1-img-big-img .pc-k1-img-list-sm .pc-k1-img-box-sm:hover {
           border-color: #00A1C2;
           cursor: pointer; }
@@ -2504,19 +2530,19 @@ a {
     margin-bottom: 10px; } }
 
 @media (max-width: 1366px) {
-  .sect-1 .sect-1-cont .sect-1-box .sect-1-img {
+  .sect-1 .sect-1-cont .sect-1-box a img {
     height: 330px; } }
 
 @media (max-width: 1024px) {
-  .sect-1 .sect-1-cont .sect-1-box .sect-1-img {
+  .sect-1 .sect-1-cont .sect-1-box a img {
     height: 260px; } }
 
 @media (max-width: 834px) {
-  .sect-1 .sect-1-cont .sect-1-box .sect-1-img {
+  .sect-1 .sect-1-cont .sect-1-box a img {
     height: 210px; } }
 
 @media (max-width: 768px) {
-  .sect-1 .sect-1-cont .sect-1-box .sect-1-img {
+  .sect-1 .sect-1-cont .sect-1-box a img {
     height: 190px; } }
 
 @media (max-width: 1366px) {
@@ -2971,7 +2997,7 @@ a {
     margin-left: 20px; } }
 
 @media (max-width: 1366px) {
-  .sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-h3 {
+  .sect-2 .sect-2-sm .cont-1-sm-box h3 {
     font-size: 15px; } }
 
 @media (max-width: 1366px) {
@@ -3150,19 +3176,19 @@ a {
     margin: 9px 0 0 70px; } }
 
 @media (max-width: 1366px) {
-  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost .cont-2-h4 {
+  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4 {
     font-size: 23px; } }
 
 @media (max-width: 768px) {
-  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost .cont-2-h4 {
+  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4 {
     font-size: 20px; } }
 
 @media (max-width: 601px) {
-  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost .cont-2-h4 {
+  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4 {
     font-size: 30px; } }
 
 @media (max-width: 414px) {
-  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost .cont-2-h4 {
+  .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-cost h4, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-cost h4 {
     font-size: 20px; } }
 
 @media (max-width: 1366px) {
@@ -3781,7 +3807,7 @@ a {
     height: 215px; } }
 
 @media (max-width: 768px) {
-  .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-p {
+  .sect-4 .sect-4-cont .sect-4-box .sect-4-text p {
     font-size: 11px; } }
 
 @media (max-width: 1366px) {
@@ -4400,31 +4426,6 @@ a {
 @media (max-width: 414px) {
   .spec-box .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
     height: 160px; } }
-
-@media (max-width: 834px) {
-  .spec-box .pc-k1-img-cont .pc-k1-img-list-sm {
-    width: 75%; } }
-
-@media (max-width: 601px) {
-  .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm {
-    padding: 5px 15px; } }
-
-@media (max-width: 414px) {
-  .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm {
-    padding: 5px 2px; } }
-
-@media (max-width: 834px) {
-  .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm .pc-k1-img-sm {
-    width: 90%;
-    height: 60px; } }
-
-@media (max-width: 414px) {
-  .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm .pc-k1-img-sm {
-    height: 38px; } }
-
-@media (max-width: 375px) {
-  .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm .pc-k1-img-sm {
-    height: 30px; } }
 
 @media (max-width: 1024px) {
   .spec-box .pc-k1-img-text {

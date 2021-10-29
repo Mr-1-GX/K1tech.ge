@@ -49,6 +49,15 @@
                                 @extend %pc-k1-butt-r-h4;
                                 @extend %pc-ico-nm-h2-fe;
                                 @extend %pc-ico-nm-h2-med;
+                                &:first-child {
+                                    span {
+                                        text-decoration: line-through;
+                                        color: rgba(255, 0, 0, 0.938);
+                                    }
+                                }
+                                span {
+                                    color: rgba(255, 0, 0, 0.938);
+                                }
                             }
                             .product-xazi {
                                 width: 100%;
