@@ -927,6 +927,11 @@
         flex-direction: column;
     }
 }
+%flt-user-cont-med {
+    @media (max-width: 1536px) {
+        top: 130px;
+    }
+}
 %sect-2-flt-med {
     @media (max-width: 1366px) {
         padding-top: 2px;
@@ -1021,6 +1026,9 @@
     @media (max-width: 600px) {
         font-size: 17px;
     }
+}
+%sid-icon-med {
+    
 }
 %ico-nm-h2-med-2 {
     

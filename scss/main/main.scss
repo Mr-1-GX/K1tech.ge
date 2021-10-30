@@ -251,12 +251,13 @@
         @extend %sect-2-big-med;
         //------- Filtr adn user BAR ------
         .flt-user-cont {
-            display: flex;
+            @include d-flex (flex,space-between,center);
             width: 100%;
             position: fixed;
-            top: 95px;
+            top: 180px;
             left: 0;
             z-index: 1000;
+            @extend %flt-user-cont-med;
             //----- SIDE BAR ----------
             .sect-2-flt {
                 max-width: 470px;
@@ -452,7 +453,7 @@
                         flex-direction: column;
                         position: absolute;
                         top: 15px;
-                        left: 420px;
+                        left: 394px;
                         width: 155px;
                         i {
                             color: $color-02;
@@ -508,7 +509,7 @@
                 .user-bar {
                     position: absolute;
                     top: 70px;
-                    right: -191%;
+                    right: -220%;
                     background: rgba(255, 255, 255, 0.5);
                     backdrop-filter: blur(15px);
                     width: 960px;
@@ -535,7 +536,7 @@
                     flex-direction: column;
                     position: absolute;
                     top: 90px;
-                    left: 80%;
+                    left: 75%;
                     width: 118px;
                     height: 340px;
                     i {
