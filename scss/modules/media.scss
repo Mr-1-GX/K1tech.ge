@@ -8,7 +8,7 @@
 }
 %nav-box-med {
     @media (max-width: 1366px) {
-        width: 93%;
+        width: 90%;
         margin: 5px auto;
     }
     @media (max-width: 1024px) {
@@ -25,8 +25,7 @@
 }
 %nav-logo-med {
     @media (max-width: 1366px) {
-        max-width: 65px;
-        height: 75px;
+        height: 95px;
     }
     @media (max-width: 1024px) {
         max-width: 50px;
@@ -49,6 +48,9 @@
         max-width: 40px;
         height: 45px;
     }
+}
+%nav-logo-act-med {
+    height: 50px;
 }
 %navi-med {
     @media (max-width: 1366px) {
@@ -237,7 +239,7 @@
 }
 %search-med {
     @media (max-width: 1366px) {
-        width: 490px;
+        width: 390px;
         height: 40px;
     }
     @media (max-width: 1024px) {
@@ -278,7 +280,7 @@
 }
 %inp-search-med {
     @media (max-width: 1366px) {
-        width: 425px;
+        width: 325px;
     }
     @media (max-width: 1024px) {
         width: 275px;
@@ -312,6 +314,7 @@
 }
 %srch-fa-med {
     @media (max-width: 1366px) {
+        font-size: 26px;
         padding: 0 20px 8px;
     }
     @media (max-width: 1024px) {
@@ -420,6 +423,9 @@
     }
 }
 %head-flt-ul-med {
+    @media (max-width: 1536px) {
+        width: 97%;
+    }
     @media (max-width: 834px) {
         width: 99%;
     }
@@ -428,8 +434,11 @@
     }
 }
 %head-flt-li-med {
+    @media (max-width: 1600px) {
+        font-size: 21px;
+    }
     @media (max-width: 1366px) {
-        font-size: 14px;
+        font-size: 17px;
         max-width: 95px;
     }
     @media (max-width: 1024px) {
@@ -648,7 +657,7 @@
 }
 %search-act-med {
     @media (max-width: 1366px) {
-        width: 1045px;
+        width: 310px;
     }
     @media (max-width: 1280px) {
         width: 990px;
@@ -684,7 +693,7 @@
 }
 %inp-search-act-med {
     @media (max-width: 1366px) {
-        width: 980px;
+        width: 245px;
     }
     @media (max-width: 1280px) {
         width: 925px;
@@ -745,6 +754,13 @@
     }
 }
 %head-flt-li-act-med {
+    @media (max-width: 1600px) {
+        font-size: 16px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 14px;
+        max-width: 155px;
+    }
     @media (max-width: 834px) {
         font-size: 10px;
         letter-spacing: 1px;
@@ -820,7 +836,7 @@
 }
 %sect-1-img-med {
     @media (max-width: 1366px) {
-        height: 330px;
+        height: 590px;
     }
     @media (max-width: 1024px) {
         height: 260px;
@@ -834,6 +850,11 @@
 }
 //----------
 //Section-2
+%sect-2-med {
+    @media (max-width: 1536px) {
+        width: 88%;
+    }
+}
 %pro-navi-med {
     @media (max-width: 1366px) {
         height: 30px;
@@ -928,8 +949,14 @@
     }
 }
 %flt-user-cont-med {
+    @media (max-width: 1600px) {
+        top: 140px;
+    }
     @media (max-width: 1536px) {
         top: 130px;
+    }
+    @media (max-width: 1366px) {
+        top: 110px;
     }
 }
 %sect-2-flt-med {
@@ -950,6 +977,11 @@
         width: 90%;
         position: unset;
         margin: 20px auto;
+    }
+}
+%cont-1-img-user {
+    @media (max-width: 1600px) {
+        width: 66%;
     }
 }
 %flt-cont-med {
@@ -1027,8 +1059,32 @@
         font-size: 17px;
     }
 }
+%user-bar {
+    @media (max-width: 1536px) {
+        width: 1105px;
+    }
+    @media (max-width: 1366px) {
+        width: 900px;
+    }
+}
 %sid-icon-med {
-    
+    @media (max-width: 1600px) {
+        left: -13%;
+    }
+    @media (max-width: 1366px) {
+        left: -74px;
+        height: 370px;
+        i {
+            font-size: 15px;
+            width: 24%;
+            line-height: 21px;
+        }
+    }
+}
+%itmes-med {
+    a {
+        line-height: 38px;
+    }
 }
 %ico-nm-h2-med-2 {
     
@@ -1144,10 +1200,25 @@
         height: 25px;
     }
 }
-%sect-2-box-med {
-    @media (max-width: 1366px) {
-        height: 830px;
+%users-icon {
+    @media (max-width: 1600px) {
+        left: 88%;
     }
+    @media (max-width: 1536px) {
+        left: 87%;
+    }
+    @media (max-width: 1366px) {
+        left: 85%;
+        width: 123px;
+        height: 265px;
+        i {
+            font-size: 17px;
+            width: 27%;
+            line-height: 22px;
+        }
+    }
+}
+%sect-2-box-med {
     @media (max-width: 1024px) {
         width: 50%;
         height: 1870px;
@@ -1278,13 +1349,43 @@
         height: 140px;
     }
 }
+%sect-4-med {
+    @media (max-width: 1536px) {
+        width: 90%;
+    }
+}
 %cont-1-img-text-med {
     @media (max-width: 1366px) {
-        height: 55px;
+        height: 75px;
     }
     @media (max-width: 768px) {
         height: 40px;
         padding: 2px 10px;
+    }
+}
+%user-icon {
+    @media (max-width: 1600px) {
+        left: 87%;
+        max-width: 140px;
+        i {
+            width: 47%;
+        }
+    }
+    @media (max-width: 1536px) {
+        top: 8px;
+        left: 93%;
+        align-items: center;
+        width: 67px;
+        i {
+            width: 85%;
+            font-size: 37px;
+        }
+    }
+    @media (max-width: 1366px) {
+        top: 20px;
+        i {
+            font-size: 30px;
+        }
     }
 }
 %flt-ico-nm-2-med {
@@ -1367,6 +1468,9 @@
     }
 }
 %cont-1-sm-box-med {
+    @media (max-width: 1536px) {
+        width: 47%;
+    }
     @media (max-width: 1366px) {
         height: 75px;
     }
@@ -1381,6 +1485,11 @@
     }
 }
 %cont-1-sm-img-med {
+    @media (max-width: 1366px) {
+        img {
+            height: 140px;
+        }
+    }
     @media (max-width: 768px) {
         margin-left: 20px;
     }
@@ -1393,7 +1502,11 @@
 //----------
 //Section-3
 %sect-3-med {
+    @media (max-width: 1536px) {
+        width: 88%;
+    }
     @media (max-width: 1366px) {
+        height: 560px;
         margin: 20px auto 10px;
         padding: 2px 0 30px 0;
     }
@@ -1417,7 +1530,7 @@
 }
 %sect-3-cont-med {
     @media (max-width: 1366px) {
-        height: 315px;
+        height: 420px;
     }
     @media (max-width: 962px) {
         height: 340px;
@@ -1442,7 +1555,7 @@
 }
 %cont-2-box-med {
     @media (max-width: 1366px) {
-        height: 240px;
+        height: 400px;
         margin: 30px 5px;
     }
     @media (max-width: 834px) {
@@ -1467,7 +1580,7 @@
 %cont-2-text-med {
     @media (max-width: 1366px) {
         max-width: 280px;
-        height: 170px;
+        height: 260px;
     }
     @media (max-width: 768px) {
         height: 130px;
@@ -1506,7 +1619,7 @@
 }
 %cont-2-p-box-med {
     @media (max-width: 1366px) {
-        height: 65px;
+        height: 150px;
     }
     @media (max-width: 834px) {
         height: 125px;
@@ -1526,7 +1639,7 @@
 }
 %cont-2-p-med {
     @media (max-width: 1366px) {
-        font-size: 15px;
+        font-size: 20px;
     }
     @media (max-width: 768px) {
         font-size: 12px;
@@ -1543,7 +1656,12 @@
 }
 %cont-2-cost-med {
     @media (max-width: 1366px) {
-        margin: 14px 0 0 130px; 
+        margin: 14px 0 0 0px; 
+        justify-content: space-around;
+        h4 {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
     }
     @media (max-width: 834px) {
         margin: 10px 0 0 105px;
@@ -1572,12 +1690,14 @@
 //Section-BanBox
 %sect-banbox-med {
     @media (max-width: 1366px) {
+        width: 88%;
         margin: 20px auto;
     }
 }
 %banbox-cont-med {
     @media (max-width: 1366px) {
         height: 160px;
+        justify-content: space-between;
     }
     @media (max-width: 1024px) {
         height: 310px;
@@ -1606,6 +1726,7 @@
 }
 %banbox-box-med {
     @media (max-width: 1366px) {
+        width: 49%;
         height: 90px;
     }
     @media (max-width: 1024px) {
@@ -1636,6 +1757,7 @@
 }
 %consol-med {
     @media (max-width: 1366px) {
+        @include d-flex (flex,center,center);
         height: 85px;
     }
     @media (max-width: 962px) {
@@ -1694,6 +1816,10 @@
     }
 }
 %box-box-ico-med {
+    @media (max-width: 1366px) {
+        width: 75%;
+        height: 110px;
+    }
     @media (max-width: 962px) {
         height: 85px;
     }
@@ -1783,9 +1909,13 @@
     }
 }
 %banbox-cont-2-med {
+    @media (max-width: 1536px) {
+        max-width: 1415px;
+    }
     @media (max-width: 1366px) {
-        width: 95%;
+        width: 100%;
         height: 630px;
+        justify-content: space-between;
     }
     @media (max-width: 1280px) {
         height: 550px;
@@ -1814,6 +1944,9 @@
     }
 }
 %sect-ban-cont-med {
+    @media (max-width: 1536px) {
+        max-width: 770px;
+    }
     @media (max-width: 1366px) {
         width: 60%;
         height: 615px;
@@ -1903,6 +2036,9 @@
     }
 }
 %sect-ban-cont-2-med {
+    @media (max-width: 1536px) {
+        max-width: 570px;
+    }
     @media (max-width: 1366px) {
         width: 38%;
         height: 615px;
@@ -2155,7 +2291,8 @@
     @media (max-width: 1366px) {
         height: 230px;
         p {
-            font-size: 31px;
+            font-size: 29px;
+            padding: 10px 80px;
         }
     }
     @media (max-width: 1280px) {

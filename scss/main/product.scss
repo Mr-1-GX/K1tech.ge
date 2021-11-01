@@ -17,12 +17,10 @@
                     a {
                         max-width: 180px;
                         margin-bottom: 25px;
-                        @extend %pc-1-img-hrf-med;
                         @extend %pc-1-img-hrf-hover;
                         img {
                             width: 100%;
                             height: 170px;
-                            @extend %pc-1-img-box-med;
                         }
                     }
                     .product-1-img-text {
