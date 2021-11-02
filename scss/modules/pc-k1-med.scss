@@ -105,6 +105,9 @@
     }
 }
 %pc-k1-img-text-med {
+    @media (max-width: 1366px) {
+        width: 45%;
+    }
     @media (max-width: 1024px) {
         width: 99%;
         margin-left: 320px;

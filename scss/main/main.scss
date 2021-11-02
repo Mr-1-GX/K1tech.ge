@@ -326,7 +326,7 @@
                     left: -13%;
                     width: 119px;
                     height: 480px;
-                    @extend %sid-icon-med;
+                    @extend %side-icon-med;
                     i {
                         color: $color-01;
                         font-size: 19px;
@@ -358,6 +358,7 @@
                     transition: 0.6s ease;
                     transition-property: left;
                     border-radius: 5px;
+                    @extend %side-bar-med;
                     .close-btn {
                         position: relative;
                         color: $color-04;

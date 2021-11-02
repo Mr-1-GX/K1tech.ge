@@ -12,7 +12,7 @@
         margin: 5px auto;
     }
     @media (max-width: 1024px) {
-        width: 92%;
+        width: 80%;
     }
     @media (max-width: 414px) {
         width: 85%;
@@ -28,8 +28,13 @@
         height: 95px;
     }
     @media (max-width: 1024px) {
-        max-width: 50px;
-        height: 55px;
+        max-width: 240px;
+        height: 110px;
+        a {
+            h1 {
+                font-size: 45px;
+            }
+        }
     }
     @media (max-width: 962px) {
         max-width: 40px;
@@ -49,15 +54,13 @@
         height: 45px;
     }
 }
-%nav-logo-act-med {
-    height: 50px;
-}
 %navi-med {
     @media (max-width: 1366px) {
         width: 60%;
     }
     @media (max-width: 1024px) {
-        width: 70%;
+        max-width: 550px;
+        width: 100%;
         justify-content: flex-end;
     }
     @media (max-width: 600px) {
@@ -70,7 +73,7 @@
 }
 %navi-cont-med {
     @media (max-width: 1024px) {
-        width: 83%;
+        width: 99%;
     }
     @media (max-width: 414px) {
         width: 90%;
@@ -243,8 +246,8 @@
         height: 40px;
     }
     @media (max-width: 1024px) {
-        width: 320px;
-        height: 30px;
+        width: 520px;
+        height: 55px;
     }
     @media (max-width: 962px) {
         height: 29px;
@@ -283,7 +286,7 @@
         width: 325px;
     }
     @media (max-width: 1024px) {
-        width: 275px;
+        width: 440px;
     }
     @media (max-width: 834px) {
         width: 200px;
@@ -318,8 +321,8 @@
         padding: 0 20px 8px;
     }
     @media (max-width: 1024px) {
-        padding: 0 10px 4px;
-        font-size: 22px;
+        padding: 0 17px 7px;
+        font-size: 40px;
     }
     @media (max-width: 962px) {
         font-size: 20px;
@@ -410,7 +413,10 @@
 }
 %head-flt-cont-med {
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 95%;
+        position: absolute;
+        top: 130px;
+        left: 5px;
     }
     @media (max-width: 834px) {
         margin-left: 45px;
@@ -425,6 +431,9 @@
 %head-flt-ul-med {
     @media (max-width: 1536px) {
         width: 97%;
+    }
+    @media (max-width: 1024px) {
+        width: 80%;
     }
     @media (max-width: 834px) {
         width: 99%;
@@ -441,9 +450,12 @@
         font-size: 17px;
         max-width: 95px;
     }
+    @media (max-width: 1280px) {
+        font-size: 15px;
+    }
     @media (max-width: 1024px) {
-        max-width: 80px;
-        font-size: 12px;
+        max-width: 155px;
+        font-size: 25px;
     }
     @media (max-width: 834px) {
         font-size: 12px;
@@ -660,7 +672,8 @@
         width: 310px;
     }
     @media (max-width: 1280px) {
-        width: 990px;
+        width: 320px;
+        height: 30px;
     }
     @media (max-width: 1024px) {
         width: 820px;
@@ -696,7 +709,7 @@
         width: 245px;
     }
     @media (max-width: 1280px) {
-        width: 925px;
+        width: 270px;
     }
     @media (max-width: 1024px) {
         width: 755px;
@@ -727,6 +740,10 @@
     }
 }
 %srch-fa-act-med {
+    @media (max-width: 1280px) {
+        font-size: 20px;
+        padding: 0 15px 5px;
+    }
     @media (max-width: 834px) {
         font-size: 25px;
     }
@@ -760,6 +777,9 @@
     @media (max-width: 1366px) {
         font-size: 14px;
         max-width: 155px;
+    }
+    @media (max-width: 1280px) {
+        font-size: 13px;
     }
     @media (max-width: 834px) {
         font-size: 10px;
@@ -799,11 +819,20 @@
 //---------
 //Section-1
 %sect-1-med {
+    @media (max-width: 1600px) {
+        margin: 85px 0 auto;
+    }
+    @media (max-width: 1536px) {
+        margin: 73px 0 auto;
+    }
     @media (max-width: 1366px) {
-        margin: 3px 0 5px;
+        margin: 62px 0 auto;
     }
     @media (max-width: 1280px) {
-        margin: 15px 0 15px;
+        margin: 57px 0 auto;
+    }
+    @media (max-width: 1024px) {
+        margin: 114px 0 auto;
     }
     @media (max-width: 810px) {
         margin: 10px 0 1px;
@@ -829,18 +858,24 @@
 %sect-1-box-med {
     @media (max-width: 1366px) {
         margin-bottom: 1px;
+        a {
+            img {
+                height: 64vh;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        a {
+            img {
+                height: 35vh;
+            }
+        }
     }
     @media (max-width: 810px) {
         margin-bottom: 10px;
     }
 }
 %sect-1-img-med {
-    @media (max-width: 1366px) {
-        height: 590px;
-    }
-    @media (max-width: 1024px) {
-        height: 260px;
-    }
     @media (max-width: 834px) {
         height: 210px;
     }
@@ -950,13 +985,16 @@
 }
 %flt-user-cont-med {
     @media (max-width: 1600px) {
-        top: 140px;
+        top: 125px;
     }
     @media (max-width: 1536px) {
         top: 130px;
     }
     @media (max-width: 1366px) {
-        top: 110px;
+        top: 90px;
+    }
+    @media (max-width: 1024px) {
+        top: 155px;
     }
 }
 %sect-2-flt-med {
@@ -1061,29 +1099,71 @@
 }
 %user-bar {
     @media (max-width: 1536px) {
-        width: 1105px;
+        width: 975px;
     }
     @media (max-width: 1366px) {
         width: 900px;
     }
+    @media (max-width: 1280px) {
+        width: 815px;
+    }
+    @media (max-width: 1024px) {
+        left: 120%;
+    }
 }
-%sid-icon-med {
+%side-icon-med {
     @media (max-width: 1600px) {
         left: -13%;
-    }
-    @media (max-width: 1366px) {
-        left: -74px;
-        height: 370px;
+        height: 430px;
         i {
-            font-size: 15px;
-            width: 24%;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    @media (max-width: 1536px) {
+        height: 390px;
+        i {
+            font-size: 17px;
             line-height: 21px;
         }
     }
+    @media (max-width: 1366px) {
+        left: -74px;
+        height: 345px;
+        i {
+            font-size: 14px;
+            width: 24%;
+            line-height: 17px;
+        }
+    }
+    @media (max-width: 1280px) {
+        left: -78px;
+        height: 310px;
+        i {
+            font-size: 12px;
+            width: 20%;
+            line-height: 16px;
+        }
+    }
+    @media (max-width: 1024px) {
+        height: 345px;
+    }
+}
+%side-bar-med {
+    @media (max-width: 1024px) {
+        left: -145%;
+    }
 }
 %itmes-med {
-    a {
-        line-height: 38px;
+    @media (max-width: 1366px) {
+        a {
+            line-height: 39px;
+        }
+    }
+    @media (max-width: 1280px) {
+        a {
+            line-height: 35px;
+        }
     }
 }
 %ico-nm-h2-med-2 {
@@ -1203,9 +1283,14 @@
 %users-icon {
     @media (max-width: 1600px) {
         left: 88%;
+        height: 290px;
+        i {
+            width: 30%;
+            line-height: 25px;
+        }
     }
     @media (max-width: 1536px) {
-        left: 87%;
+        left: 86%;
     }
     @media (max-width: 1366px) {
         left: 85%;
@@ -1216,6 +1301,18 @@
             width: 27%;
             line-height: 22px;
         }
+    }
+    @media (max-width: 1280px) {
+        width: 112px;
+        height: 230px;
+        i {
+            font-size: 15px;
+            width: 23%;
+            line-height: 15px;
+        }
+    }
+    @media (max-width: 1024px) {
+        left: 66%;
     }
 }
 %sect-2-box-med {
@@ -1366,7 +1463,7 @@
 %user-icon {
     @media (max-width: 1600px) {
         left: 87%;
-        max-width: 140px;
+        max-width: 145px;
         i {
             width: 47%;
         }
@@ -1386,6 +1483,9 @@
         i {
             font-size: 30px;
         }
+    }
+    @media (max-width: 1024px) {
+        left: 85%;
     }
 }
 %flt-ico-nm-2-med {
@@ -1446,6 +1546,9 @@
     }
 }
 %sect-2-sm-med {
+    @media (max-width: 1366px) {
+        margin: 70px 0 25px;
+    }
     @media (max-width: 1024px) {
         height: 200px;
         flex-direction: column;
@@ -1556,7 +1659,7 @@
 %cont-2-box-med {
     @media (max-width: 1366px) {
         height: 400px;
-        margin: 30px 5px;
+        margin: 30px 14px;
     }
     @media (max-width: 834px) {
         height: 280px;
@@ -1641,6 +1744,9 @@
     @media (max-width: 1366px) {
         font-size: 20px;
     }
+    @media (max-width: 1280px) {
+        font-size: 18px;
+    }
     @media (max-width: 768px) {
         font-size: 12px;
     }
@@ -1655,12 +1761,27 @@
     }
 }
 %cont-2-cost-med {
+    @media (max-width: 1536px) {
+        justify-content: space-around;
+        h4 {
+            font-size: 21px;
+            letter-spacing: 2px;
+        }
+    }
     @media (max-width: 1366px) {
         margin: 14px 0 0 0px; 
         justify-content: space-around;
         h4 {
             font-size: 20px;
             letter-spacing: 2px;
+            &:first-child {
+                margin-right: 1px;
+            }
+        }
+    }
+    @media (max-width: 1280px) {
+        h4 {
+            font-size: 18px;
         }
     }
     @media (max-width: 834px) {
@@ -2307,11 +2428,12 @@
             padding: 10px 25px;
         }
     }
-    @media (max-width: 1028px) {
-        height: 270px;
+    @media (max-width: 1024px) {
+        height: 320px;
         p {
             font-size: 32px;
             margin: 10px 0;
+            padding: 10px 5px;
         }
         button {
             font-size: 25px;
