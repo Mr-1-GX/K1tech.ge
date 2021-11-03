@@ -117,6 +117,7 @@
     overflow-y: auto;
     transition: 1.0s ease-in-out;
     @extend %border-def;
+    @extend %active-med;
     .nav-box {
         height: 60px;
         margin: 0 auto;
@@ -153,6 +154,7 @@
             margin: 0 auto;
             padding: 5px 0 0;
             @include d-flex (flex,space-between,center);
+            @extend %head-flt-cont-act-med;
             .head-flt-ul {
                 .head-flt-li {
                     color: $color-02;
@@ -434,6 +436,7 @@
                 }
                 .bar-active {
                     left: 0px;
+                    @extend %bar-active-med;
                 }
                 .rotate {
                     transform: rotate(90deg);
@@ -574,6 +577,7 @@
                 }
                 .user-bar-active {
                     right: -5px;
+                    @extend %user-bar-active-med;
                 }
                 .rotate {
                     transform: rotate(90deg);
@@ -651,6 +655,7 @@
                             .cont-1-fit-li {
                                 @extend %cont-1-fit-li-size;
                                 @include d-flex (flex,space-between,center);
+                                @extend %cont-1-fit-li-med;
                                 .cont-1-fit-a {
                                     @extend %cont-1-fit-li-font;
                                     @extend %font-hover-def;

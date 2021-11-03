@@ -2,6 +2,7 @@
     width: 100%;
     margin-top: 5px;
     @include d-flex (flex,space-evenly,flex-start);
+    @extend %spec-box-med;
     .pc-k1-img-cont {
         max-width: 600px;
         width: 100%;
@@ -11,6 +12,7 @@
         cursor: pointer;
         position: sticky;
         top: 95px;
+        @extend %pc-k1-img-cont-med;
         .close-big-img {
             visibility: hidden;
         }
