@@ -905,12 +905,13 @@ a {
         .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon {
           display: flex;
           justify-content: space-between;
-          align-items: end;
+          align-items: center;
           flex-direction: column;
           position: absolute;
           top: 80px;
-          left: -13%;
-          width: 119px;
+          left: 1%;
+          max-width: 70px;
+          width: 100%;
           height: 480px; }
           .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon i {
             color: #F4F6F6;
@@ -922,7 +923,7 @@ a {
             backdrop-filter: blur(15px);
             border-radius: 50px;
             cursor: pointer;
-            width: 30%;
+            width: 65%;
             text-align: center; }
             .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon i:hover {
               color: #F4F6F6;
@@ -1014,17 +1015,17 @@ a {
           padding: 10px 2px;
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: end;
           flex-direction: row-reverse; }
           .sect-2 .sect-2-big .flt-user-cont .sect-2-user .cont-1-img-user .user-icon {
             display: flex;
             justify-content: space-between;
-            align-items: end;
+            align-items: center;
             flex-direction: column;
             position: absolute;
             top: 12px;
-            left: 90%;
-            max-width: 150px;
+            left: 94%;
+            max-width: 85px;
             width: 100%; }
             .sect-2 .sect-2-big .flt-user-cont .sect-2-user .cont-1-img-user .user-icon i {
               color: #00A1C2;
@@ -1081,12 +1082,13 @@ a {
         .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon {
           display: flex;
           justify-content: space-between;
-          align-items: end;
+          align-items: center;
           flex-direction: column;
           position: absolute;
           top: 90px;
-          left: 91%;
-          width: 118px;
+          left: 95%;
+          max-width: 75px;
+          width: 100%;
           height: 340px; }
           .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon i {
             color: #F4F6F6;
@@ -1098,7 +1100,7 @@ a {
             backdrop-filter: blur(15px);
             border-radius: 50px;
             cursor: pointer;
-            width: 35%;
+            width: 65%;
             text-align: center; }
             .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon i:hover {
               color: #F4F6F6;
@@ -2766,6 +2768,10 @@ a {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-user .cont-1-img-user {
     width: 66%; } }
 
+@media (max-width: 1536px) {
+  .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .cont-1-img-text .flt-icon, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-icon, .sect-3 .cont-1-img-text .flt-icon, .sect-4 .cont-1-img-text .flt-icon {
+    justify-content: space-between; } }
+
 @media (max-width: 1366px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .cont-1-img-text .flt-icon, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-icon, .sect-3 .cont-1-img-text .flt-icon, .sect-4 .cont-1-img-text .flt-icon {
     max-width: 44px; } }
@@ -2832,14 +2838,18 @@ a {
 
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon {
-    left: -13%;
+    left: 4%;
+    width: 9%;
     height: 430px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon i {
       font-size: 18px;
-      line-height: 25px; } }
+      line-height: 25px;
+      width: 100%; } }
 
 @media (max-width: 1536px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon {
+    left: 4%;
+    width: 9%;
     height: 390px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon i {
       font-size: 17px;
@@ -2847,20 +2857,18 @@ a {
 
 @media (max-width: 1366px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon {
-    left: -74px;
+    left: 14px;
+    width: 7%;
     height: 345px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon i {
       font-size: 14px;
-      width: 24%;
       line-height: 17px; } }
 
 @media (max-width: 1280px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon {
-    left: -78px;
     height: 310px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .sid-icon i {
       font-size: 12px;
-      width: 20%;
       line-height: 16px; } }
 
 @media (max-width: 1024px) {
@@ -2881,33 +2889,32 @@ a {
 
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon {
-    left: 88%;
+    left: 94%;
+    width: 5%;
     height: 290px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon i {
-      width: 30%;
       line-height: 25px; } }
 
 @media (max-width: 1536px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon {
-    left: 86%; } }
+    left: 94%;
+    width: 4%; }
+    .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon i {
+      width: 100%; } }
 
 @media (max-width: 1366px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon {
-    left: 85%;
-    width: 123px;
+    left: 95%;
     height: 265px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon i {
       font-size: 17px;
-      width: 27%;
       line-height: 22px; } }
 
 @media (max-width: 1280px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon {
-    width: 112px;
     height: 230px; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-user .users-icon i {
       font-size: 15px;
-      width: 23%;
       line-height: 15px; } }
 
 @media (max-width: 1024px) {
@@ -3082,10 +3089,13 @@ a {
     height: 40px;
     padding: 2px 10px; } }
 
+@media (max-width: 1536px) {
+  .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .cont-1-img-text {
+    width: 93%; } }
+
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-user .cont-1-img-user .user-icon {
-    left: 87%;
-    max-width: 145px; }
+    left: 92%; }
     .sect-2 .sect-2-big .flt-user-cont .sect-2-user .cont-1-img-user .user-icon i {
       width: 47%; } }
 
