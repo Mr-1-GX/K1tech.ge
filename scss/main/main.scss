@@ -156,6 +156,7 @@
             @include d-flex (flex,space-between,center);
             @extend %head-flt-cont-act-med;
             .head-flt-ul {
+                @extend %head-flt-ul-act-med;
                 .head-flt-li {
                     color: $color-02;
                     font-size: 16px;

@@ -71,6 +71,7 @@
         background: rgba(5, 116, 148, 0.3);
         backdrop-filter: blur(4px);
         z-index: 300;
+        @extend %pc-k1-img-big-img-med;
         .close-big-img {
             position: fixed;
             top: 40px;
@@ -80,6 +81,7 @@
             z-index: 400;
             cursor: pointer;
             visibility: hidden;
+            @extend %close-big-img-med;
             i {
                 font-size: 50px;
                 color: #008CBA;
@@ -92,15 +94,18 @@
             padding: 10px;
             margin-top: 60px;
             background: $color-01;
+            @extend %pc-k1-img-box-big-med;
             .pc-k1-img-box-slide {
                max-width: none;
                 height: 470px;
                 margin: 0px 0 0 40px;
                 @include d-flex (flex,center,center);
+                @extend %pc-k1-img-box-slide-big-med;
                 .pc-k1-img {
                     max-width: 580px;
                     width: 100%;
                     height: 485px;
+                    @extend %pc-k1-img-big-med;
                 }
             }
         }
