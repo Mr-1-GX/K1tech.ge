@@ -77,10 +77,11 @@
 //slick-dots-def
 %slick-dots {
     li {
+        width: 50px;
         button {
             &:before {
                 color: $color-06;
-                font-size: 15px;
+                font-size: 40px;
             }
         }
     }
@@ -89,7 +90,7 @@
         button {
             &:before {
                 color: $color-02;
-                font-size: 25px;
+                font-size: 60px;
             }
         }
     }
@@ -314,10 +315,10 @@
     border-radius: 5px;
 }
 %head-flt-li-font {
-    font-size: 19px;
+    font-size: 25px;
     color: $color-01;
     font-family: 'archy-B';
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 %head-li-img-size {
     width: 100%;
@@ -344,7 +345,7 @@
 %sect-2-size {
     max-width: 1430px;
     width: 100%;
-    margin: 0 auto;
+    margin: 155px auto;
     background-color: $sect-2-bg;
 }
 %sect-2-big-size {
@@ -556,7 +557,7 @@
     height: $box-box-heig;
 }
 %banbox-cont-2-size {
-    max-width: 1300px;
+    max-width: 1400px;
     width: 100%;
 }
 %box-img-size {
@@ -564,24 +565,23 @@
     height: $box-img-heig;
 }
 %sect-ban-cont-size {
-    max-width: 730px;
+    max-width: 815px;
     width: 100%;
     height: 700px;
 }
 %tv-box-size {
-    max-width: $tv-box-wid;
-    width: $size-0-def;
-    margin:$tv-box-size-mrgn;
+    max-width: 640px;
+    width: 100%;
 }
 %tv-size {
-    width: $size-0-def;
-    height: $tv-heig;
+    width: 100%;
+    height: 480px;
 }
 %tv-text-cont-size {
-    max-width: $tv-text-cont-wid;
-    width: $size-0-def;
-    height: $tv-text-cont-heig;
-    margin: $tv-text-cont-mrgn;
+    max-width: 780px;
+    width: 100%;
+    height: 100px;
+    margin: 15px auto;
 }
 %tv-ico-nm-size {
     max-width: $tv-ico-nm-wid;
