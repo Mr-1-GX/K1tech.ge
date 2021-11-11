@@ -1,21 +1,19 @@
 
-$("#burger-menu").on("click", function(){
-    $("#menu").toggleClass("open-menu");
-    $("#socicon").toggleClass("open-socicon");
-    $("#head-size").toggleClass("open-head-size");
-  })
+
 
 const header = document.querySelector('.head-cont');
 
 window.onscroll = function(){
   var top = window.scrollY;
   console.log(top);
-  if (top >= 30){
+  if (top >= 15){
     header.classList.add('active')
   }else {
     header.classList.remove('active');
   }
 };
+
+
 //------- MENU FILTR  -----------
 $(document).ready(function() {
   $('.sub-btn').click(function() {
@@ -31,11 +29,23 @@ $(document).ready(function() {
     $('.flt-ico-nm-bar').css("visibility", "visible");
     $('.sid-icon').css("visibility", "hidden");
   });
+  $('.user-icon-head').click(function() {
+    $('.user-bar').addClass('user-bar-active');
+    $('.user-close-btn').css("visibility", "visible");
+    $('.user-ico-nm-bar').css("visibility", "visible");
+    $('.users-icon').css("visibility", "hidden");
+  });
   $('.user-icon').click(function() {
     $('.user-bar').addClass('user-bar-active');
     $('.user-close-btn').css("visibility", "visible");
     $('.user-ico-nm-bar').css("visibility", "visible");
     $('.users-icon').css("visibility", "hidden");
+  });
+  $('.sid-icon-head').click(function() {
+    $('.side-bar').addClass('bar-active');
+    $('.close-btn').css("visibility", "visible");
+    $('.flt-ico-nm-bar').css("visibility", "visible");
+    $('.sid-icon').css("visibility", "hidden");
   });
   $('.sid-icon').click(function() {
     $('.side-bar').addClass('bar-active');
@@ -86,6 +96,8 @@ $(document).ready(function() {
  demoBtn.addEventListener("click", () => {
    demoBanner.classList.remove("activ");
  });
+
+ 
 
 
 
