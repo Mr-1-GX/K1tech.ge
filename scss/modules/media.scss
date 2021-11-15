@@ -31,6 +31,9 @@
         width: 68%;
         margin: 10px 50px;
     }
+    @media (max-width: 601px) {
+        width: 65%;
+    }
     @media (max-width: 414px) {
         width: 80%;
         flex-direction: row;
@@ -123,6 +126,9 @@
     @media (max-width: 834px) {
         width: 70%;
     }
+    @media (max-width: 601px) {
+        width: 56%;
+    }
     @media (max-width: 600px) {
         width: 85%;
     }
@@ -182,8 +188,8 @@
         height: 40px;
     }
     @media (max-width: 601px) {
-        width: 180px;
-        height: 25px;
+        width: 190px;
+        height: 40px;
     }
     @media (max-width: 600px) {
         width: 170px;
@@ -265,7 +271,7 @@
         padding: 0 12px 5px;
     }
     @media (max-width: 601px) {
-        font-size: 17px;
+        font-size: 30px;
         padding: 0 12px 4px;
     }
     @media (max-width: 600px) {
@@ -403,11 +409,13 @@
         }
     }
     @media (max-width: 601px) {
+        top: 81px;
+        left: 65px;
         ul {
             a {
+                width: 18%;
                 li {
-                    max-width: 60px;
-                    font-size: 10px;
+                    font-size: 15px;
                     letter-spacing: 0px;
                 }
             }
@@ -475,6 +483,17 @@
             padding: 10px 0;
         }
     }
+    @media (max-width: 601px) {
+        width: 8%;
+        top: 22px;
+        left: 73%;
+        i {
+            width: 95%;
+            height: 45px;
+            font-size: 28px;
+            line-height: 25px;
+        }
+    }
 }
 %user-icon-head-med {
     @media (max-width: 1600px) {
@@ -524,6 +543,17 @@
             padding: 10px 0;
         }
     }
+    @media (max-width: 601px) {
+        width: 8%;
+        top: 22px;
+        left: 82%;
+        i {
+            width: 95%;
+            height: 45px;
+            font-size: 28px;
+            line-height: 25px;
+        }
+    }
 }
 %sid-icon-head-med {
     @media (max-width: 1600px) {
@@ -570,6 +600,16 @@
             padding: 10px 0;
         }
     }
+    @media (max-width: 601px) {
+        width: 8%;
+        top: 22px;
+        i {
+            width: 95%;
+            height: 45px;
+            font-size: 28px;
+            line-height: 25px;
+        }
+    }
 }
 //----------------
 //Active-Header
@@ -584,6 +624,10 @@
     @media (max-width: 834px) {
         top: 0px;
         height: 60px;
+    }
+    @media (max-width: 601px) {
+        top: 0px;
+        height: 50px;
     }
 }
 %nav-box-act-med {
@@ -603,6 +647,9 @@
     }
     @media (max-width: 768px) {
         width: 70%;
+    }
+    @media (max-width: 601px) {
+        margin:  5px 15px;
     }
     @media (max-width: 414px) {
         width: 90%;
@@ -631,6 +678,9 @@
         width: 15%;
         height: 50px;
     }
+    @media (max-width: 601px) {
+        height: 37px;
+    }
     @media (max-width: 414px) {
         height: 35px;
         margin: 0 0 0 1px;
@@ -649,6 +699,9 @@
     }
     @media (max-width: 834px) {
         width: 80%;
+    }
+    @media (max-width: 601px) {
+        width: 85%;
     }
 }
 %head-flt-cont-act-med {
@@ -766,10 +819,13 @@
         }
     }
     @media (max-width: 601px) {
+        top: 8px;
+        left: 73px;
         ul {
             a {
+                width: 25%;
                 li {
-                    font-size: 7px;
+                    font-size: 10px;
                 }
             }
         }
@@ -792,6 +848,10 @@
     }
     @media (max-width: 768px) {
         width: 86%;
+    }
+    @media (max-width: 601px) {
+        width: 15%;
+        height: 35px;
     }
     @media (max-width: 414px) {
         width: 75%;
@@ -843,7 +903,8 @@
         width: 49px;
     }
     @media (max-width: 601px) {
-        width: 420px;
+        width: 40px;
+        height: 30px;
     }
     @media (max-width: 414px) {
         width: 270px;
@@ -904,6 +965,9 @@
     @media (max-width: 834px) {
         font-size: 25px;
     }
+    @media (max-width: 601px) {
+        font-size: 23px;
+    }
     @media (max-width: 414px) {
         font-size: 25px;
     }
@@ -938,6 +1002,15 @@
             font-size: 30px;
         }
     }
+    @media (max-width: 601px) {
+        top: 11px;
+        left: 73%;
+        i {
+            height: 40px;
+            font-size: 28px;
+            line-height: 20px;
+        }
+    }
 }
 %user-icon-head-act-med {
     @media (max-width: 1600px) {
@@ -969,6 +1042,15 @@
             font-size: 30px;
         }
     }
+    @media (max-width: 601px) {
+        top: 11px;
+        left: 81%;
+        i {
+            height: 40px;
+            font-size: 28px;
+            line-height: 20px;
+        }
+    }
 }
 %sid-icon-head-act-med {
     @media (max-width: 1600px) {
@@ -998,6 +1080,15 @@
         left: 90%;
         i {
             font-size: 30px;
+        }
+    }
+    @media (max-width: 601px) {
+        top: 11px;
+        left: 89%;
+        i {
+            height: 40px;
+            font-size: 28px;
+            line-height: 20px;
         }
     }
 }

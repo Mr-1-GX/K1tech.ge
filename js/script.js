@@ -6,10 +6,10 @@ const header = document.querySelector('.head-cont');
 window.onscroll = function(){
   var top = window.scrollY;
   console.log(top);
-  if (top >= 30){
-    header.classList.add('active')
+  if (top >= 20){
+    header.classList.add('head-size')
   }else {
-    header.classList.remove('active');
+    header.classList.remove('head-size');
   }
 };
 
