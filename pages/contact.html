@@ -6,56 +6,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>K1Tech</title>
         <script src="https://kit.fontawesome.com/16d1808843.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="img/k1.png" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="../img/k1.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body class="body-bg">
-        <header class="head-cont">
+        <header id="head-size" class="head-cont">
             <div class="nav-box">
                 <div class="nav-logo">
-                    <a href="index.html">
-                        <img class="img-100" src="img/k1.PNG" alt="Logo">
+                    <a href="../index.html">
+                        <div class="k1-logo">
+                            <img src="../img/k1.PNG" alt="Logo">
+                        </div>
+                        <h1>Tech.ge</h1>
                     </a>
                 </div>
-                <nav class="navi">
-                    <ul id="menu" class="nav-ul">
-                        <li class="nav-li">
-                            <a class="nav-a" href="product.html"> პროდუქტები </a>
-                            <ul class="nav-drop-ul">
-                                <li class="nav-drop-li"><a class="nav-drop" href="notebook.html">ნოუთბუქი</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">კომპიუტერი</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">მონიტორი</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">კლავიატურა</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">მაუსი</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">დინამიკი</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">ყურსასმენი</a></li>
-                                <li class="nav-drop-li"><a class="nav-drop" href="#">ვაი და ფაი</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-a" href="#"> კომპიუტერი </a>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-a" href="#"> ფასდაკლებები </a>
-                        </li>
-                        <li class="nav-li"> 
-                            <a class="nav-a" href="contact.html"> კონტაქტი </a>
-                        </li>
+                <div id="socicon" class="head-flt-cont">
+                    <ul>
+                        <a href="../pages/product/product.html">
+                            <li>პროდუქტები</li>
+                        </a>
+                        <a href="#">
+                            <li>კომპიუტერის აწყობა</li>
+                        </a>
+                        <a href="#">
+                            <li>პროდუქტების შედარება</li>
+                        </a>
+                        <a href="#">
+                            <li>სურვილების სია</li>
+                        </a>
                     </ul>
-                    <ul id="socicon" class="soc-ul">
-                        <ul class="contact-ul">
-                            <li class="soc-li"><a href="https://www.facebook.com/K1TechLLC"><i class="fab fa-facebook-f fa"></i></a></li>
-                            <li class="soc-li"><a href="https://www.instagram.com"><i class="fab fa-instagram fa"></i></a></li>
-                        </ul>
-                        <div class="contact-box">
-                            <Li class="soc-li"><a class="soc-a" href="mailto:k1tech@ygmail.com"><i class="far fa-envelope fa"></i> K1tech@gmail.com</a></Li>
-                            <li class="soc-li"><a class="soc-a" href="+995 557 100 067"><i class="fas fa-phone-alt fa"></i> +995 557 100 067</a></li>
-                        </div>
-                    </ul>
-                </nav>
-                <div id="burger-menu" class="burger-icon">
-                    <i class="fas fa-align-center"></i>
                 </div>
+                <nav class="navi">
+                    <div class="navi-cont">
+                        <div class="search">
+                            <table class="element-search">
+                                <tr>
+                                    <td>
+                                        <input class="inp-search" type="text" placeholder="მოძებნე აქ......">
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fas fa-search srch-fa"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="arrow-head">
+                <i class="fas fa-cart-arrow-down"></i>
+            </div>
+            <div class="user-icon-head">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="sid-icon-head">
+                <i class="fas fa-align-center"></i>
             </div>
         </header>
         <section class="contact-bg">
@@ -267,9 +274,9 @@
                 <p class="avtori-p"><a class="avtori-a" href="index.html"> K1Tech </a> - ინტერნეტ მაღაზია <i class="far fa-copyright fa"></i> 2021</p>
             </div>
         </footer>
-        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <script type="text/javascript" src="js/slick.js"></script>
+        <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <script type="text/javascript" src="../js/slick.min.js"></script>
+        <script type="text/javascript" src="../js/slick.js"></script>
     </body>
   </html>

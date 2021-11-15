@@ -106,7 +106,7 @@
         @include d-flex (flex,space-between,center);
         position: absolute;
         top: 45px;
-        left: 87%;
+        left: 85%;
         max-width: 85px;
         width: 100%;
         transition: 1.0s ease-in-out;
@@ -132,7 +132,7 @@
         @include d-flex (flex,space-between,center);
         position: absolute;
         top: 45px;
-        left: 90%;
+        left: 89%;
         max-width: 85px;
         width: 100%;
         transition: 1.0s ease-in-out;
@@ -713,7 +713,6 @@
                 }
                 .user-bar-active {
                     right: -5px;
-                    @extend %user-bar-active-med;
                 }
                 .rotate {
                     transform: rotate(90deg);

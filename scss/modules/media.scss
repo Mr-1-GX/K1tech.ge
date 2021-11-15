@@ -254,8 +254,11 @@
         font-size: 40px;
     }
     @media (max-width: 962px) {
+        font-size: 20px;
+        padding: 0 20px 5px;
+    }
+    @media (max-width: 834px) {
         font-size: 30px;
-        padding: 0 15px 5px;
     }
     @media (max-width: 768px) {
         font-size: 35px;
@@ -339,14 +342,14 @@
         }
     }
     @media (max-width: 962px) {
-        width: 90%;
-        top: 55px;
-        left: 90px;
+        width: 85%;
+        top: 60px;
+        left: 75px;
         ul {
             width: 99%;
             a {
+                width: 15%;
                 li {
-                    max-width: 115px;
                     font-size: 18px;
                 }
             }
@@ -579,8 +582,8 @@
         height: 50px;
     }
     @media (max-width: 834px) {
-        top: -15px;
-        height: 85px;
+        top: 0px;
+        height: 60px;
     }
 }
 %nav-box-act-med {
@@ -596,7 +599,7 @@
     }
     @media (max-width: 834px) {
         width: 70%;
-        height: 70%;
+        height: 100%;
     }
     @media (max-width: 768px) {
         width: 70%;
@@ -645,7 +648,7 @@
         }
     }
     @media (max-width: 834px) {
-        width: 95%;
+        width: 80%;
     }
 }
 %head-flt-cont-act-med {
@@ -726,7 +729,7 @@
         }
     }
     @media (max-width: 834px) {
-        top: 33px;
+        top: 15px;
         width: 52%;
         ul {
             width: 90%;
@@ -823,12 +826,12 @@
         height: 40px;
     }
     @media (max-width: 962px) {
-        width: 45px;
-        height: 35px;
+        width: 35px;
+        height: 25px;
     }
     @media (max-width: 834px) {
-        width: 55px;
-        height: 41px;
+        width: 45px;
+        height: 35px;
     }
     @media (max-width: 810px) {
         width: 53px;
@@ -895,10 +898,11 @@
         padding: 5px 10px;
     }
     @media (max-width: 962px) {
-        font-size: 25px;
+        font-size: 20px;
+        padding: 3px 8px;
     }
     @media (max-width: 834px) {
-        font-size: 30px;
+        font-size: 25px;
     }
     @media (max-width: 414px) {
         font-size: 25px;
@@ -921,10 +925,17 @@
         left: 81%;
     }
     @media (max-width: 962px) {
-        top: 25px;
-        left: 76%;
+        top: 10px;
+        left: 79%;
         i {
-            font-size: 35px;
+            font-size: 22px;
+        }
+    }
+    @media (max-width: 834px) {
+        top: 15px;
+        left: 77%;
+        i {
+            font-size: 30px;
         }
     }
 }
@@ -945,10 +956,17 @@
         left: 86%;
     }
     @media (max-width: 962px) {
-        top: 25px;
-        left: 83%;
+        top: 10px;
+        left: 85%;
         i {
-            font-size: 35px;
+            font-size: 22px;
+        }
+    }
+    @media (max-width: 834px) {
+        top: 15px;
+        left: 84%;
+        i {
+            font-size: 30px;
         }
     }
 }
@@ -970,15 +988,16 @@
     }
     @media (max-width: 962px) {
         top: 10px;
+        left: 91%;
         i {
-            font-size: 25px;
+            font-size: 22px;
         }
     }
     @media (max-width: 834px) {
-        top: 25px;
+        top: 15px;
         left: 90%;
         i {
-            font-size: 35px;
+            font-size: 30px;
         }
     }
 }
@@ -1366,9 +1385,6 @@
         height: 570px;
     }
 }
-%user-bar-active-med {
-    right: 0;
-}
 %side-icon-med {
     @media (max-width: 1600px) {
         left: 4%;
@@ -1484,14 +1500,11 @@
             line-height: 35px;
         }
     }
-    
 }
 %ico-nm-h2-med-2 {
-    
     @media (max-width: 1366px) {
         margin: 0 15px 18px 0;
     }
-    
     @media (max-width: 834px) {
         font-size: 16px;
     }
@@ -1500,8 +1513,7 @@
         letter-spacing: 1px;
         margin: 0 5px 1px 0;
         padding-top: 3px;
-    }
-    
+    } 
 }
 //------- MENU FILTR  -----------
 
@@ -2818,10 +2830,6 @@
     @media (max-width: 768px) {
         margin: 0 0 0 20px;
     }
-}
-%sect-baner-img-med {
-    max-width: 290px;
-    margin-bottom: 24px;
 }
 %sect-baner-img-box-med {
     @media (max-width: 1366px) {
