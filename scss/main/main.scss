@@ -713,6 +713,7 @@
                 }
                 .user-bar-active {
                     right: -5px;
+                    @extend %user-bar-active-med;
                 }
                 .rotate {
                     transform: rotate(90deg);
