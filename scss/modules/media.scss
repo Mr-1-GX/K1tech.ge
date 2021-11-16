@@ -1212,16 +1212,16 @@
         margin: 120px auto;
     }
     @media (max-width: 1366px) {
-        margin: 62px 0 auto;
+        margin: 85px 0 auto;
     }
     @media (max-width: 1280px) {
-        margin: 80px auto;
+        margin: 84px auto;
     }
     @media (max-width: 1024px) {
         margin: 180px auto;
     }
     @media (max-width: 962px) {
-        margin: 95px auto;
+        margin: 105px auto;
     }
     @media (max-width: 834px) {
         max-width: 830px;
@@ -1231,7 +1231,7 @@
         margin: 123px 0;
     }
     @media (max-width: 768px) {
-        margin: 1px 0 5px;
+        margin: 130px 0 5px;
     }
     @media (max-width: 601px) {
         margin: 10px 0 0;
@@ -1288,10 +1288,12 @@
     @media (max-width: 810px) {
         margin-bottom: 10px;
     }
-}
-%sect-1-img-med {
     @media (max-width: 768px) {
-        height: 190px;
+        a {
+            img {
+                height: 28vh;
+            }
+        }
     }
 }
 //----------
@@ -1574,12 +1576,16 @@
         right: -250%;
     }
     @media (max-width: 962px) {
-        width: 880px;
-        height: 430px;
+        width: 750px;
+        height: 450px;
         right: -265%;
     }
     @media (max-width: 834px) {
         right: -305%;
+    }
+    @media (max-width: 768px) {
+        right: -360%;
+        width: 715px;
     }
     @media (max-width: 414px) {
         width: 410px;
@@ -1651,7 +1657,7 @@
     }
     @media (max-width: 962px) {
         width: 390px;
-        height: 72vh;
+        height: 77vh;
     }
     @media (max-width: 414px) {
         width: 430px;
@@ -1659,40 +1665,80 @@
     }
 }
 %bar-active-med {
-    @media (max-width: 1024px) {
+    @media (max-width: 1600px) {
+        top: -3px;
+    }
+    @media (max-width: 1536px) {
+        top: -10px;
+    }
+    @media (max-width: 1280px) {
+        top: -5px;
         left: 0%;
     }
+    @media (max-width: 1024px) {
+        top: 20px;
+    }
     @media (max-width: 962px) {
+        top: 10px;
         left: -5%;
+    }
+    @media (max-width: 768px) {
+        top: 35px;
     }
 }
 %user-bar-active-med {
+    @media (max-width: 1600px) {
+        top: -3px;
+    }
+    @media (max-width: 1536px) {
+        top: -10px;
+    }
+    @media (max-width: 1280px) {
+        top: -5px;
+        right: -1px;
+    }
+    @media (max-width: 1024px) {
+        top: 20px;
+    }
+    @media (max-width: 962px) {
+        top: 10px;
+        right: -50px;
+    }
+    @media (max-width: 768px) {
+        top: 35px;
+        right: -1px;
+    }
     @media (max-width: 414px) {
         right: -1%;
     }
 }
 %itmes-med {
+    @media (max-width: 1536px) {
+        a {
+            line-height: 37px;
+        }
+    }
     @media (max-width: 1366px) {
         a {
-            line-height: 39px;
+            line-height: 30px;
         }
     }
     @media (max-width: 1280px) {
         a {
-            line-height: 35px;
+            line-height: 28px;
         }
     }
     @media (max-width: 1024px) {
         a {
             font-size: 20px;
-            line-height: 40px;
+            line-height: 35px;
         }
 
     }
     @media (max-width: 962px) {
         a {
             font-size: 15px;
-            line-height: 25px;
+            line-height: 21px;
         }
     }
     @media (max-width: 414px) {

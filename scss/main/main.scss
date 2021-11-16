@@ -373,7 +373,6 @@
                 cursor: pointer;
                 img {
                     @extend %sect-1-img-size;
-                    @extend %sect-1-img-med;
                 }
             }
         }
@@ -573,6 +572,7 @@
                     }
                 }
                 .bar-active {
+                    top: -40px;
                     left: 0px;
                     @extend %bar-active-med;
                 }
@@ -712,6 +712,7 @@
                     }
                 }
                 .user-bar-active {
+                    top: -40px;
                     right: -5px;
                     @extend %user-bar-active-med;
                 }
