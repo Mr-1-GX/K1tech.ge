@@ -124,7 +124,7 @@
     width: 100%;
     height: 30px;
     position: sticky;
-    top: 62px;
+    top: 67px;
     z-index: 300;
     background-color: $color-010;
 }
@@ -489,9 +489,9 @@
     margin: 10px;
 }
 %cont-2-text-size {
-    max-width: $cont-2-text-wid;
-    width: $size-0-def;
-    height: $cont-2-text-heig;
+    max-width: 370px;
+    width: 100%;
+    height: 390px;
 }
 %cont-2-p-box-size {
     max-width: 550px;

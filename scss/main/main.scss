@@ -882,38 +882,45 @@
             @include d-flex (flex,space-between,center);
             flex-direction: column;
             @extend %cont-2-box-med;
-            .cont-2-text {
-                @extend %cont-2-text-size;
-                @include d-flex (flex,space-around,baseline);
-                flex-direction: column;
-                @extend %cont-2-text-med;
-                .cont-2-img-box {
-                    .cont-2-text-img {
-                        width: $size-0-def;
-                        height: 260px;
-                        @extend %cont-2-text-img-med;
+            a {
+                @include d-flex (flex,space-evenly,baseline);
+                .cont-2-text {
+                    @extend %cont-2-text-size;
+                    @include d-flex (flex,space-evenly,center);
+                    flex-direction: column;
+                    @extend %cont-2-text-med;
+                    .cont-2-img-box {
+                        width: 90%;
+                        img {
+                            width: $size-0-def;
+                            height: 280px;
+                            @extend %cont-2-text-img-med;
+                        }
                     }
                 }
+                p {
+                    font-size: 45px;
+                    color: $color-04;
+                    font-family: bold;
+                    letter-spacing: 1px;
+                    text-shadow: 0 0 1px $color-02;
+                    text-align: center;
+                }
             }
-            .cont-2-p-box {
-                @extend %cont-2-p-box-size;
-                @include d-flex (flex,space-between,center);
-                flex-direction: column;
-                @extend %cont-2-p-box-med;
-                .cont-2-p {
-                    margin-bottom: 5px;
-                    @extend %cont-2-p-font;
-                    @extend %cont-2-p-med;
+            a {
+                width: 100%;
+                .cont-2-p-box {
+                    display: none;
                 }
                 .cont-2-cost {
                     width: 100%;
-                    height: 85px;
+                    height: 80px;
                     margin-right: 10px;
-                    @include d-flex (flex,end,center);
+                    @include d-flex (flex,space-around,center);
                     @extend %cont-2-cost-med;
                     h4 {
                         &:first-child {
-                            margin-right: 50px;
+                            margin-right: 5px;
                             span {
                                 text-decoration: line-through;
                                 color: rgba(255, 0, 0, 0.938);
@@ -921,7 +928,58 @@
                         }
                         @extend %cont-2-h4-font;
                         span {
+                            font-size: 40px;
                             color: rgba(255, 0, 0, 0.938);
+                        }
+                    }
+                }
+            }
+            &:after {
+                background-color: #F4F6F6;
+                a {
+                    display: none;
+                }
+                a {
+                    .cont-2-p-box {
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        @include d-flex (flex,space-between,center);
+                        background-color: $color-01;
+                        @extend %cont-2-p-box-size;
+                        flex-direction: column;
+                        @extend %cont-2-p-box-med;
+                        p {
+                            margin-bottom: 5px;
+                            @extend %cont-2-p-font;
+                            @extend %cont-2-p-med;
+                        }
+                        button {
+                            font-size: 50px;
+                            color: $color-02;
+                            border-radius: 30px;
+                            @include border (1px, solid, $color-02);
+                        }
+                    }
+                    .cont-2-cost {
+                        width: 100%;
+                        height: 110px;
+                        margin-right: 10px;
+                        @include d-flex (flex,space-around,center);
+                        @extend %cont-2-cost-med;
+                        h4 {
+                            &:first-child {
+                                margin-right: 5px;
+                                span {
+                                    text-decoration: line-through;
+                                    color: rgba(255, 0, 0, 0.938);
+                                }
+                            }
+                            @extend %cont-2-h4-font;
+                            span {
+                                font-size: 40px;
+                                color: rgba(255, 0, 0, 0.938);
+                            }
                         }
                     }
                 }
