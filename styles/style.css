@@ -109,13 +109,13 @@ a {
   width: 50px; }
   .sect-1 .sect-1-cont .sect-1-box .slick-dots li button:before, .sect-3 .sect-3-cont .slick-dots li button:before, .sect-4 .sect-4-cont .slick-dots li button:before {
     color: #062D2D;
-    font-size: 40px; }
+    font-size: 27px; }
 
 .sect-1 .sect-1-cont .sect-1-box .slick-dots .slick-active, .sect-3 .sect-3-cont .slick-dots .slick-active, .sect-4 .sect-4-cont .slick-dots .slick-active {
   margin: 1px 15px; }
   .sect-1 .sect-1-cont .sect-1-box .slick-dots .slick-active button:before, .sect-3 .sect-3-cont .slick-dots .slick-active button:before, .sect-4 .sect-4-cont .slick-dots .slick-active button:before {
     color: #00A1C2;
-    font-size: 60px; }
+    font-size: 40px; }
 
 .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .side-bar .cont-1-img-text .flt-ico-nm-bar .xazi, .sect-2 .sect-2-big .flt-user-cont .sect-2-user .user-bar .cont-1-img-user .flt-ico-nm .xazi, .sect-2 .sect-2-big .flt-user-cont .sect-2-user .user-bar .cont-1-img-user .user-ico-nm-bar .xazi, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-ico-nm .xazi, .sect-3 .cont-1-img-text .flt-ico-nm .xazi, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm .xazi, .sect-banbox .banbox-cont-2 .sect-ban-cont-2 .sect-ban-box .tvh-text-cont .tvh-ico-nm .xazi, .sect-4 .cont-1-img-text .flt-ico-nm .xazi, .foot-bg .xazi {
   width: 100%;
@@ -125,10 +125,15 @@ a {
   border: 0.1px solid #A9CCE3;
   box-shadow: 0 0 13px #00A1C2; }
 
-.head-size, .sect-2, .sect-2 .pro-navi, .sect-2 .sect-2-sm .cont-1-sm-box, .sect-3, .sect-3 .sect-3-cont .cont-2-box, .sect-banbox .banbox-cont .banbox-box, .sect-banbox .banbox-cont-2 .sect-ban-cont, .sect-banbox .banbox-cont-2 .sect-ban-cont-2 .sect-ban-box, .sect-4, .sect-4 .sect-4-cont .sect-4-box, .sect-baner, .foot-bg, .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm, .spec-box .pc-k1-img-big-img .pc-k1-img-list-sm .pc-k1-img-box-sm {
+.head-size, .sect-2, .sect-2 .pro-navi, .sect-2 .sect-2-sm .cont-1-sm-box, .sect-3, .sect-banbox .banbox-cont .banbox-box, .sect-banbox .banbox-cont-2 .sect-ban-cont, .sect-banbox .banbox-cont-2 .sect-ban-cont-2 .sect-ban-box, .sect-4, .sect-4 .sect-4-cont .sect-4-box, .sect-baner, .foot-bg, .spec-box .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm, .spec-box .pc-k1-img-big-img .pc-k1-img-list-sm .pc-k1-img-box-sm {
   border-radius: 3px;
   border: 1px solid #85929E;
   box-shadow: 0 0 0 1px #ECF0F1; }
+
+.sect-3 .sect-3-cont .cont-2-box {
+  border-radius: 290px;
+  border: 1px solid #00A1C2;
+  box-shadow: 0px 0px 9px 2px #00A1C2; }
 
 .head-cont .nav-box .navi .navi-cont .search, .head-cont .nav-box .navi .navi-cont .search .element-search .inp-search {
   border-radius: 3px;
@@ -335,13 +340,13 @@ a {
   margin: 10px auto; }
 
 .sect-3 .sect-3-cont .cont-2-box {
-  height: 480px;
+  height: 440px;
   margin: 10px; }
 
 .sect-3 .sect-3-cont .cont-2-box a .cont-2-text {
   max-width: 370px;
   width: 100%;
-  height: 390px; }
+  height: 365px; }
 
 .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box {
   max-width: 550px;
@@ -378,8 +383,9 @@ a {
   height: 120px; }
 
 .sect-banbox .banbox-cont .banbox-box .consol {
-  max-width: 250px;
-  width: 100%; }
+  max-width: 170px;
+  width: 100%;
+  height: 105px; }
 
 .sect-banbox .banbox-cont .banbox-box .consol .consol-ul .consol-li {
   font-size: 20px;
@@ -403,7 +409,7 @@ a {
 .sect-banbox .banbox-cont .banbox-box .box-box {
   max-width: 370px;
   width: 100%;
-  height: 180px; }
+  height: 170px; }
 
 .sect-banbox .banbox-cont-2 {
   max-width: 1400px;
@@ -411,7 +417,7 @@ a {
 
 .sect-banbox .banbox-cont .banbox-box .box-box .box-img {
   width: 100%;
-  height: 190px; }
+  height: 160px; }
 
 .sect-banbox .banbox-cont-2 .sect-ban-cont {
   max-width: 815px;
@@ -1316,7 +1322,7 @@ a {
   text-align: center;
   background-color: #F4F6F6; }
   .sect-3 .cont-1-img-text {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
     padding: 10px 2px;
     display: flex;
@@ -1340,7 +1346,8 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      background-color: #F4F6F6; }
       .sect-3 .sect-3-cont .cont-2-box a {
         display: flex;
         justify-content: space-evenly;
@@ -1351,12 +1358,12 @@ a {
           align-items: center;
           flex-direction: column; }
           .sect-3 .sect-3-cont .cont-2-box a .cont-2-text .cont-2-img-box {
-            width: 90%; }
+            width: 85%; }
             .sect-3 .sect-3-cont .cont-2-box a .cont-2-text .cont-2-img-box img {
               width: 100%;
               height: 280px; }
         .sect-3 .sect-3-cont .cont-2-box a p {
-          font-size: 45px;
+          font-size: 33px;
           color: #255A5A;
           font-family: bold;
           letter-spacing: 1px;

@@ -81,7 +81,7 @@
         button {
             &:before {
                 color: $color-06;
-                font-size: 40px;
+                font-size: 27px;
             }
         }
     }
@@ -90,7 +90,7 @@
         button {
             &:before {
                 color: $color-02;
-                font-size: 60px;
+                font-size: 40px;
             }
         }
     }
@@ -112,6 +112,11 @@
     border-radius: $size-03;
     @include border (1px, solid, $color-05);
     box-shadow: 0 0 0 $size-01 $color-010;
+}
+%border-slide {
+    border-radius: 290px;
+    @include border (1px, solid, $color-02);
+    box-shadow: 0px 0px 9px 2px $color-02;
 }
 %border-srch {
     border-radius: 3px;
@@ -485,13 +490,13 @@
     margin: 10px auto;
 }
 %cont-2-box-size {
-    height: 480px;
+    height: 440px;
     margin: 10px;
 }
 %cont-2-text-size {
     max-width: 370px;
     width: 100%;
-    height: 390px;
+    height: 365px;
 }
 %cont-2-p-box-size {
     max-width: 550px;
@@ -529,8 +534,9 @@
     height: 120px;
 }
 %consol-size {
-    max-width: $consol-wid;
-    width: $size-0-def;
+    max-width: 170px;
+    width: 100%;
+    height: 105px;
 }
 %consol-li-font {
     font-size: $consol-li-font-sz;
@@ -552,17 +558,17 @@
     height: $box-img-ico-heig;
 }
 %box-box-size {
-    max-width: $box-box-wid;
-    width: $size-0-def;
-    height: $box-box-heig;
+    max-width: 370px;
+    width: 100%;
+    height: 170px;
 }
 %banbox-cont-2-size {
     max-width: 1400px;
     width: 100%;
 }
 %box-img-size {
-    width: $size-0-def;
-    height: $box-img-heig;
+    width: 100%;
+    height: 160px;
 }
 %sect-ban-cont-size {
     max-width: 815px;

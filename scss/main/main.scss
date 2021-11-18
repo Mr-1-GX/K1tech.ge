@@ -842,7 +842,7 @@
     @extend %border-def;
     @extend %sect-3-med;
     .cont-1-img-text {
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
         padding: 10px 2px;
         @include d-flex (flex,space-between,end);
@@ -878,9 +878,10 @@
         }
         .cont-2-box {
             @extend %cont-2-box-size;
-            @extend %border-def;
+            @extend %border-slide;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
+            background-color: $color-01;
             @extend %cont-2-box-med;
             a {
                 @include d-flex (flex,space-evenly,baseline);
@@ -890,16 +891,16 @@
                     flex-direction: column;
                     @extend %cont-2-text-med;
                     .cont-2-img-box {
-                        width: 90%;
+                        width: 85%;
                         img {
-                            width: $size-0-def;
+                            width: 100%;
                             height: 280px;
                             @extend %cont-2-text-img-med;
                         }
                     }
                 }
                 p {
-                    font-size: 45px;
+                    font-size: 33px;
                     color: $color-04;
                     font-family: bold;
                     letter-spacing: 1px;
