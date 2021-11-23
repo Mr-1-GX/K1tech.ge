@@ -516,12 +516,12 @@
     letter-spacing: $cont-2-h4-font-ls;
     text-shadow: $cont-2-h4-font-shdw $color-03;
 }
-//Section-BanBox
+//------Section-BanBox-------
 %sect-banbox-size {
-    max-width: $sect-banbox-wid;
-    width: $size-0-def; 
-    margin: $sect-banbox-mrg;
-    padding: $sect-banbox-pdng; 
+    max-width: 1430px;
+    width: 100%; 
+    margin: 30px auto;
+    padding: 30px 0; 
 }
 %banbox-cont-size {
     max-width: 1430px;
@@ -582,6 +582,13 @@
 %tv-size {
     width: 100%;
     height: 480px;
+}
+%tv-2-p-font {
+    font-size: 23px;
+    color: $color-06;
+    font-family: 'BPG-A';
+    letter-spacing: $cont-2-p-font-ls;
+    text-shadow: $cont-2-p-font-shdw $color-03;
 }
 %tv-text-cont-size {
     max-width: 780px;
@@ -647,18 +654,13 @@
     letter-spacing: $tvh-ban-h1-font-ls;
     text-shadow:  $tvh-ban-h1-font-shdw $color-02;
 }
+//------------------
 //Section-4
 %sect-4-size {
     max-width: 1430px;
     width: 100%;
     margin: 35px auto;
     padding: 0 0 30px 0;
-}
-%sect-4-cont-size {
-    max-width: $sect-4-cont-wid;
-    width: $size-0-def;
-    height: $sect-4-cont-heig;
-    margin: $sect-4-cont-mrgn;
 }
 %sect-4-box-size {
     max-width: $sect-4-box-wid;

@@ -829,7 +829,6 @@
             h3 {
                 @extend %cont-1-sm-h3-size;
                 @extend %font-h3-def;
-                @extend %cont-1-sm-h3-med;
             }
         }
     }
@@ -875,6 +874,7 @@
         @extend %sect-3-cont-med;
         .slick-dots {
             @extend %slick-dots;
+            @extend %slick-dots-med;
         }
         .cont-2-box {
             @extend %cont-2-box-size;
@@ -892,10 +892,10 @@
                     @extend %cont-2-text-med;
                     .cont-2-img-box {
                         width: 85%;
+                        @extend %cont-2-img-box-med;
                         img {
                             width: 100%;
                             height: 280px;
-                            @extend %cont-2-text-img-med;
                         }
                     }
                 }
@@ -920,6 +920,7 @@
                     @include d-flex (flex,space-around,center);
                     @extend %cont-2-cost-med;
                     h4 {
+                        @extend %cont-2-h4-font;
                         &:first-child {
                             margin-right: 5px;
                             span {
@@ -927,7 +928,6 @@
                                 color: rgba(255, 0, 0, 0.938);
                             }
                         }
-                        @extend %cont-2-h4-font;
                         span {
                             font-size: 40px;
                             color: rgba(255, 0, 0, 0.938);
@@ -962,27 +962,6 @@
                             @include border (1px, solid, $color-02);
                         }
                     }
-                    .cont-2-cost {
-                        width: 100%;
-                        height: 110px;
-                        margin-right: 10px;
-                        @include d-flex (flex,space-around,center);
-                        @extend %cont-2-cost-med;
-                        h4 {
-                            &:first-child {
-                                margin-right: 5px;
-                                span {
-                                    text-decoration: line-through;
-                                    color: rgba(255, 0, 0, 0.938);
-                                }
-                            }
-                            @extend %cont-2-h4-font;
-                            span {
-                                font-size: 40px;
-                                color: rgba(255, 0, 0, 0.938);
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -1007,14 +986,15 @@
             .consol {
                 @extend %consol-size;
                 @extend %consol-med;
-                .consol-ul {
+                ul {
                     @include d-flex (flex,center,center);
                     flex-direction: column;
-                    .consol-li {
-                        padding: 5px 0;
-                        @extend %consol-li-font;
-                        @extend %consol-li-dec;
-                        @extend %consol-li-med;
+                    a {
+                        li {
+                            padding: 5px 0;
+                            @extend %consol-li-font;
+                            @extend %consol-li-dec;
+                        }
                     }
                 }
             }
@@ -1022,25 +1002,23 @@
                 @extend %box-box-ico-size;
                 @include d-flex (flex,flex-end,center);
                 @extend %box-box-ico-med;
-                .box-img-ico {
+                img {
                     @extend %box-img-ico-size;
-                    @extend %box-img-ico-med;
                 }
             }
             .box-box {
                 @extend %box-box-size;
                 @include d-flex (flex,flex-end,center);
                 @extend %box-box-med;
-                .box-img {
+                img {
                     @extend %box-img-size;
-                    @extend %box-img-med;
                 }
             }
         }
     }
     .banbox-cont-2 {
         @extend %banbox-cont-2-size;
-        @include d-flex (flex,space-around,center);
+        @include d-flex (flex,space-between,center);
         @extend %banbox-cont-2-med;
         .sect-ban-cont {
             @extend %sect-ban-cont-size;
@@ -1055,7 +1033,6 @@
                 height: 570px;
                 @include d-flex (flex,center,center);
                 flex-direction: column;
-                a {
                     .tv-2-text {
                         height: 465px;
                         @include d-flex (flex,center,center);
@@ -1063,13 +1040,12 @@
                             @extend %tv-box-size;
                             @include d-flex (flex,center,center);
                             @extend %tv-box-med;
-                            .tv {
+                            img {
                                 @extend %tv-size;
                                 @extend %tv-med;
                             }
                         }
                     }
-                }
                 .tv-2-p-box {
                     @extend %cont-2-p-box-size;
                     @include d-flex (flex,space-between,center);
@@ -1077,7 +1053,7 @@
                     @extend %cont-2-p-box-med;
                     p {
                         margin-bottom: 5px;
-                        @extend %cont-2-p-font;
+                        @extend %tv-2-p-font;
                         @extend %cont-2-p-med;
                     }
                     .tv-2-cost {
@@ -1087,15 +1063,17 @@
                         @include d-flex (flex,center,center);
                         @extend %cont-2-cost-med;
                         h4 {
+                            @extend %cont-2-h4-font;
                             &:first-child {
                                 margin-right: 50px;
                                 span {
+                                    font-size: 25px;
                                     text-decoration: line-through;
                                     color: rgba(255, 0, 0, 0.938);
                                 }
                             }
-                            @extend %cont-2-h4-font;
                             span {
+                                font-size: 40px;
                                 color: rgba(255, 0, 0, 0.938);
                             }
                         }
@@ -1181,14 +1159,13 @@
 }
 //Section-4
 .sect-4 {
-    @extend %sect-4-size;
+    @extend %sect-3-size;
+    text-align: center;
     background-color: $color-01;
-    flex-direction: column;
     @extend %border-def;
-    @include d-flex (flex,space-around,center);
-    @extend %sect-4-med;
+    @extend %sect-3-med;
     .cont-1-img-text {
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
         padding: 10px 2px;
         @include d-flex (flex,space-between,end);
@@ -1216,53 +1193,97 @@
         }
     }
     .sect-4-cont {
-        @extend %sect-4-cont-size;
-        @include d-flex (flex,space-between,center);
-        @extend %sect-4-cont-med;
+        @extend %sect-3-cont-size;
+        @include d-flex (flex,space-around,center);
+        @extend %sect-3-cont-med;
         .slick-dots {
-            bottom: -40px;
             @extend %slick-dots;
+            @extend %slick-dots-med;
         }
-        .sect-4-box {
-            @extend %sect-4-box-size;
-            @include d-flex (flex,space-around,center);
-            @extend %border-def;
+        .cont-2-box {
+            @extend %cont-2-box-size;
+            @extend %border-slide;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
             background-color: $color-01;
-            @extend %sect-4-box-med;
-            .sect-4-img {
-                @extend %sect-4-img-size;
-                background-color: $color-010;
-                @include d-flex (flex,space-around,center);
-                @extend %sect-4-img-med;
-                img {
-                    width: 100px;
-                }
-            }
-            .sect-4-text {
-                @extend %sect-4-text-size;
-                @extend %sect-4-text-med;
-                h3 {
-                    margin: 10px;
-                    @extend %sect-4-h3-font;
+            @extend %cont-2-box-med;
+            a {
+                @include d-flex (flex,space-evenly,baseline);
+                .cont-2-text {
+                    @extend %cont-2-text-size;
+                    @include d-flex (flex,space-evenly,center);
+                    flex-direction: column;
+                    @extend %cont-2-text-med;
+                    .cont-2-img-box {
+                        width: 85%;
+                        @extend %cont-2-img-box-med;
+                        img {
+                            width: 100%;
+                            height: 280px;
+                        }
+                    }
                 }
                 p {
-                    @extend %sect-4-p-size;
-                    @extend %sect-4-p-font;
-                    @extend %sect-4-p-med;
+                    font-size: 33px;
+                    color: $color-04;
+                    font-family: bold;
+                    letter-spacing: 1px;
+                    text-shadow: 0 0 1px $color-02;
+                    text-align: center;
                 }
-                .sect-4-cost {
+            }
+            a {
+                width: 100%;
+                .cont-2-p-box {
+                    display: none;
+                }
+                .cont-2-cost {
+                    width: 100%;
+                    height: 80px;
+                    margin-right: 10px;
+                    @include d-flex (flex,space-around,center);
+                    @extend %cont-2-cost-med;
                     h4 {
+                        @extend %cont-2-h4-font;
                         &:first-child {
-                            margin-right: 50px;
+                            margin-right: 5px;
                             span {
                                 text-decoration: line-through;
                                 color: rgba(255, 0, 0, 0.938);
                             }
                         }
-                        @extend %cont-2-h4-font;
-                        @extend %cont-2-h4-med;
                         span {
+                            font-size: 40px;
                             color: rgba(255, 0, 0, 0.938);
+                        }
+                    }
+                }
+            }
+            &:after {
+                background-color: #F4F6F6;
+                a {
+                    display: none;
+                }
+                a {
+                    .cont-2-p-box {
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        @include d-flex (flex,space-between,center);
+                        background-color: $color-01;
+                        @extend %cont-2-p-box-size;
+                        flex-direction: column;
+                        @extend %cont-2-p-box-med;
+                        p {
+                            margin-bottom: 5px;
+                            @extend %cont-2-p-font;
+                            @extend %cont-2-p-med;
+                        }
+                        button {
+                            font-size: 50px;
+                            color: $color-02;
+                            border-radius: 30px;
+                            @include border (1px, solid, $color-02);
                         }
                     }
                 }

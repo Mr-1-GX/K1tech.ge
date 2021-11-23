@@ -1,6 +1,4 @@
 
-
-
 const header = document.querySelector('.head-cont');
 
 window.onscroll = function(){
@@ -91,7 +89,7 @@ $(document).ready(function() {
 
  setTimeout(() => {
     demoBanner.classList.add("activ");
- },3000);
+ },300);
 
  demoBtn.addEventListener("click", () => {
    demoBanner.classList.remove("activ");
