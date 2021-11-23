@@ -1033,6 +1033,7 @@
                 height: 570px;
                 @include d-flex (flex,center,center);
                 flex-direction: column;
+                @extend %tv-2-box-med;
                     .tv-2-text {
                         height: 465px;
                         @include d-flex (flex,center,center);

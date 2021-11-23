@@ -2507,6 +2507,7 @@
         }
     }
     @media (max-width: 1440px) {
+        height: 325px;
         margin: 10px 40px;
     }
     @media (max-width: 1366px) {
@@ -2568,6 +2569,9 @@
 %cont-2-text-med {
     @media (max-width: 1600px) {
         height: 285px;
+    }
+    @media (max-width: 1440px) {
+        height: 275px;
     }
     @media (max-width: 1366px) {
         max-width: 280px;
@@ -2803,6 +2807,9 @@
     @media (max-width: 1536px) {
         padding: 0;
     }
+    @media (max-width: 1440px) {
+        width: 88%;
+    }
     @media (max-width: 1366px) {
         width: 88%;
         margin: 20px auto;
@@ -2815,9 +2822,11 @@
     }
 }
 %banbox-cont-med {
+    @media (max-width: 1440px) {
+        justify-content: space-between;
+    }
     @media (max-width: 1366px) {
         height: 160px;
-        justify-content: space-between;
     }
     @media (max-width: 1024px) {
         height: 440px;
@@ -2849,6 +2858,9 @@
     @media (max-width: 1366px) {
         width: 49%;
         height: 90px;
+    }
+    @media (max-width: 1440px) {
+        width: 48%;
     }
     @media (max-width: 1024px) {
         max-width: 905px;
@@ -2981,6 +2993,13 @@
     }
 }
 %box-box-ico-med {
+    @media (max-width: 1440px) {
+        width: 60%;
+        height: 120px;
+        img {
+            height: 145px;
+        }
+    }
     @media (max-width: 1366px) {
         width: 75%;
         height: 110px;
@@ -3134,6 +3153,9 @@
     @media (max-width: 1536px) {
         max-width: 770px;
     }
+    @media (max-width: 1440px) {
+        width: 59%;
+    }
     @media (max-width: 1366px) {
         width: 60%;
         height: 615px;
@@ -3162,6 +3184,11 @@
     }
     @media (max-width: 414px) {
         height: 300px;
+    }
+}
+%tv-2-box-med {
+    @media (max-width: 1366px) {
+        height: 515px;
     }
 }
 %tv-box-med {
@@ -3225,6 +3252,9 @@
 %sect-ban-cont-2-med {
     @media (max-width: 1536px) {
         max-width: 570px;
+    }
+    @media (max-width: 1440px) {
+        width: 40%;
     }
     @media (max-width: 1366px) {
         width: 38%;
