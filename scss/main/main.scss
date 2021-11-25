@@ -942,18 +942,17 @@
                 }
                 a {
                     .cont-2-p-box {
+                        @extend %cont-2-p-box-size;
                         position: absolute;
                         top: 0;
                         left: 10px;
                         @include d-flex (flex,space-between,center);
                         background-color: $color-01;
-                        @extend %cont-2-p-box-size;
                         flex-direction: column;
                         @extend %cont-2-p-box-med;
                         p {
                             margin-bottom: 5px;
                             @extend %cont-2-p-font;
-                            @extend %cont-2-p-med;
                         }
                         button {
                             font-size: 50px;
@@ -1037,13 +1036,13 @@
                     .tv-2-text {
                         height: 465px;
                         @include d-flex (flex,center,center);
+                        @extend %tv-2-text-med;
                         .tv-box {
                             @extend %tv-box-size;
                             @include d-flex (flex,center,center);
                             @extend %tv-box-med;
                             img {
                                 @extend %tv-size;
-                                @extend %tv-med;
                             }
                         }
                     }
@@ -1051,18 +1050,17 @@
                     @extend %cont-2-p-box-size;
                     @include d-flex (flex,space-between,center);
                     flex-direction: column;
-                    @extend %cont-2-p-box-med;
+                    @extend %tv-2-p-box-med;
                     p {
                         margin-bottom: 5px;
                         @extend %tv-2-p-font;
-                        @extend %cont-2-p-med;
                     }
                     .tv-2-cost {
                         width: 100%;
                         height: 85px;
                         margin-right: 10px;
-                        @include d-flex (flex,center,center);
-                        @extend %cont-2-cost-med;
+                        @include d-flex (flex,space-between,center);
+                        @extend %tv-2-cost-med;
                         h4 {
                             @extend %cont-2-h4-font;
                             &:first-child {
@@ -1088,19 +1086,18 @@
                 .tv-icon {
                     max-width: 80px;
                     @include d-flex (flex,space-between,center);
-                    .tv-icon-box {
+                    @extend %tv-icon-med;
+                    img {
                        width: 100%;
-                       @extend %tv-icon-box-med;
                     }
                 }
                 .tv-ico-nm {
                     @extend %tv-ico-nm-size;
                     text-align: end;
                     @extend %tv-ico-nm-med;
-                    .tv-ban-h1 {
+                    h1 {
                         @extend %tv-ban-h1-size;
                         @extend %sect-ban-h1-font;
-                        @extend %tv-ban-h1-med;
                     }
                     .xazi {
                         @extend %xazi;
@@ -1267,18 +1264,17 @@
                 }
                 a {
                     .cont-2-p-box {
+                        @extend %cont-2-p-box-size;
                         position: absolute;
                         top: 0;
                         left: 10px;
                         @include d-flex (flex,space-between,center);
                         background-color: $color-01;
-                        @extend %cont-2-p-box-size;
                         flex-direction: column;
                         @extend %cont-2-p-box-med;
                         p {
                             margin-bottom: 5px;
                             @extend %cont-2-p-font;
-                            @extend %cont-2-p-med;
                         }
                         button {
                             font-size: 50px;

@@ -70,6 +70,24 @@ $('.lazy').slick({
       }
     },
     {
+      breakpoint: 711,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 602,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
+        slidesToShow: 1
+      }
+    },
+    {
       breakpoint: 480,
       settings: {
         arrows: false,
@@ -105,6 +123,15 @@ $('.lazy-2').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '30px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 602,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
         slidesToShow: 1
       }
     },

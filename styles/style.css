@@ -450,12 +450,12 @@ a {
   width: 100%;
   height: 115px; }
 
-.sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm .tv-ban-h1 {
+.sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
   width: 100%;
   height: 80px;
   padding: 10px 45px; }
 
-.sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm .tv-ban-h1 {
+.sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
   font-size: 50px;
   color: #565555;
   font-family: 'archy-B';
@@ -1440,7 +1440,7 @@ a {
             height: 85px;
             margin-right: 10px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center; }
             .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child {
               margin-right: 50px; }
@@ -1460,7 +1460,7 @@ a {
           display: flex;
           justify-content: space-between;
           align-items: center; }
-          .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon .tv-icon-box {
+          .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon img {
             width: 100%; }
         .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
           text-align: end; }
@@ -3507,7 +3507,7 @@ a {
   .sect-1 .sect-1-cont .sect-1-box {
     margin-bottom: 1px; }
     .sect-1 .sect-1-cont .sect-1-box a img {
-      height: 64vh; } }
+      height: 50vh; } }
 
 @media (max-width: 1280px) {
   .sect-1 .sect-1-cont .sect-1-box a img {
@@ -3893,6 +3893,10 @@ a {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .side-bar {
     width: 390px;
     height: 77vh; } }
+
+@media (max-width: 710px) {
+  .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .side-bar {
+    left: -175%; } }
 
 @media (max-width: 601px) {
   .sect-2 .sect-2-big .flt-user-cont .sect-2-flt .side-bar {
@@ -4565,6 +4569,14 @@ a {
   .sect-3, .sect-4 {
     height: 640px; } }
 
+@media (max-width: 710px) {
+  .sect-3, .sect-4 {
+    height: 345px; } }
+
+@media (max-width: 601px) {
+  .sect-3, .sect-4 {
+    height: 430px; } }
+
 @media (max-width: 600px) {
   .sect-3, .sect-4 {
     width: 99%; } }
@@ -4610,10 +4622,14 @@ a {
   .sect-3 .sect-3-cont, .sect-4 .sect-4-cont {
     height: 510px; } }
 
+@media (max-width: 710px) {
+  .sect-3 .sect-3-cont, .sect-4 .sect-4-cont {
+    height: 220px; } }
+
 @media (max-width: 601px) {
   .sect-3 .sect-3-cont, .sect-4 .sect-4-cont {
-    width: 85%;
-    height: 390px; } }
+    width: 99%;
+    height: 305px; } }
 
 @media (max-width: 600px) {
   .sect-3 .sect-3-cont, .sect-4 .sect-4-cont {
@@ -4670,9 +4686,18 @@ a {
     .sect-3 .sect-3-cont .cont-2-box a p, .sect-4 .sect-4-cont .cont-2-box a p {
       font-size: 35px; } }
 
+@media (max-width: 710px) {
+  .sect-3 .sect-3-cont .cont-2-box, .sect-4 .sect-4-cont .cont-2-box {
+    height: 215px; }
+    .sect-3 .sect-3-cont .cont-2-box a p, .sect-4 .sect-4-cont .cont-2-box a p {
+      font-size: 17px; } }
+
 @media (max-width: 601px) {
   .sect-3 .sect-3-cont .cont-2-box, .sect-4 .sect-4-cont .cont-2-box {
-    height: 350px; } }
+    height: 310px;
+    margin: 5px 50px; }
+    .sect-3 .sect-3-cont .cont-2-box a p, .sect-4 .sect-4-cont .cont-2-box a p {
+      font-size: 30px; } }
 
 @media (max-width: 600px) {
   .sect-3 .sect-3-cont .cont-2-box, .sect-4 .sect-4-cont .cont-2-box {
@@ -4716,6 +4741,10 @@ a {
     max-width: 490px;
     width: 100%;
     height: 365px; } }
+
+@media (max-width: 710px) {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-text, .sect-4 .sect-4-cont .cont-2-box a .cont-2-text {
+    height: 175px; } }
 
 @media (max-width: 601px) {
   .sect-3 .sect-3-cont .cont-2-box a .cont-2-text, .sect-4 .sect-4-cont .cont-2-box a .cont-2-text {
@@ -4761,6 +4790,10 @@ a {
   .sect-3 .sect-3-cont .cont-2-box a .cont-2-text .cont-2-img-box img, .sect-4 .sect-4-cont .cont-2-box a .cont-2-text .cont-2-img-box img {
     height: 375px; } }
 
+@media (max-width: 710px) {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-text .cont-2-img-box img, .sect-4 .sect-4-cont .cont-2-box a .cont-2-text .cont-2-img-box img {
+    height: 170px; } }
+
 @media (max-width: 601px) {
   .sect-3 .sect-3-cont .cont-2-box a .cont-2-text .cont-2-img-box img, .sect-4 .sect-4-cont .cont-2-box a .cont-2-text .cont-2-img-box img {
     height: 245px; } }
@@ -4782,126 +4815,124 @@ a {
       height: 205px; } }
 
 @media (max-width: 1366px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
-    height: 150px; } }
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+    height: 150px; }
+    .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
+      font-size: 20px; } }
+
+@media (max-width: 1280px) {
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
+    font-size: 18px; } }
 
 @media (max-width: 1024px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
     height: 170px; } }
 
 @media (max-width: 834px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
     height: 125px; } }
 
 @media (max-width: 768px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
-    height: 46px; } }
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+    height: 46px; }
+    .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
+      font-size: 20px; } }
 
 @media (max-width: 601px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
-    height: 92px; } }
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+    height: 92px; }
+    .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
+      font-size: 16px; } }
 
 @media (max-width: 414px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
-    height: 87px; } }
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+    height: 87px; }
+    .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
+      font-size: 14px; } }
 
 @media (max-width: 375px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
-    height: 85px; } }
-
-@media (max-width: 1366px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
-    font-size: 20px; } }
-
-@media (max-width: 1280px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
-    font-size: 18px; } }
-
-@media (max-width: 768px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
-    font-size: 12px; } }
-
-@media (max-width: 601px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
-    font-size: 16px; } }
-
-@media (max-width: 414px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
-    font-size: 14px; } }
-
-@media (max-width: 375px) {
-  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
-    font-size: 13px; } }
+  .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box {
+    height: 85px; }
+    .sect-3 .sect-3-cont .cont-2-box:after a .cont-2-p-box p, .sect-4 .sect-4-cont .cont-2-box:after a .cont-2-p-box p {
+      font-size: 13px; } }
 
 @media (max-width: 1600px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
     font-size: 28px; }
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
     font-size: 39px; } }
 
 @media (max-width: 1536px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     justify-content: space-around; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
       font-size: 21px;
       letter-spacing: 2px; } }
 
 @media (max-width: 1366px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     margin: 14px 0 0 0px;
     justify-content: space-around; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
       font-size: 20px;
       letter-spacing: 2px; }
-      .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child {
+      .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child {
         margin-right: 1px; } }
 
 @media (max-width: 1280px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
     font-size: 18px; } }
 
 @media (max-width: 962px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     height: 40px; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
       font-size: 20px; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
       font-size: 30px; } }
 
 @media (max-width: 834px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     margin: 10px 0 0 0; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
       font-size: 27px; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
       font-size: 40px; } }
 
 @media (max-width: 768px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     margin: 0; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
       font-size: 45px; } }
 
+@media (max-width: 710px) {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+    margin: 0; }
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
+      font-size: 15px; }
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+      font-size: 25px; } }
+
 @media (max-width: 601px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 {
     font-size: 30px; } }
 
 @media (max-width: 414px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     margin: 9px 0 0 0px; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
       font-size: 20px; }
-    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+    .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
       font-size: 35px; } }
 
 @media (max-width: 375px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4:first-child span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4:first-child span {
     font-size: 20px; }
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost h4 span, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost h4 span {
     font-size: 30px; } }
 
 @media (max-width: 360px) {
-  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
+  .sect-3 .sect-3-cont .cont-2-box a .cont-2-cost, .sect-4 .sect-4-cont .cont-2-box a .cont-2-cost {
     margin: 9px 0 0 0px; } }
 
 @media (max-width: 1536px) {
@@ -4957,7 +4988,7 @@ a {
 
 @media (max-width: 601px) {
   .sect-banbox .banbox-cont {
-    height: 170px; } }
+    height: 240px; } }
 
 @media (max-width: 600px) {
   .sect-banbox .banbox-cont {
@@ -4998,7 +5029,7 @@ a {
 
 @media (max-width: 601px) {
   .sect-banbox .banbox-cont .banbox-box {
-    height: 55px; } }
+    height: 70px; } }
 
 @media (max-width: 600px) {
   .sect-banbox .banbox-cont .banbox-box {
@@ -5057,9 +5088,9 @@ a {
 
 @media (max-width: 601px) {
   .sect-banbox .banbox-cont .banbox-box .consol {
-    height: 50px; }
+    height: 65px; }
     .sect-banbox .banbox-cont .banbox-box .consol ul a li {
-      font-size: 9px;
+      font-size: 15px;
       letter-spacing: 2px;
       padding: 1px 0; } }
 
@@ -5122,9 +5153,10 @@ a {
 
 @media (max-width: 601px) {
   .sect-banbox .banbox-cont .banbox-box .box-box-ico {
-    height: 55px; }
+    width: 35%;
+    height: 65px; }
     .sect-banbox .banbox-cont .banbox-box .box-box-ico img {
-      height: 65px; } }
+      height: 80px; } }
 
 @media (max-width: 600px) {
   .sect-banbox .banbox-cont .banbox-box .box-box-ico {
@@ -5181,9 +5213,9 @@ a {
 
 @media (max-width: 601px) {
   .sect-banbox .banbox-cont .banbox-box .box-box {
-    height: 75px; }
+    height: 100px; }
     .sect-banbox .banbox-cont .banbox-box .box-box img {
-      height: 70px; } }
+      height: 110px; } }
 
 @media (max-width: 600px) {
   .sect-banbox .banbox-cont .banbox-box .box-box {
@@ -5285,17 +5317,62 @@ a {
   .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box {
     height: 515px; } }
 
-@media (max-width: 1366px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box {
-    margin: 20px auto; } }
+@media (max-width: 1024px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box {
+    height: 440px; } }
+
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box {
+    height: 330px; } }
+
+@media (max-width: 768px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box {
+    height: 360px; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box {
+    height: 250px; } }
 
 @media (max-width: 1366px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
-    height: 320px; } }
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text {
+    width: 83%; } }
+
+@media (max-width: 1280px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text {
+    width: 80%;
+    height: 380px; } }
+
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text {
+    height: 240px; } }
+
+@media (max-width: 768px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text {
+    height: 230px; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text {
+    width: 83%; } }
+
+@media (max-width: 1366px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box {
+    margin: 2px auto; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
+      height: 380px; } }
+
+@media (max-width: 1280px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box {
+    margin: 5px auto; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
+      height: 385px; } }
 
 @media (max-width: 1024px) {
   .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
-    height: 260px; } }
+    height: 340px; } }
+
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
+    height: 240px; } }
 
 @media (max-width: 834px) {
   .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
@@ -5309,41 +5386,127 @@ a {
   .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-text .tv-box img {
     height: 177px; } }
 
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p {
+    font-size: 21px; } }
+
+@media (max-width: 768px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p {
+    font-size: 20px; } }
+
+@media (max-width: 710px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p {
+    font-size: 15px; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box p {
+    font-size: 13px; } }
+
+@media (max-width: 1280px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost {
+    height: 35px; } }
+
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span {
+    font-size: 20px; }
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span {
+    font-size: 32px; } }
+
+@media (max-width: 768px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost {
+    height: 40px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span {
+      font-size: 20px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span {
+      font-size: 35px; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost {
+    height: 20px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4:first-child span {
+      font-size: 12px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-2-box .tv-2-p-box .tv-2-cost h4 span {
+      font-size: 22px; } }
+
 @media (max-width: 1366px) {
   .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont {
     width: 95%;
     height: 65px; } }
 
+@media (max-width: 1280px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont {
+    height: 50px;
+    margin: 5px auto; } }
+
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont {
+    height: 45px; } }
+
+@media (max-width: 768px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont {
+    height: 50px;
+    margin: 5px auto; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont {
+    height: 30px; } }
+
 @media (max-width: 1366px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon .tv-icon-box {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon img {
     width: 70%; } }
 
-@media (max-width: 768px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon .tv-icon-box {
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon img {
     width: 60%; } }
 
-@media (max-width: 1366px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
-    height: 135px; } }
-
 @media (max-width: 768px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
-    height: 143px; } }
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon img {
+    width: 60%; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-icon img {
+    width: 45%; } }
 
 @media (max-width: 1366px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm .tv-ban-h1 {
-    font-size: 40px;
-    padding: 35px 45px 0 0; } }
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
+    height: 135px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
+      font-size: 40px;
+      padding: 35px 45px 0 0; } }
+
+@media (max-width: 1280px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
+    height: 60px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
+      height: 40px;
+      padding: 0; } }
+
+@media (max-width: 962px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
+    height: 45px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
+      font-size: 30px;
+      height: 30px; } }
 
 @media (max-width: 834px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm .tv-ban-h1 {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
     font-size: 35px;
     padding: 35px 25px 0 0; } }
 
 @media (max-width: 768px) {
-  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm .tv-ban-h1 {
-    font-size: 30px;
-    padding: 45px 15px 0 0; } }
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
+    height: 41px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
+      font-size: 30px;
+      height: 30px;
+      padding: 0; } }
+
+@media (max-width: 601px) {
+  .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm {
+    height: 45px; }
+    .sect-banbox .banbox-cont-2 .sect-ban-cont .tv-text-cont .tv-ico-nm h1 {
+      font-size: 25px;
+      height: 25px; } }
 
 @media (max-width: 1536px) {
   .sect-banbox .banbox-cont-2 .sect-ban-cont-2 {
@@ -5834,6 +5997,14 @@ a {
       margin: 1px 10px; }
       .sect-1 .sect-1-cont .sect-1-box .slick-dots .slick-active button:before, .sect-3 .sect-3-cont .slick-dots .slick-active button:before, .sect-4 .sect-4-cont .slick-dots .slick-active button:before {
         font-size: 18px; } }
+
+@media (max-width: 601px) {
+  .sect-1 .sect-1-cont .sect-1-box .slick-dots li, .sect-3 .sect-3-cont .slick-dots li, .sect-4 .sect-4-cont .slick-dots li {
+    width: 25px; }
+    .sect-1 .sect-1-cont .sect-1-box .slick-dots li button:before, .sect-3 .sect-3-cont .slick-dots li button:before, .sect-4 .sect-4-cont .slick-dots li button:before {
+      font-size: 13px; }
+  .sect-1 .sect-1-cont .sect-1-box .slick-dots .slick-active button:before, .sect-3 .sect-3-cont .slick-dots .slick-active button:before, .sect-4 .sect-4-cont .slick-dots .slick-active button:before {
+    font-size: 19px; } }
 
 @media (max-width: 414px) {
   .sect-1 .sect-1-cont .sect-1-box .slick-dots, .sect-3 .sect-3-cont .slick-dots, .sect-4 .sect-4-cont .slick-dots {
